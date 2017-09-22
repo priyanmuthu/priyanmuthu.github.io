@@ -1,326 +1,261 @@
-<!DOCTYPE html>
 <html>
-<title>Priyan Vaithilingam</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
+<head>
+  <title>Resume | Priyan Vaithilingam</title>
+  <meta charset="UTF-8"><!--[if IE]><![endif]-->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+  <title>Priyan Vaithilingam</title>
+  <link rel="shortcut icon" href="http://priyan.info/img/logo-black.png" hreflang="en-us">
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('https://priyanpublic.blob.core.windows.net/public/DSCN1133%20(2).JPG');
-    min-height: 100%;
-}
+  <meta property="og:title" content="Resume | Priyan Vaithilingam" />
+  <meta property="og:description" content="Write description here" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.priyan.info/" />
+  <meta property="og:site_name" content="Resume | Priyan Vaithilingam" />
+  <!-- <meta property="og:image" content="" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="672" />
+  <meta property="og:image:type" content="image/png" /> -->
+  <meta property="og:locale" content="en_US">
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("https://priyanpublic.blob.core.windows.net/public/DSCN1133%20(2).JPG");
-    min-height: 400px;
-}
+  <meta name="description" content="Website of priyan vaithilingam.">
+  <meta name="keywords" content="research, development, msr, priyan, vaithilingam, priyanmuthu, microsoft, iiti">
 
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("https://priyanpublic.blob.core.windows.net/public/DSCN1133%20(2).JPG");
-    min-height: 400px;
-}
+  <meta itemprop="name" content="Resume | Priyan Vaithilingam">
+  <meta itemprop="description" content="write description here.">
+  <meta itemprop="image" content="">
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
-</style>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://priyan.info/">
+  <meta name="twitter:site" content="@priyanvaithi">
+  <meta name="twitter:creator" content="@priyanvaithi">
+  <meta name="twitter:title" content="Resume | Priyan Vaithilingam">
+  <meta name="twitter:description" content="write description here.">
+  <meta name="twitter:image:src" content="">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
+  <div id="content"></div>
+  <script src="https://fb.me/react-0.14.6.js"></script>
+  <script src="https://fb.me/react-dom-0.14.6.js"></script>
+  <script src="https://unpkg.com/react@0.12.1/dist/JSXTransformer.js"></script>
+  <script type="text/jsx">
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PRIYAN <span class="w3-hide-small">VAITHILINGAM</span></span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center">Tech | Music | Blog | Nerd</p>
-  <p>As the sun goes down I stand up, the nocturnal hallucinations coming live. I was destined for it and I will fulfil it. For who will if not me? With coffee in the mug and LAN cable connected, I dance along with the keys. Let's capture the world!</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Priyan Vaithilingam</b></p><br>
-      <img src="https://priyanpublic.blob.core.windows.net/public/priyan.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>With boundless imagination running round <br/>
-        A whole new world inside me,<br/>
-        The last few years were just<br/> 
-        spinning the hamster wheel<br/>
-        Round and round it went, <br/>
-        blurring the world around<br/>
-        <br/>
-        With millions of color in my head<br/>
-        I chose only two to paint my world<br/>
-        Was I scared to be different?<br/>
-        Or was it easy to be the same?<br/>
-        <br/>
-        But suddenly I looked around<br/>
-        And found myself insignificant<br/>
-        Not to the world, but to myself<br/>
-        I want to be the sun in the sky<br/>
-        Not a speck of sand in the beach<br/>
-        <br/>
-        When everyone chose the road,<br/>
-        I decided the mountains<br/>
-        For I don’t know not about destination<br/>
-        But I'll sure enjoy the journey.</p>
-    </div>
-  </div>
-  <!-- <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div> -->
-</div>
-
-<!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
-  </div>
-</div> -->
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"><a src="https://facebook.com/priyanvai"/></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</footer>
- 
-<!-- Add Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    var DATA = {
+      name: "Priyan Vaithilingam",
+      subtext: "Research Fellow",
+      jobStatus: "Microsoft Research India",
+      twitterURL: 'https://twitter.com/priyanvaithi',
+      instaURL: 'https://www.instagram.com/priyanmuthu/',
+      githubURL: 'https://github.com/priyanmuthu',
+      linkedinURL: 'https://www.linkedin.com/in/priyanv',
+      resumeURL: 'http://priyan.info/CV.pdf'
     }
-}
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
+    var App = React.createClass({
+      render: function() {
+        return(
+          <div className="app">
+            <Left
+              name={this.props.profileData.name}
+              subtext={this.props.profileData.subtext}
+              jobStatus={this.props.profileData.jobStatus}
+              twitterURL={this.props.profileData.twitterURL}
+              instaURL={this.props.profileData.instaURL}
+              githubURL={this.props.profileData.githubURL}
+              linkedinURL={this.props.profileData.linkedinURL}
+            />
+            <Right
+              intro={this.props.profileData.intro}
+              resumeURL={this.props.profileData.resumeURL}
+            />
+          </div>
+        );
+      }
+    });
 
+    var Left = React.createClass({
+      render: function() {
+        return(
+          <div className="left">
+            <div className="bg-img"></div>
+            <div className="left-inner">
+              <div className="info">
+                <h2 className="name">{this.props.name}</h2>
+                <div className="subtext">{this.props.subtext}</div>
+                <div className="jobStatus">{this.props.jobStatus}</div>
+                <div className="social-links">
+                  <a href={this.props.twitterURL} target="_blank"><i className="fa fa-twitter"></i></a>
+                  <a href={this.props.instaURL} target="_blank"><i className="fa fa-instagram"></i></a>
+                  <a href={this.props.githubURL} target="_blank"><i className="fa fa-github"></i></a>
+                  <a href={this.props.linkedinURL}  target="_blank"><i className="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      }
+    });
+
+    var Right = React.createClass({
+      render: function() {
+        return(
+          <div className="right">
+            <div className="right-inner">
+
+
+              <div className="introduction">
+                <h4>Intro</h4>
+                <div className="content">
+                  <p className="intro-p">I&#39;m currently working as a Research Fellow in Microsoft Research India.</p>
+                  <p className="intro-p">
+                    Currently working on a myriad of things, including Microsoft Email Insights, Microsoft P# and Accessbile Prgramming environments.
+                  </p>
+                  <span className="intro-p job-pls"></span>
+                </div>
+              </div>
+
+
+              <div className="experience">
+                <h4>Experience</h4>
+                <div className="content">
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="https://research.microsoft.com/" target="_blank">Microsoft Research India</a>
+                      <div className="duration">March 2016 &mdash; Present</div>
+                    </div>
+                    <div className="title">Research Fellow</div>
+                    <ul className="description">
+                      <li>Working on CodeTalk : A step towards accessible programming environments</li>
+                      <li>Working on Microsoft P# : A safer asynchronous programming language.</li>
+                      <li>Built and released Microsoft Email Insights : Faster and better Email search.</li>
+                    </ul>
+                  </div>
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="https://www.microsoft.com/en-in/about/" target="_blank">Microsoft India</a>
+                      <div className="duration">July 2015 &mdash; March 2016</div>
+                    </div>
+                    <div className="title">Software Engineer</div>
+                    <ul className="description">
+                      <li>Helped in migrating the internal data services tool to Cosmos:Microsoft's big data platform.</li>
+                      <li>Worked on .Net and SQL.</li>
+                    </ul>
+                  </div>
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="http://www.sesc.in" target="_blank">Student Entrepreneurship Support Cell</a>
+                      <div className="duration">Aug. 2013 &mdash; Jan. 2015</div>
+                    </div>
+                    <div className="title">E-Leader and Co-Founder</div>
+                    <ul className="description">
+                      <li>Laid the initial Foundation of the cell, and a ten year plan to realize its vision.</li>
+                      <li>Secured funding for incubating start-ups within the institute.</li>
+                    </ul>
+                  </div>
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="https://www.microsoft.com/en-in/about/" target="_blank">Microsoft India</a>
+                      <div className="duration">May 2014 &mdash; July 2014</div>
+                    </div>
+                    <div className="title">Software Developer intern</div>
+                    <ul className="description">
+                      <li>Worked on Enterprise feedback management.</li>
+                      <li>Made the AI for Battleship game (internal) for XBOX Kinect.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+
+              <div className="education">
+                <h4>Education</h4>
+                <div className="content">
+                  <div className="university">
+                    <a href="http://www.iiti.ac.in/" target="_blank">Indian institute of Science (IIT) Indore</a>
+                    <div className="passout">May 2015</div>
+                  </div>
+                  <div className="college"><a href="http://cse.iiti.ac.in" target="_blank">Computer Science and Engineering</a></div>
+                  <div className="minor"><strong>Degree:</strong> B.Tech Computer Science and Engineering</div>
+                  <div className="conc"><strong>GPA:</strong> 9.0  <i>(of 10)</i></div>
+                  <div className="study-abroad"></div>
+                  <div className="grad-date"></div>
+                </div>
+              </div>
+              
+              <div className="projects">
+                <h4>Projects & Contribution</h4>
+                <div className="content">
+                  <div className="project-item">
+                    <a className="project-title" href="https://github.com/p-org/PSharp" target="_blank">Microsoft P# - A safer asynchronous programming language</a>
+                    <p className="project-desc">Enabled massive parallel testing of P# code binaries using Azure Batch systems.</p>
+                  </div>
+                  <div className="project-item">
+                    <a className="project-title" href="https://www.microsoft.com/en-us/garage/profiles/email-insights/" target="_blank">Microsoft Email Insights <i>(Official Microsoft Release)</i></a>
+                    <p className="project-desc">Involved in the product development and release of the application.</p>
+                  </div>
+                  <div className="project-item">
+                    <div className="project-title">CodeTalk : Accessible programming environments</div>
+                    <p className="project-desc">Working on making programming environments like Visual Studio accessible for Visual Impaired developers.</p>
+                  </div>
+                  <div className="project-item">
+                    <a className="project-title" href="https://github.com/aravindsagar/SmartLockScreen" target="_blank">Smart Lock Screen for Android <i>(B.Tech Project)</i></a>
+                    <p className="project-desc">Involved in the product development with one another partner in the final year of college.</p>
+                    <p className="project-desc">Finalist in <i>Best B.Tech Project Award</i>.</p>
+                  </div>
+                </div>
+              </div>
+  
+                
+              <div className="experience">
+                <h4>Press & Media</h4>
+                <div className="content">
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="https://goo.gl/kt17Zm" target="_blank">Find messages faster with the Microsoft Garage’s latest release, Email Insights</a>
+                      <div className="duration">14 Feb 2017</div>
+                    </div>
+                    <div className="title">Microsoft Blog</div>
+                  </div>
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="https://goo.gl/CBzs5Q" target="_blank">AI’s big leap to tiny devices opens world of possibilities</a>
+                      <div className="duration">29 June 2017</div>
+                    </div>
+                    <div className="title">Microsoft Blog</div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div className="skills">
+                <h4>Research Interests</h4>
+                <div className="content">
+                  <div className="skill-category">
+                    <span>Search and Information Retrieval</span>
+                  </div>
+                  <div className="skill-category">
+                    <span>Human Computer Interaction</span>
+                  </div>
+                </div>
+              </div>
+              <a className="resume" href={this.props.resumeURL} target="_blank"><div className="resume-link">Grab a PDF of my full resume</div></a>
+            </div>
+          </div>
+        );
+      }
+    });
+
+    ReactDOM.render(
+      <App profileData={DATA}/>,
+      document.getElementById('content')
+    );
+
+
+  </script>
 </body>
 </html>
