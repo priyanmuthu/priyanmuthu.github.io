@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Download PDF Copy](https://priyan.info/CV.pdf)
+
 Education
 ======
 &nbsp;&nbsp;&nbsp;&nbsp;**B.Tech. in Computer Science, Indian Institute of Technology, Indore**  
