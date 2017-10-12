@@ -6,6 +6,7 @@ tags:
   - MSR
   - EmailInsights
   - Microsoft
+  - News
 ---
 
 Microsoft Email Insights, the project I have been working on has finally released. Find the press release here: [Find messages faster with the Microsoft Garage’s latest release, Email Insights](https://goo.gl/kt17Zm).

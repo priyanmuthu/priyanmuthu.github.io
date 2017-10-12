@@ -9,15 +9,7 @@ redirect_from:
   - /who
 ---
 
-Here I will write something about me
-
-A heading
-======
-Something about that heading
-
-Another heading
-======
-Something about that
+I'm a Research Fellow in Microsoft Research India, currently working on Human-Computer Interaction (accessibility), Information Retrieval and Programming Language.
 
 
 Updates
