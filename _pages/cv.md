@@ -11,49 +11,36 @@ redirect_from:
 
 Education
 ======
-* B.S. in Github, Github University, 2012
-* M.S. in Jekyll, Github University, 2014
-* Ph.D in Version Control Theory, Github University, 2018 (expected)
+&nbsp;&nbsp;&nbsp;&nbsp;**B.Tech. in Computer Science, Indian Institute of Technology, Indore**  
+&nbsp;&nbsp;&nbsp;&nbsp;*9.0 (out of 10)*  
+&nbsp;&nbsp;&nbsp;&nbsp;2011-2015  
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Research Fellow, Microsoft Research India  
+*Mar 2016 - Present*
+  * CodeTalk
+  * SmartStick
+  * Email Insights
+  * PSharp
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Software Engineer, Microsoft India
+*June 2015 - Mar 2016*
+  * Microsoft Big Data Platform : Data migration
+  * MACH Journalist
 
-Publications
+* Co-Founder & E-Leader, Student Entrepreneurship Support Cell (IITI)
+*Aug 2013 - Jan 2015*
+  * 2nd Place, National Entrepreneurship Challenge 2015
+  * Incubated 2 start-ups from the institute
+
+* Software Engineer Intern, Microsoft India
+*May 2014 - July 2014*
+  * User Feedback Systems
+  * Battleship Game for Microsoft Kinect (Ripple Framework)
+
+
+Honors and Awards
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Microsoft Hackathon 2017: 2nd place worldwide (developer category)
+* National Entrepreneurship Challenge 2015 : 2nd Place
