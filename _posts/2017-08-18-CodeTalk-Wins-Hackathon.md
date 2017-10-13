@@ -1,7 +1,7 @@
 ---
 title: 'CodeTalk wins 2nd Place in Microsoft Hackathon'
 date: 2017-08-18
-permalink: /posts/IoTArticle
+permalink: /posts/CodeTalkWins
 tags:
   - MSR
   - CodeTalk
