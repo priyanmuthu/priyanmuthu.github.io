@@ -11,7 +11,7 @@ redirect_from:
 Blogs
 ----
 
-<br/><br/>
+<br/>
 
 [![The Onion Art Project](/images/onionart.png)](https://theonionart.wordpress.com)
 
