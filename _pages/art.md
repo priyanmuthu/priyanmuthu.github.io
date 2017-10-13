@@ -8,6 +8,9 @@ redirect_from:
   - /writing/
 ---
 
+Blogs
+----
+
 <br/><br/>
 
 [![The Onion Art Project](/images/onionart.png)](https://theonionart.wordpress.com)
