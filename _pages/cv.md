@@ -19,24 +19,24 @@ Education
 
 Work experience
 ======
-* Research Fellow, Microsoft Research India  
+* **Research Fellow, Microsoft Research India**  
 *Mar 2016 - Present*
   * CodeTalk
   * SmartStick
   * Email Insights
   * PSharp
 
-* Software Engineer, Microsoft India  
+* **Software Engineer, Microsoft India**  
 *June 2015 - Mar 2016*
   * Microsoft Big Data Platform : Data migration
   * MACH Journalist
 
-* Co-Founder & E-Leader, Student Entrepreneurship Support Cell (IITI)  
+* **Co-Founder & E-Leader, Student Entrepreneurship Support Cell (IITI)**  
 *Aug 2013 - Jan 2015*
   * 2nd Place, National Entrepreneurship Challenge 2015
   * Incubated 2 start-ups from the institute
 
-* Software Engineer Intern, Microsoft India  
+* **Software Engineer Intern, Microsoft India**  
 *May 2014 - July 2014*
   * User Feedback Systems
   * Battleship Game for Microsoft Kinect (Ripple Framework)
@@ -44,5 +44,5 @@ Work experience
 
 Honors and Awards
 ======
-* Microsoft Hackathon 2017: 2nd place worldwide (developer category)
-* National Entrepreneurship Challenge 2015 : 2nd Place
+* **Microsoft Hackathon 2017**: 2nd place worldwide (developer category)
+* **National Entrepreneurship Challenge 2015** : 2nd Place
