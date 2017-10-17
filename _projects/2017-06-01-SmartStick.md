@@ -8,6 +8,8 @@ redirect_from:
   - /projects/IoT
   - /projects/IoT.html
   - /SmartStick
+  - /projects/smartstick
+  - /smartstick
 ---
 
 The Smart Stick projects goal is to improve the standard of living for Visually Impaired people. The Walking stick is one of the most common aid used. The potential it has if coupled as an accessibility device is huge. This is the driving force for this Hackathon. We plan to ‘SMARTify” the walking stick to be able to interact with the user and provide a seamless experience.
