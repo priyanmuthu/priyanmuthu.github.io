@@ -13,7 +13,7 @@ redirect_from:
 ---
 
 
-**CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers** (*Submitted*)  
+**CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers** *(Submitted)*  
 *CHI 2018 (under review)*  
 *Potluri, Venkatesh, **Vaithilingam, Priyan**, et. al.*
 
