@@ -9,7 +9,7 @@ redirect_from:
   - /who
 ---
 
-I'm a Research Fellow in Microsoft Research India, currently working on Human-Computer Interaction (accessibility), Information Retrieval and Programming Language.
+I'm a Research Fellow in Microsoft Research India, currently working on [Accessibility of Programming Environments](https://priyan.info/codetalk), [A whole new way to search and interact with emails](https://priyan.info/emailinsights), and [a safer asynchronous programming language](https://priyan.info/psharp).
 
 
 Updates
