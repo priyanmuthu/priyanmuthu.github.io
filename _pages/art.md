@@ -1,7 +1,7 @@
 ---
 permalink: /art/
-title: "Art Projects"
-excerpt: "Art Projects"
+title: "Art"
+excerpt: "Art"
 author_profile: true
 redirect_from: 
   - /art.html
