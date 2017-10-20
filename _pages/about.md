@@ -8,16 +8,11 @@ redirect_from:
   - /about.html
   - /who
 ---
+I'm a **Research Fellow** in **Microsoft Research** India, currently working on [accessibility](https://priyan.info/codetalk) of Programming Environments, a whole new way to [search and interact](https://priyan.info/emailinsights) with emails, and a safer [asynchronous](https://priyan.info/psharp) programming language.  
 
-I'm a **Research Fellow** in **Microsoft Research** India, currently working on [accessibility](https://priyan.info/codetalk) of Programming Environments, a whole new way to [search and interact](https://priyan.info/emailinsights) with emails, and a safer [asynchronous](https://priyan.info/psharp) programming language.
+For more details on my current work, please visit my [projects](https://priyan.info/projects) page.  
 
-
-Currently working on
-----
-* [CodeTalk](https://priyan.info/projects/CodeTalk/)
-* [PSharp](https://priyan.info/projects/PSharp/)
-* [SmartStick](https://priyan.info/projects/SmartStick/)
-* [Email Insights](https://priyan.info/projects/EmailInsights/)
+I also indulge deeply in [Art](https://priyan.info/art). I also collaborate in [*The Onion Art Project*](https://theonionart.wordpress.com) and maintain a personal blog : [*Broken Typewriter*](https://priyanmuthu.wordpress.com).
 
 <br/>
 
