@@ -19,7 +19,7 @@ Interactivity is a key concern in interface design. I'm form India, where techno
 Art
 ---
 
-I also indulge deeply in [Art](https://priyan.info/art). I collaborate in [*The Onion Art Project*](https://theonionart.wordpress.com) and maintain a personal blog : [*Broken Typewriter*](https://priyanmuthu.wordpress.com).
+I also indulge deeply in [Art](https://priyan.info/art). I collaborate in [*The Onion Art Project*](https://theonionart.wordpress.com) and maintain a personal blog : [*Broken Typewriter*](https://priyanmuthu.wordpress.com) and [*Snippets*](https://microsnips.wordpress.com).
 
 <br/>
 
