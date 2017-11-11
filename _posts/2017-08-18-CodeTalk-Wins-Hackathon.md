@@ -9,6 +9,9 @@ tags:
   - Accessibility
   - Visual Impairment
   - Microsoft
+redirect_from:
+  - /posts/codetalkwins
+  - /posts/hackathon
 ---
 
-CodeTalk, our solution to improve programming environment accessibility wins Microsoft Hackathon 2017 worldwide 2nd place (developer category).
+CodeTalk, our solution to improve programming environment accessibility wins Microsoft Hackathon 2017 worldwide 2nd place (developer category). To know more about CodeTalk click [here](https://priyan.info/projects/CodeTalk)
