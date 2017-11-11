@@ -16,6 +16,8 @@ redirect_from:
 
 *More updates coming soon...*
 
+![SmartStick](/images/projects/smartstick/smartstick.png)
+
 Press & Media
 ----
 
