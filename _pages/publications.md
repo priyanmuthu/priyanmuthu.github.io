@@ -17,6 +17,11 @@ redirect_from:
  *CHI 2018 (under review)*  
  *Potluri, Venkatesh, **Vaithilingam, Priyan**, et. al.*
 
+Honors & Awards
+====
+
+* **Microsoft Hackathon 2017** : worldwide 2nd Place (developer category)
+* **National Entrepreneurship Challenge** : 2nd place on behalf of SESC, IIT Indore
 
 Press & Media
 ====
@@ -44,9 +49,3 @@ ZDNet
 * **[Find That missing message with Microsoft Garage's newest app, Email Insights](https://goo.gl/BLqt9L)**  
 Digital Trends  
 16 Feb, 2017
-
-Honors & Awards
-====
-
-* **Microsoft Hackathon 2017** : worldwide 2nd Place (developer category)
-* **National Entrepreneurship Challenge** : 2nd place on behalf of SESC, IIT Indore
