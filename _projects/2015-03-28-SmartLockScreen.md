@@ -10,6 +10,7 @@ redirect_from:
   - /smartlockscreen
   - /SmartLockscreen
   - /Smartlockscreen
+  - /SmartLockScreen
 ---
 
 <p align="justify">An android app, for balancing security and convenience, with Environment sensitive passwords, Notifications in lock-screen, and Restricted User profiles</p>
