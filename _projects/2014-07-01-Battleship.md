@@ -13,7 +13,7 @@ redirect_from:
 
 <p align="justify">BattleShip is the classic two-player board game redesigned for Kinect. It uses the dual projection floor-screen model of the <a href="https://github.com/Microsoft/kinect-ripple" target="_blank">ripple framework</a> for Kinect</p>
 
-![Game Projection](/images/projects/battleship.jpg)
+![Game Projection](/images/projects/battleship/battleship.jpg)  
 
 [Link to GitHub repository](https://github.com/vaishaks/battleship)
 
