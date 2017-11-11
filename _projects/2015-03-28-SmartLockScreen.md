@@ -1,6 +1,6 @@
 ---
 title: "SmartLockScreen : A context-aware lock-screen for android"
-excerpt: "*Officially released in Windows Store &#124; [Featured in Microsoft Blog](https://goo.gl/kt17Zm)*"
+excerpt: "*Released in XDA &#124; Open-Source*"
 collection: "projects"
 permalink: /projects/SmartLockScreen/
 redirect_from:
