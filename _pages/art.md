@@ -13,7 +13,7 @@ Blogs
 
 <br/>
 
-[![The Onion Art Project](/images/onionart.png)](https://theonionart.wordpress.com)
+[![The Onion Art Project](/images/art/onionart.png)](https://theonionart.wordpress.com)
 
 ________
 
