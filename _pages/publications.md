@@ -38,7 +38,7 @@ Press & Media
 PC World  
 14 Feb, 2017
 
-* **[Microsoft Garage releases Email Insights, a better way to search through email**](https://goo.gl/LPz8ys)**   
+* **[Microsoft Garage releases Email Insights, a better way to search through email](https://goo.gl/LPz8ys)**   
 ON MSFT  
 14 Feb, 2017
 
