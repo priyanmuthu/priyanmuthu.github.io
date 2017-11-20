@@ -9,6 +9,8 @@ redirect_from:
   - /EmailInsights
   - /projects/emailinsights
   - /emailinsights
+  - /email
+  - /Email
 ---
 
 <p align="justify">Email Insights is a lightweight email client which helps users do their emails related tasks faster. It provides guided search in the form of superfast autocomplete, spell correct and fuzzy name search which means that users do not have to type out everything. Email Insights provides relevance based search results in addition to time ordered results so that users do not have to scroll down to find that elusive mail. Email Insights also provides additional features like tabbed email searches and quick commands from search box so that your email experience is faster, easier and more productive.</p>
