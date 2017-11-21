@@ -13,7 +13,8 @@ redirect_from:
   - /SmartLockScreen
 ---
 
-<p align="justify">An android app, for balancing security and convenience, with Environment sensitive passwords, Notifications in lock-screen, and Restricted User profiles</p>
+An android app, for balancing security and convenience, with Environment sensitive passwords, Notifications in lock-screen, and Restricted User profiles.    
+{: .text-justify}
 
 [Link to GitHub repository](https://github.com/aravindsagar/SmartLockScreen)
 
