@@ -8,8 +8,8 @@ redirect_from:
 ---
 
 <form id="contactform" action="//formspree.io/priyanmuthu@gmail.com" method="POST">
-    <input id="nameinput" type="text" placeholder="Your name">
-    <input id="emailinput" type="email" placeholder="Your email">
+    <input id="nameinput" name="name" type="text" placeholder="Your name">
+    <input id="emailinput" name="_replyto" type="email" placeholder="Your email">
     <textarea id="nametextarea" name="message" placeholder="Your message"></textarea>
     <input type="submit" value="Send">
 </form>
