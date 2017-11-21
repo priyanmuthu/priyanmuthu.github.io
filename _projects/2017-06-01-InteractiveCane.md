@@ -6,6 +6,7 @@ permalink: /projects/InteractiveCane/
 redirect_from:
   - /projects/SmartStick.html
   - /projects/SmartStick
+  - /projects/SmartStick/
   - /projects/IoT
   - /projects/IoT.html
   - /SmartStick
