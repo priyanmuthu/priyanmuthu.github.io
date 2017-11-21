@@ -4,6 +4,7 @@ title: "About me - A poem"
 excerpt: "About me - A poem"
 author_profile: true
 redirect_from: 
+  - /narrateme
   - /narrateme.html
 ---
 With boundless imagination running round  
