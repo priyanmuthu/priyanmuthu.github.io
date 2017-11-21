@@ -1,5 +1,5 @@
 ---
-permalink: /narrateme/
+permalink: /narrateme
 title: "About me - A poem"
 excerpt: "About me - A poem"
 author_profile: true
