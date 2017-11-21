@@ -37,3 +37,4 @@ Updates
   {% endfor %}
 </ul>
 
+To read a poem about me, click [here](/narrateme)
