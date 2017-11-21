@@ -11,7 +11,7 @@ redirect_from:
 I'm a **Research Fellow** in **Microsoft Research** India, a guitarist and a writer. An aspiring researcher in Human-Computer Interaction concentrated on interactivity and interface design. In Microsoft Research, I'm currently working on [accessibility](/projects/CodeTalk/) of Programming Environments, a [smarter walking cane](/projects/SmartStick/) for Visually Impaired people, a whole new way to [search and interact](/projects/EmailInsights/) with emails, and a safer [asynchronous](/projects/PSharp/) programming language.  
 {: .text-justify}
 
-For more details on my current work, please visit my [projects](/projects) page.  
+For more details on my current work, please visit my [projects](/projects/) page.  
 
 Why HCI?
 ---
@@ -21,7 +21,7 @@ Interactivity is a key concern in interface design. I'm form India, where techno
 Art
 ---
 
-I also indulge deeply in [Art](/art). I collaborate in [*The Onion Art Project*](https://theonionart.wordpress.com) and maintain a personal blog : [*Broken Typewriter*](https://priyanmuthu.wordpress.com) and [*Snippets*](https://microsnips.wordpress.com).
+I also indulge deeply in [Art](/art/). I collaborate in [*The Onion Art Project*](https://theonionart.wordpress.com) and maintain a personal blog : [*Broken Typewriter*](https://priyanmuthu.wordpress.com) and [*Snippets*](https://microsnips.wordpress.com).
 {: .text-justify}
 
 <br/>
@@ -37,4 +37,4 @@ Updates
   {% endfor %}
 </ul>
 
-To read a poem about me, click [here](/narrateme)
+To read a poem about me, click [here](/narrateme/)
