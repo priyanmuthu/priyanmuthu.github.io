@@ -8,10 +8,10 @@ redirect_from:
   - /about.html
   - /who
 ---
-I'm a **Research Fellow** in **Microsoft Research** India, a guitarist and a writer. An aspiring researcher in Human-Computer Interaction concentrated on interactivity and interface design. In Microsoft Research, I'm currently working on [accessibility](https://priyan.info/projects/CodeTalk/) of Programming Environments, a [smarter walking cane](https://priyan.info/projects/SmartStick/) for Visually Impaired people, a whole new way to [search and interact](https://priyan.info/projects/EmailInsights/) with emails, and a safer [asynchronous](https://priyan.info/projects/PSharp/) programming language.  
+I'm a **Research Fellow** in **Microsoft Research** India, a guitarist and a writer. An aspiring researcher in Human-Computer Interaction concentrated on interactivity and interface design. In Microsoft Research, I'm currently working on [accessibility](/projects/CodeTalk/) of Programming Environments, a [smarter walking cane](/projects/SmartStick/) for Visually Impaired people, a whole new way to [search and interact](/projects/EmailInsights/) with emails, and a safer [asynchronous](/projects/PSharp/) programming language.  
 {: .text-justify}
 
-For more details on my current work, please visit my [projects](https://priyan.info/projects) page.  
+For more details on my current work, please visit my [projects](/projects) page.  
 
 Why HCI?
 ---
@@ -21,7 +21,7 @@ Interactivity is a key concern in interface design. I'm form India, where techno
 Art
 ---
 
-I also indulge deeply in [Art](https://priyan.info/art). I collaborate in [*The Onion Art Project*](https://theonionart.wordpress.com) and maintain a personal blog : [*Broken Typewriter*](https://priyanmuthu.wordpress.com) and [*Snippets*](https://microsnips.wordpress.com).
+I also indulge deeply in [Art](/art). I collaborate in [*The Onion Art Project*](https://theonionart.wordpress.com) and maintain a personal blog : [*Broken Typewriter*](https://priyanmuthu.wordpress.com) and [*Snippets*](https://microsnips.wordpress.com).
 {: .text-justify}
 
 <br/>
