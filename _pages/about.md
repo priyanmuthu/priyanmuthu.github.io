@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
   - /who
 ---
-I'm a **Research Fellow** in **Microsoft Research** India, a guitarist and a writer. An aspiring researcher in Human-Computer Interaction concentrated on interactivity and interface design. In Microsoft Research, I'm currently working on [accessibility](/projects/CodeTalk/) of Programming Environments, a [smarter walking cane](/projects/SmartStick/) for Visually Impaired people, a whole new way to [search and interact](/projects/EmailInsights/) with emails, and a safer [asynchronous](/projects/PSharp/) programming language.  
+I'm a **Research Fellow** in **Microsoft Research** India, a guitarist and a writer. An aspiring researcher in Human-Computer Interaction concentrated on interactivity and interface design. In Microsoft Research, I'm currently working on [accessibility](/projects/CodeTalk/) of Programming Environments, a [smarter walking cane](/projects/InteractiveCane/) for Visually Impaired people, a whole new way to [search and interact](/projects/EmailInsights/) with emails, and a safer [asynchronous](/projects/PSharp/) programming language.  
 {: .text-justify}
 
 For more details on my current work, please visit my [projects](/projects/) page.  
