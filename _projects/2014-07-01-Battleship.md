@@ -16,6 +16,8 @@ BattleShip is the classic two-player board game redesigned for Kinect. It uses t
 
 ![Game Projection](/images/projects/battleship/battleship.jpg)  
 
-[Link to GitHub repository](https://github.com/vaishaks/battleship)
+Links
+---
+[GitHub repository](https://github.com/vaishaks/battleship)
 
 
