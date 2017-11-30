@@ -1,6 +1,6 @@
 ---
 permalink: /facebook/
-title: "Broken Typewriter - Blog"
+title: "Facebook - Priyan Vaithilingam"
 redirect_from: 
   - /Facebook
   - /FaceBook

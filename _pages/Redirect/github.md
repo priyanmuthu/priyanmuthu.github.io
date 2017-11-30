@@ -1,6 +1,6 @@
 ---
 permalink: /github/
-title: "Broken Typewriter - Blog"
+title: "GitHub - Priyan Vaithilingam"
 redirect_from: 
   - /GitHub
   - /Github
