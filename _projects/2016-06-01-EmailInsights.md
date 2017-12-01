@@ -35,3 +35,7 @@ Press & Media
 [**FIND THAT MISSING MESSAGE WITH MICROSOFT GARAGE'S NEWEST APP, EMAIL INSIGHTS**](https://goo.gl/BLqt9L)  
 *Digital Trends*
 
+Collaborators
+---
+* [Suresh Parthasarathy](https://www.microsoft.com/en-us/research/people/supartha/)
+* [B Ashok](https://www.linkedin.com/in/bashashok/)

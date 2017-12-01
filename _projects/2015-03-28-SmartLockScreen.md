@@ -31,3 +31,7 @@ Press & Media
 *Gadget Hacks*
 
 
+Collaborators
+---
+* [Aravind Sagar](https://www.linkedin.com/in/aravind-sagar-65015a5a/)
+* [Gourinath Banda](http://cse.iiti.ac.in/faculty.html)
