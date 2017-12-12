@@ -15,7 +15,7 @@ For more details on my current work, please visit my [projects](/projects/) page
 
 Why HCI?
 ---
-Interactivity is a key concern in interface design. I'm form India, where technological penetration, though rising, is not as high as other developed countries. This is due to many reasons like literacy, economic buying power etc. But the main concern is usability. Traditional design in tech products is not inclusive to all ages and demographics (this is even without considering differently-abled people). I believe judiciously designed interfaces can bring a cohesive experience to all. I have worked on many projects challenge the traditional ways of interacting with a system. I'm currently exploring Machine Learning and IoT, and I believe these small intelligent devices powered by efficient ML algorithms can change the way we interact with the world.  
+Interactivity is a key concern in interface design. I'm form India, where technological penetration, though rising, is not as high as other developed countries. This is due to many reasons like literacy, cultural differences, age etc. But the main concern is usability. My vision is to develop tools and interfaces that can transcend human diversity. I'm currently exploring the coalition of Machine Learning and HCI, which I believe can change the way we interact with the world.  
 {: .text-justify}
 
 Art
