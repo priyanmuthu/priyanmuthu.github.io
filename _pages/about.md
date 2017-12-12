@@ -21,7 +21,7 @@ Interactivity is a key concern in interface design. I'm form India, where techno
 Art
 ---
 
-I also indulge deeply in [Art](/art/). I collaborate in [*The Onion Art Project*](https://theonionart.wordpress.com){:target="_blank"} and maintain a personal blog : [*Broken Typewriter*](https://priyanmuthu.wordpress.com){:target="_blank"} and [*Snippets*](https://microsnips.wordpress.com){:target="_blank"}.
+I also indulge deeply in [Art](/art/). I collaborate in [*The Onion Art Project*](https://theonionart.wordpress.com){:target="_blank"} and maintain two personal blogs : [*Broken Typewriter*](https://priyanmuthu.wordpress.com){:target="_blank"} and [*Snippets*](https://microsnips.wordpress.com){:target="_blank"}.
 {: .text-justify}
 
 <br/>
