@@ -24,10 +24,8 @@ Work experience
 ======
 * **Research Fellow, Microsoft Research India**  
 *Mar 2016 - Present*
-  * CodeTalk
-  * SmartStick
-  * Email Insights
-  * PSharp
+  * Participating in cutting edge research in HCI, Programming Languages and Information Retrieval
+  * Won 2nd place worldwide in Microsoft Hackathon 2017 (dev. category)
 
 * **Software Engineer, Microsoft India**  
 *June 2015 - Mar 2016*
