@@ -1,6 +1,6 @@
 ---
 title: 'CodeTalk featured in Microsoft Blog'
-date: 2017-08-18
+date: 2017-12-12
 permalink: /posts/CodeTalkArticle
 tags:
   - MSR
