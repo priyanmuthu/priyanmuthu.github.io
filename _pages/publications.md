@@ -13,8 +13,8 @@ redirect_from:
 ---
 
 
-* **CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers** *(Accepted)*  
- *CHI 2018 (under review)*  
+* **CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers**  
+ *ACM SIGCHI 2018 (Accepted)*  
  *Potluri, Venkatesh, **Vaithilingam, Priyan**, et. al.*
 
 Honors & Awards
@@ -25,6 +25,15 @@ Honors & Awards
 
 Press & Media
 ====
+
+* **[CodeTalk: Rethinking IDE accessibility](https://www.microsoft.com/en-us/research/blog/codetalk-rethinking-ide-accessibility/)**  
+ Microsoft Research Blog  
+ 11 December, 2017
+
+* **[Research That Matters](http://epaper.financialexpress.com/1462735/Indian-Express/December-11,-2017#page/8/1)**  
+ Financial Express  
+ 11 December, 2017
+
 
 * **[AI’s big leap to tiny devices opens world of possibilities](https://goo.gl/CBzs5Q)**  
  Microsoft Blog  

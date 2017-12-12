@@ -28,4 +28,5 @@ The Interactive cane aims to improve the standard of living for Visually Impaire
 Press & Media
 ----
 
-[**AI’s big leap to tiny devices opens world of possibilities**](https://goo.gl/CBzs5Q)
+* [**Research That Matters**](http://epaper.financialexpress.com/1462735/Indian-Express/December-11,-2017#page/8/1)  
+* [**AI’s big leap to tiny devices opens world of possibilities**](https://goo.gl/CBzs5Q)  
