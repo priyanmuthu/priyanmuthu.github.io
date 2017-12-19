@@ -15,7 +15,7 @@ redirect_from:
 
 * **CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers**  
  *ACM SIGCHI 2018 (Accepted)*  
- *Potluri, Venkatesh, **Vaithilingam, Priyan**, et. al.*
+ *Venkatesh Potluri, **Priyan Vaithilingam**, Suresh Parthasarathy, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa*
 
 Honors & Awards
 ====
