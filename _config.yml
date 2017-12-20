@@ -270,7 +270,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
+plugins: ['jekyll-twitter-plugin']
 
 # Archives
 #  Type
