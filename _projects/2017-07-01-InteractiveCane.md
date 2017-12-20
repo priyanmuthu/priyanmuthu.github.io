@@ -1,6 +1,6 @@
 ---
-title: "Interactive Cane: ML enabled smart walking stick for Visually Impaired people"
-excerpt: "*[Featured in Microsoft Blog](https://goo.gl/CBzs5Q)*"
+title: "Interactive Cane"
+excerpt: "ML enabled smart walking stick for Visually Impaired people"
 collection: "projects"
 permalink: /projects/InteractiveCane/
 redirect_from:

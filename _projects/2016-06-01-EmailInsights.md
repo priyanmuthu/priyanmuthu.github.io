@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Email Insights : Faster and Better Email Experience"
-excerpt: "*Officially released in Windows Store &#124; [Featured in Microsoft Blog](https://goo.gl/kt17Zm)*"
+title: "Microsoft Email Insights"
+excerpt: "Faster and Better Email Experience"
 collection: "projects"
 permalink: /projects/EmailInsights/
 redirect_from:

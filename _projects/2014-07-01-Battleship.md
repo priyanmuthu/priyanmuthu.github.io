@@ -1,6 +1,6 @@
 ---
-title: "BattleShip : Classic Board game for Kinect"
-excerpt: "*Featured in Kinect ripple centers in Microsoft.*"
+title: "BattleShip"
+excerpt: "Classic Board game for Kinect"
 collection: "projects"
 permalink: /projects/BattleShip/
 redirect_from:

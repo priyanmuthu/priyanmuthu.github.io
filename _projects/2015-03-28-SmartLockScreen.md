@@ -1,6 +1,6 @@
 ---
-title: "SmartLockScreen : A context-aware lock-screen for android"
-excerpt: "*Released in XDA &#124; Open-Source*"
+title: "SmartLockScreen"
+excerpt: "A context-aware lock-screen for android"
 collection: "projects"
 permalink: /projects/SmartLockScreen/
 redirect_from:
