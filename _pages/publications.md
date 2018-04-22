@@ -13,7 +13,8 @@ redirect_from:
 ---
 
 
-* **CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers** [\[pdf\]](https://dl.acm.org/citation.cfm?id=3174192)  
+* **CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers**  
+[\[pdf\]](https://dl.acm.org/citation.cfm?id=3174192)  
  *ACM SIGCHI 2018 - Honarable Mention Award*  
  *Venkatesh Potluri, **Priyan Vaithilingam**, Suresh Parthasarathy, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa*
 
