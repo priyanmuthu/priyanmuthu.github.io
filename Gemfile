@@ -17,7 +17,7 @@ gem "github-pages", group: :jekyll_plugins
 # gem "jekyll"
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
-gem 'nokogiri', '~> 1.7', '>= 1.7.2'
+gem 'nokogiri', '~> 1.8', '>= 1.8.2'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
