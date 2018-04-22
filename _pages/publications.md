@@ -21,7 +21,7 @@ redirect_from:
 Honors & Awards
 ====
 
-* **Microsoft Hackathon 2017** : worldwide 2nd Place (developer category)
+* **Microsoft Hackathon 2017** : worldwide 2nd Place (consumer category)
 * **National Entrepreneurship Challenge** : 2nd place on behalf of SESC, IIT Indore
 
 Press & Media
