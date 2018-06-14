@@ -12,7 +12,7 @@ redirect_from:
 
 {% include base_path %}
 
-[Download PDF Copy](https://priyan.info/files/cvpriyan.pdf)
+[Download PDF Copy](https://priyan.info/files/priyancv.pdf)
 
 Education
 ======
