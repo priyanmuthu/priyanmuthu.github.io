@@ -17,10 +17,10 @@ redirect_from:
 Education
 ======
 &nbsp;&nbsp;&nbsp;&nbsp;**M.S in Computer Science, University of California, San Diego**   
-&nbsp;&nbsp;&nbsp;&nbsp;*present*  
+&nbsp;&nbsp;&nbsp;&nbsp;*Sept 2018 - June 2020 (Expected)*  
 
 &nbsp;&nbsp;&nbsp;&nbsp;**B.Tech. in Computer Science, Indian Institute of Technology, Indore**  
-&nbsp;&nbsp;&nbsp;&nbsp;*9.0 (out of 10)*  
+&nbsp;&nbsp;&nbsp;&nbsp;*9.02/10*  
 &nbsp;&nbsp;&nbsp;&nbsp;2011-2015  
 
 Work experience
