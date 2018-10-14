@@ -9,18 +9,23 @@ redirect_from:
   - /who
 ---
 
-> [Looking for Software Engineering Internship opportunities during Summer 2019](https://www.linkedin.com/in/priyanv/)  
+> [Looking for Internship opportunities during Summer 2019](https://www.linkedin.com/in/priyanv/)  
 
-I'm currently a **Graduate Student** pursuing Masters in Computer Science at **UCSD**. An aspiring researcher in Human-Computer Interaction concentrating on interactivity and interface design. Prior to this, I was a **Research Fellow** in **Microsoft Research** India, where I worked on [accessibility](/projects/CodeTalk/) of Programming Environments, a [smarter walking cane](/projects/InteractiveCane/) for Visually Impaired people, a whole new way to [search and interact](/projects/EmailInsights/) with emails, and a safer [asynchronous](/projects/PSharp/) programming language.  
+I'm a **Graduate Student** in **UCSD** currently working under [Prof. Philip Guo](http://pgbovine.net) at the [UCSD Design Lab](https://designlab.ucsd.edu/). An aspiring researcher in Human-Computer Interaction concentrating on interactivity and interface design.  
+
+Prior to this, I was a **Research Fellow** in **Microsoft Research** India, where I worked on [accessibility](/projects/CodeTalk/) of Programming Environments, a [smarter walking cane](/projects/InteractiveCane/) for Visually Impaired people, a whole new way to [search and interact](/projects/EmailInsights/) with emails, and a safer [asynchronous](/projects/PSharp/) programming language.  
 {: .text-justify}
 
-For more details on my current work, please visit my [projects](/projects/) page.  
-
-
-I also indulge deeply in [Art](/art/). I collaborate in [*The Onion Art Project*](https://theonionart.wordpress.com){:target="_blank"} and maintain two personal blogs : [*Broken Typewriter*](https://priyanmuthu.wordpress.com){:target="_blank"} and [*Snippets*](https://microsnips.wordpress.com){:target="_blank"}.
+For more details on my current work, please visit my [projects](/projects/) page. I also indulge deeply in [Art](/art/). I collaborate in [*The Onion Art Project*](https://theonionart.wordpress.com){:target="_blank"} and maintain two personal blogs : [*Broken Typewriter*](https://priyanmuthu.wordpress.com){:target="_blank"} and [*Snippets*](https://microsnips.wordpress.com){:target="_blank"}.
 {: .text-justify}
 
 <br/>
+
+Contact
+===
+Email: [pvaithil@ucsd.edu](mailto:pvaithil@ucsd.edu), [priyanmuthu@gmail.com](mailto:priyanmuthu@gmail.com)  
+LinkedIn: [priyanv](https://www.linkedin.com/in/priyanv)  
+
 
 Updates
 ====

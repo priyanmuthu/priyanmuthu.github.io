@@ -18,7 +18,7 @@ redirect_from:
  *Venkatesh Potluri, **Priyan Vaithilingam**, Suresh Parthasarathy, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa*    
  [\[acm\]](https://dl.acm.org/citation.cfm?id=3174192) | [\[pdf\]](https://priyan.info/files/CodeTalkPaper.pdf)  
 
-Honors & Awards
+Awards
 ====
 
 * **Microsoft Hackathon 2017** : worldwide 2nd Place (consumer category)
