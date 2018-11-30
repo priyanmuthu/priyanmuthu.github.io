@@ -9,8 +9,6 @@ redirect_from:
   - /who
 ---
 
-> [Looking for Internship opportunities during Summer 2019](https://www.linkedin.com/in/priyanv/)  
-
 I'm a **Graduate Student** in **UCSD** currently working under [Prof. Philip Guo](http://pgbovine.net) at the [UCSD Design Lab](https://designlab.ucsd.edu/). An aspiring researcher in Human-Computer Interaction concentrating on interactivity and interface design.  
 
 Prior to this, I was a **Research Fellow** in **Microsoft Research** India, where I worked on [accessibility](/projects/CodeTalk/) of Programming Environments, a [smarter walking cane](/projects/InteractiveCane/) for Visually Impaired people, a whole new way to [search and interact](/projects/EmailInsights/) with emails, and a safer [asynchronous](/projects/PSharp/) programming language.  
