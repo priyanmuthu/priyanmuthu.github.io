@@ -1,6 +1,6 @@
 ---
 title: 'Joining Azure MySQL team @ Microsoft as Intern'
-date: 2017-02-14
+date: 2019-06-24
 permalink: /posts/RedmonIntern
 tags:
   - Intern
