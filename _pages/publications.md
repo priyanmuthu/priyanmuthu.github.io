@@ -12,6 +12,10 @@ redirect_from:
   - /publications.html
 ---
 
+* **Bespoke: Interactively Synthesizing Custom GUIs from Command-Line Applications By Demonstration.**    
+ *ACM Symposium on User Interface Software and Technology (UIST), 2019*    
+ ***Priyan Vaithilingam**, Philip J. Guo.*    
+ [\[acm\]]() | [\[pdf\]](http://pgbovine.net/publications/Bespoke-synthesizing-GUIs-from-CLI-demonstrations_UIST-2019.pdf)  
 
 * **CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers**    
  *ACM SIGCHI 2018 - Honarable Mention Award*    
