@@ -19,6 +19,19 @@ For more details on my current work, please visit my [projects](/projects/) page
 
 <br/>
 
+Publications
+====
+
+* **Bespoke: Interactively Synthesizing Custom GUIs from Command-Line Applications By Demonstration.**    
+ *ACM Symposium on User Interface Software and Technology (UIST), 2019*    
+ ***Priyan Vaithilingam**, Philip J. Guo.*    
+ [\[acm\]]() | [\[pdf\]](https://priyan.info/files/Bespoke-synthesizing-GUIs-from-CLI-demonstrations_UIST-2019.pdf)  
+
+* **CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers**    
+ *ACM SIGCHI 2018 - Honorable Mention Award*    
+ *Venkatesh Potluri <sup>#</sup>, **Priyan Vaithilingam<sup>#</sup>**, Suresh Parthasarathy<sup>#</sup>, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa*  (<sup>#</sup>co-first authors)
+ [\[acm\]](https://dl.acm.org/citation.cfm?id=3174192) | [\[pdf\]](https://priyan.info/files/CodeTalkPaper.pdf)  
+
 Contact
 ===
 Email: [pvaithil@ucsd.edu](mailto:pvaithil@ucsd.edu), [priyanmuthu@gmail.com](mailto:priyanmuthu@gmail.com)  
