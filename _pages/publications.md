@@ -18,8 +18,9 @@ redirect_from:
  [\[acm\]]() | [\[pdf\]](https://priyan.info/files/Bespoke-synthesizing-GUIs-from-CLI-demonstrations_UIST-2019.pdf)  
 
 * **CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers**    
- *ACM SIGCHI 2018 - Honarable Mention Award*    
- *Venkatesh Potluri, **Priyan Vaithilingam**, Suresh Parthasarathy, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa*    
+ *ACM SIGCHI 2018 - Honorable Mention Award*  
+ *Venkatesh Potluri <sup>#</sup>, **Priyan Vaithilingam<sup>#</sup>**, Suresh Parthasarathy<sup>#</sup>, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa*    
+ (<sup>#</sup>co-first authors)  
  [\[acm\]](https://dl.acm.org/citation.cfm?id=3174192) | [\[pdf\]](https://priyan.info/files/CodeTalkPaper.pdf)  
 
 Awards
