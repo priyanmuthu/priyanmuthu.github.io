@@ -102,9 +102,9 @@ GEM
     minitest (5.9.0)
     multipart-post (2.0.0)
     net-dns (0.8.0)
-    nokogiri (1.10.1)
+    nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.1-x64-mingw32)
+    nokogiri (1.10.4-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
@@ -141,7 +141,7 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-twitter-plugin
-  nokogiri (~> 1.8, >= 1.8.2)
+  nokogiri (~> 1.10)
 
 BUNDLED WITH
    1.16.0
