@@ -8,11 +8,9 @@ redirect_from:
   - /about.html
   - /who
 ---
+I'm currently a **Ph.D Student** @ **Harvard** working with [Prof. Elena Glassman](https://glassmanlab.seas.harvard.edu/glassman.html) at [Glassman Lab](https://glassmanlab.seas.harvard.edu/). I work in the intersection of Human-Computer Interaction and Programming Languages.
 
-I'm a **Master's Student** in **UCSD** currently working under [Prof. Philip Guo](http://pgbovine.net) at the [UCSD Design Lab](https://designlab.ucsd.edu/). An aspiring researcher in Human-Computer Interaction concentrating on interactivity and interface design.  
-
-Prior to this, I was a **Research Fellow** in **Microsoft Research** India, where I worked on [accessibility](/projects/CodeTalk/) of Programming Environments, a [smarter walking cane](/projects/InteractiveCane/) for Visually Impaired people, a whole new way to [search and interact](/projects/EmailInsights/) with emails, and a safer [asynchronous](/projects/PSharp/) programming language.  
-{: .text-justify}
+Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Prof. Philip Guo](http://pgbovine.net) at the [UCSD Design Lab](https://designlab.ucsd.edu/). I was also fortunate to work in **Microsoft Research** India as a **Research Fellow** for two years, where I worked on multitude of [projects](/projects/).
 
 For more details on my current work, please visit my [projects](/projects/) page. I also indulge deeply in [Art](/art/). I collaborate in [*The Onion Art Project*](https://theonionart.wordpress.com){:target="_blank"} and maintain two personal blogs : [*Broken Typewriter*](https://priyanmuthu.wordpress.com){:target="_blank"} and [*Snippets*](https://microsnips.wordpress.com){:target="_blank"}.
 {: .text-justify}
