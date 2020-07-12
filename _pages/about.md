@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
   - /who
 ---
-I'm currently a **Ph.D Student** @ **Harvard** working with [Prof. Elena Glassman](https://glassmanlab.seas.harvard.edu/glassman.html) at [Glassman Lab](https://glassmanlab.seas.harvard.edu/). I work in the intersection of Human-Computer Interaction and Programming Languages.
+I'm a **Ph.D Student** @ **Harvard** working with [Prof. Elena Glassman](https://glassmanlab.seas.harvard.edu/glassman.html) at [Glassman Lab](https://glassmanlab.seas.harvard.edu/). I work in the intersection of Human-Computer Interaction and Programming Languages.
 
 Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Prof. Philip Guo](http://pgbovine.net) at the [UCSD Design Lab](https://designlab.ucsd.edu/). I was also fortunate to work in **Microsoft Research** India as a **Research Fellow** for two years, where I worked on multitude of [projects](/projects/).
 
