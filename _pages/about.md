@@ -32,7 +32,7 @@ Publications
 
 Contact
 ===
-Email: [pvaithil@ucsd.edu](mailto:pvaithil@ucsd.edu), [priyanmuthu@gmail.com](mailto:priyanmuthu@gmail.com)  
+Email: [pvaithilingam@g.harvard.edu](mailto:pvaithilingam@g.harvard.edu), [priyanmuthu@gmail.com](mailto:priyanmuthu@gmail.com)  
 LinkedIn: [priyanv](https://www.linkedin.com/in/priyanv)  
 
 
