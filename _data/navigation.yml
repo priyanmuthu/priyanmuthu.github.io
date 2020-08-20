@@ -1,16 +1,13 @@
 # main links links
 main:
-  - title: "Projects"
-    url: /projects/ 
-    
   - title: "Publications"
-    url: /publications/
-        
-  - title: "Updates"
-    url: /year-archive/
+    url: /#publications
     
   - title: "CV"
-    url: /cv/
+    url: /files/cvpriyan.pdf
   
   - title: "Blog"
     url: https://priyanmuthu.wordpress.com/
+  
+  - title: "Contact"
+    url: /#contact
