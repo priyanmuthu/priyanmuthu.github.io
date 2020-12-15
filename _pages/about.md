@@ -20,13 +20,19 @@ For more details on my current work, please visit my [projects](/projects/) page
 Publications
 ====
 
+* **Papercode: Generating Paper-Based User Interfaces for Code Review, Annotation, and Teaching.**    
+ *UIST 2020 Poster*    
+ ***Priyan Vaithilingam**, Julia M. Markel,  Philip J. Guo.*    
+ [\[acm\]](https://doi.org/10.1145/3379350.3416191)
+
+
 * **Bespoke: Interactively Synthesizing Custom GUIs from Command-Line Applications By Demonstration.**    
- *ACM Symposium on User Interface Software and Technology (UIST), 2019*    
+ *UIST 2019*    
  ***Priyan Vaithilingam**, Philip J. Guo.*    
  [\[acm\]](https://dl.acm.org/doi/10.1145/3332165.3347944) | [\[pdf\]](https://priyan.info/files/Bespoke-synthesizing-GUIs-from-CLI-demonstrations_UIST-2019.pdf)  
 
 * **CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers**    
- *ACM SIGCHI 2018 - Honorable Mention Award*    
+ *CHI 2018 - Honorable Mention Award*    
  *Venkatesh Potluri <sup>#</sup>, **Priyan Vaithilingam<sup>#</sup>**, Suresh Parthasarathy<sup>#</sup>, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa*  (<sup>#</sup>co-first authors)
  [\[acm\]](https://dl.acm.org/citation.cfm?id=3174192) | [\[pdf\]](https://priyan.info/files/CodeTalkPaper.pdf)  
 
