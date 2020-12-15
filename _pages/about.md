@@ -23,8 +23,7 @@ Publications
 * **Papercode: Generating Paper-Based User Interfaces for Code Review, Annotation, and Teaching.**    
  *UIST 2020 Poster*    
  ***Priyan Vaithilingam**, Julia M. Markel,  Philip J. Guo.*    
- [\[acm\]](https://doi.org/10.1145/3379350.3416191)
-
+ [\[acm\]](https://doi.org/10.1145/3379350.3416191) | [\[paper pdf\]](https://priyan.info/files/uist20d-sub1069-i5.pdf) | [\[poster pdf\]](https://priyan.info/files/uist20d-sub1069-i6.pdf)  
 
 * **Bespoke: Interactively Synthesizing Custom GUIs from Command-Line Applications By Demonstration.**    
  *UIST 2019*    
