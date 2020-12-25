@@ -270,6 +270,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-redirect-from
 plugins: ['jekyll-twitter-plugin']
 
 # Archives
