@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
   - /who
 ---
-I'm a **Ph.D Student** @ **Harvard** working with [Prof. Elena Glassman](https://glassmanlab.seas.harvard.edu/glassman.html) at [Glassman Lab](https://glassmanlab.seas.harvard.edu/). I work in the intersection of Human-Computer Interaction and Programming Languages.
+I'm a **Ph.D. Student** @ **Harvard** working with [Prof. Elena Glassman](https://glassmanlab.seas.harvard.edu/glassman.html) at [Glassman Lab](https://glassmanlab.seas.harvard.edu/). I work in the intersection of Human-Computer Interaction and Programming Languages.
 
 Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Prof. Philip Guo](http://pgbovine.net) at the [UCSD Design Lab](https://designlab.ucsd.edu/). I was also fortunate to work in **Microsoft Research** India as a **Research Fellow** for two years, where I worked on multitude of [projects](/projects/).
 
@@ -32,7 +32,7 @@ Publications
 
 * **CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers**    
  *CHI 2018 - Honorable Mention Award*    
- *Venkatesh Potluri <sup>#</sup>, **Priyan Vaithilingam<sup>#</sup>**, Suresh Parthasarathy<sup>#</sup>, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa*  (<sup>#</sup>co-first authors)
+ *Venkatesh Potluri, **Priyan Vaithilingam**, Suresh Parthasarathy, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa*    
  [\[acm\]](https://dl.acm.org/citation.cfm?id=3174192) | [\[pdf\]](https://priyan.info/files/CodeTalkPaper.pdf)  
 
  ---
