@@ -35,25 +35,12 @@ Publications
  *Venkatesh Potluri, **Priyan Vaithilingam**, Suresh Parthasarathy, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa*    
  [\[acm\]](https://dl.acm.org/citation.cfm?id=3174192) | [\[pdf\]](https://priyan.info/files/CodeTalkPaper.pdf)  
 
- ---
-
-Updates
-====
-
-- [Bespoke paper](https://dl.acm.org/doi/10.1145/3332165.3347944) accepted at UIST 2019
-- Joining Azure MySQL team @ Microsoft as Intern
-- [CodeTalk paper](https://dl.acm.org/citation.cfm?id=3174192) : Honorable mention at CHI2018
-- Research That Matters : Feature in Financial Express
-- CodeTalk featured in Microsoft Blog
-- CodeTalk wins 2nd Place in Microsoft Hackathon
-
 ---
 
-Awards
+Contact
 ====
-
-* **Microsoft Hackathon 2017** : worldwide 2nd Place (consumer category)
-* **National Entrepreneurship Challenge** : 2nd place on behalf of SESC, IIT Indore
+Email: [pvaithilingam@g.harvard.edu](mailto:pvaithilingam@g.harvard.edu), [priyanmuthu@gmail.com](mailto:priyanmuthu@gmail.com)  
+LinkedIn: [priyanv](https://www.linkedin.com/in/priyanv)  
 
 ---
 
@@ -84,8 +71,3 @@ Press & Media
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ---
-
-Contact
-====
-Email: [pvaithilingam@g.harvard.edu](mailto:pvaithilingam@g.harvard.edu), [priyanmuthu@gmail.com](mailto:priyanmuthu@gmail.com)  
-LinkedIn: [priyanv](https://www.linkedin.com/in/priyanv)  
