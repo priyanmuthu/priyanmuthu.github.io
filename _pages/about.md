@@ -9,16 +9,21 @@ redirect_from:
   - /who
 ---
 I'm a **Ph.D. Student** @ **Harvard** working with [Prof. Elena Glassman](https://glassmanlab.seas.harvard.edu/glassman.html) at [Glassman Lab](https://glassmanlab.seas.harvard.edu/). I work in the intersection of Human-Computer Interaction and Programming Languages.
+{: .text-justify}  
 
 Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Prof. Philip Guo](http://pgbovine.net) at the [UCSD Design Lab](https://designlab.ucsd.edu/). I was also fortunate to work in **Microsoft Research** India as a **Research Fellow** for two years, where I worked on multitude of [projects](/projects/).
+{: .text-justify}  
 
-For more details on my current work, please visit my [projects](/projects/) page. I also indulge deeply in [Art](/art/). I collaborate in [*The Onion Art Project*](https://theonionart.wordpress.com){:target="_blank"} and maintain two personal blogs : [*Broken Typewriter*](https://priyanmuthu.wordpress.com){:target="_blank"} and [*Snippets*](https://microsnips.wordpress.com){:target="_blank"}.
-{: .text-justify}
 
 <br/>
 
 Publications
 ====
+
+* **Interpretable Program Synthesis**    
+ *CHI 2021*    
+ *Tianyi Zhang, Zhiyang Chen, Yuanli Zhu, **Priyan Vaithilingam**, Xinyu Wang, Elena L Glassman*    
+ [\[pdf\]](https://priyan.info/files/ips_chi2021.pdf) 
 
 * **Papercode: Generating Paper-Based User Interfaces for Code Review, Annotation, and Teaching.**    
  *UIST 2020 Poster*    
@@ -43,6 +48,8 @@ Email: [pvaithilingam@g.harvard.edu](mailto:pvaithilingam@g.harvard.edu), [priya
 LinkedIn: [priyanv](https://www.linkedin.com/in/priyanv)  
 
 ---
+
+<!---
 
 Press & Media
 ====
@@ -71,3 +78,4 @@ Press & Media
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ---
+--->
