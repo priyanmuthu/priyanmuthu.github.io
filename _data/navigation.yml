@@ -6,8 +6,5 @@ main:
   - title: "CV"
     url: /files/priyan_cv.pdf
   
-  - title: "Blog"
-    url: https://priyanmuthu.wordpress.com/
-  
   - title: "Contact"
     url: /#contact
