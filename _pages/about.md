@@ -11,7 +11,7 @@ redirect_from:
 I'm a **Ph.D. Student** @ **Harvard** working with [Prof. Elena Glassman](https://glassmanlab.seas.harvard.edu/glassman.html) at [Glassman Lab](https://glassmanlab.seas.harvard.edu/). I work in the intersection of Human-Computer Interaction and Programming Languages.
 {: .text-justify}  
 
-Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Prof. Philip Guo](http://pgbovine.net) at the [UCSD Design Lab](https://designlab.ucsd.edu/). I was also fortunate to work in **Microsoft Research** India as a **Research Fellow** for two years, where I worked on a multitude of [projects](/projects/).
+Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Prof. Philip Guo](http://pgbovine.net) at the [UCSD Design Lab](https://designlab.ucsd.edu/). I was also fortunate to work in **Microsoft Research** India as a **Research Fellow** for two years, where I worked on a multitude of  related to Information retrieval, developer tools, and programming accessibility.
 {: .text-justify}  
 
 
