@@ -44,8 +44,8 @@ Publications
 
 Contact
 ====
-Email: [pvaithilingam@g.harvard.edu](mailto:pvaithilingam@g.harvard.edu), [priyanmuthu@gmail.com](mailto:priyanmuthu@gmail.com)  
-LinkedIn: [priyanv](https://www.linkedin.com/in/priyanv)  
+Work Email: [pvaithilingam@g.harvard.edu](mailto:pvaithilingam@g.harvard.edu)  
+Personal Email: [priyanmuthu@gmail.com](mailto:priyanmuthu@gmail.com)  
 
 ---
 
