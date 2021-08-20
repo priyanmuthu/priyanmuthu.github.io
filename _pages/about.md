@@ -23,7 +23,7 @@ Publications
 * **Interpretable Program Synthesis**    
  *CHI 2021*    
  *Tianyi Zhang, Zhiyang Chen, Yuanli Zhu, **Priyan Vaithilingam**, Xinyu Wang, Elena L Glassman*    
- [\[pdf\]](https://priyan.info/files/ips_chi2021.pdf) 
+ [\[acm\]](https://dl.acm.org/doi/10.1145/3411764.3445646) | [\[pdf\]](https://priyan.info/files/ips_chi2021.pdf) 
 
 * **Papercode: Generating Paper-Based User Interfaces for Code Review, Annotation, and Teaching.**    
  *UIST 2020 Poster*    
