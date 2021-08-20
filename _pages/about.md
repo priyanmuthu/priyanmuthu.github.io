@@ -20,6 +20,11 @@ Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Pro
 Publications
 ====
 
+* **Assuage: Assembly Synthesis Using A Guided Exploration**    
+ *UIST 2021*    
+ *Jingmei Hu, **Priyan Vaithilingam**, Stephen Chong, Margo Seltzer, Elena L Glassman*    
+ [\[pdf\]](https://priyan.info/files/assuage_uist2021.pdf) 
+
 * **Interpretable Program Synthesis**    
  *CHI 2021*    
  *Tianyi Zhang, Zhiyang Chen, Yuanli Zhu, **Priyan Vaithilingam**, Xinyu Wang, Elena L Glassman*    
