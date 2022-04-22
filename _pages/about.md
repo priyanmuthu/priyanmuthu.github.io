@@ -20,10 +20,15 @@ Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Pro
 Publications
 ====
 
+* **Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models**    
+ *UIST 2021*    
+ ***Priyan Vaithilingam**, Tianyi Zhang, Elena L Glassman*    
+ [\[acm\]]() | [\[pdf\]](https://tianyi-zhang.github.io/files/chi2022-lbw-copilot.pdf) 
+
 * **Assuage: Assembly Synthesis Using A Guided Exploration**    
  *UIST 2021*    
  *Jingmei Hu, **Priyan Vaithilingam**, Stephen Chong, Margo Seltzer, Elena L Glassman*    
- [\[pdf\]](https://priyan.info/files/assuage_uist2021.pdf) 
+ [\[acm\]](https://dl.acm.org/doi/10.1145/3411764.3445646) | [\[pdf\]](https://priyan.info/files/assuage_uist2021.pdf) 
 
 * **Interpretable Program Synthesis**    
  *CHI 2021*    
