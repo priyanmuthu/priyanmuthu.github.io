@@ -21,7 +21,7 @@ Publications
 ====
 
 * **Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models**    
- *UIST 2021*    
+ *CHI LBW 2022*    
  ***Priyan Vaithilingam**, Tianyi Zhang, Elena L Glassman*    
  [\[acm\]]() | [\[pdf\]](https://tianyi-zhang.github.io/files/chi2022-lbw-copilot.pdf) 
 
