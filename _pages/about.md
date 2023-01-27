@@ -19,11 +19,15 @@ Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Pro
 
 Publications
 ====
-
+* **Towards More Effective AI-Assisted Programming: A Systematic Design Exploration to Improve Visual Studio IntelliCode's User Experience**    
+ *ICSE SEIP 2023*    
+ ***Priyan Vaithilingam**, Elena L Glassman, Peter Groenwegen, Sumit Gulwani, Austin Z. Henley, Rohan Malpani, David Pugh, Arjun Radhakrishna, Gustavo Soares, Joey Wang, Aaron Yim*    
+ [\[acm\]]() | [\[pdf\]]()
+ 
 * **Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models**    
  *CHI LBW 2022*    
  ***Priyan Vaithilingam**, Tianyi Zhang, Elena L Glassman*    
- [\[acm\]]() | [\[pdf\]](https://tianyi-zhang.github.io/files/chi2022-lbw-copilot.pdf) 
+ [\[acm\]](https://dl.acm.org/doi/abs/10.1145/3491101.3519665) | [\[pdf\]](https://tianyi-zhang.github.io/files/chi2022-lbw-copilot.pdf) 
 
 * **Assuage: Assembly Synthesis Using A Guided Exploration**    
  *UIST 2021*    
