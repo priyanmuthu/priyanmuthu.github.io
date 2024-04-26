@@ -8,10 +8,10 @@ redirect_from:
   - /about.html
   - /who
 ---
-I'm a **Ph.D. Student** @ **Harvard** working with [Prof. Elena Glassman](https://glassmanlab.seas.harvard.edu/glassman.html) at [Glassman Lab](https://glassmanlab.seas.harvard.edu/). I work in the intersection of Human-Computer Interaction and Programming Languages.
+I'm a **Ph.D. Student** @ **Harvard** working with [Prof. Elena Glassman](https://glassmanlab.seas.harvard.edu/glassman.html) at [Glassman Lab](https://glassmanlab.seas.harvard.edu/). I work in the intersection of Human-Computer Interaction, Artificial Intelligence, and Software Engineering.
 {: .text-justify}  
 
-Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Prof. Philip Guo](http://pgbovine.net) at the [UCSD Design Lab](https://designlab.ucsd.edu/). I was also fortunate to work in **Microsoft Research** India as a **Research Fellow** for two years, where I worked on a multitude of projects related to Information retrieval, developer tools, and programming accessibility.
+Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Prof. Philip Guo](https://pg.ucsd.edu/) at the [UCSD Design Lab](https://designlab.ucsd.edu/). I was also fortunate to work in **Microsoft Research** India as a **Research Fellow** for two years, where I worked on a multitude of projects related to Information retrieval, developer tools, and programming accessibility.
 {: .text-justify}  
 
 
@@ -19,10 +19,26 @@ Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Pro
 
 Publications
 ====
+
+* **Imagining a Future of Designing with AI: Dynamic Grounding, Constructive Negotiation, and Sustainable Motivation**    
+ *DIS 2024*    
+ ***Priyan Vaithilingam**, Ian Arawjo, Elena L Glassman*    
+ [\[arxiv\]](https://arxiv.org/abs/2402.07342) | [\[pdf\]](https://arxiv.org/pdf/2402.07342)
+
+* **DynaVis: Dynamically Synthesized UI Widgets for Visualization Editing**    
+ **🏆Best Paper Award** *CHI 2024*    
+ ***Priyan Vaithilingam**, Elena L Glassman, Jeevana Priya Inala, Chenglong Wang*    
+ [\[arxiv\]](https://arxiv.org/abs/2401.10880) | [\[pdf\]](https://arxiv.org/pdf/2401.10880)
+
+* **ChainForge: A Visual Toolkit for Prompt Engineering and LLM Hypothesis Testing**    
+ **🎖️Honorable Mention Award** *CHI 2024*    
+ *Ian Arawjo, Chelse Swoopes, **Priyan Vaithilingam**, Elena L Glassman, Martin Wattenberg*    
+ [\[arxiv\]](https://arxiv.org/abs/2309.09128) | [\[pdf\]](https://arxiv.org/pdf/2309.09128)
+
 * **Towards More Effective AI-Assisted Programming: A Systematic Design Exploration to Improve Visual Studio IntelliCode's User Experience**    
  *ICSE SEIP 2023*    
  ***Priyan Vaithilingam**, Elena L Glassman, Peter Groenwegen, Sumit Gulwani, Austin Z. Henley, Rohan Malpani, David Pugh, Arjun Radhakrishna, Gustavo Soares, Joey Wang, Aaron Yim*    
- [\[acm\]]() | [\[pdf\]]()
+ [\[acm\]](https://ieeexplore.ieee.org/abstract/document/10172834) | [\[pdf\]](https://austinhenley.com/pubs/Vaithilingam2023ICSE_IntelliCode.pdf)
  
 * **Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models**    
  *CHI LBW 2022*    
@@ -50,7 +66,7 @@ Publications
  [\[acm\]](https://dl.acm.org/doi/10.1145/3332165.3347944) | [\[pdf\]](https://priyan.info/files/Bespoke-synthesizing-GUIs-from-CLI-demonstrations_UIST-2019.pdf)  
 
 * **CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers**    
- *CHI 2018 - Honorable Mention Award*    
+ **🎖️Honorable Mention Award** *CHI 2018*    
  *Venkatesh Potluri, **Priyan Vaithilingam**, Suresh Parthasarathy, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa*    
  [\[acm\]](https://dl.acm.org/citation.cfm?id=3174192) | [\[pdf\]](https://priyan.info/files/CodeTalkPaper.pdf)  
 
