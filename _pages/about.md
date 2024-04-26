@@ -72,40 +72,26 @@ Publications
 
 ---
 
+Relevant Work Experience  
+====
+
+* **Research Intern, Microsoft Research**    
+  [MSR VIDA](https://www.microsoft.com/en-us/research/group/vida/)    
+  *May 2023 - Aug 2023, Redmond USA*    
+  
+* **Research Intern, Microsoft Research**    
+  [MICROSOFT PROSE](https://www.microsoft.com/en-us/research/group/prose/)    
+  *Sep 2021 - Aug 2022, Remote*    
+  
+* **Research Fellow, Microsoft Research India**    
+  [Applied Sciences and Engineering](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/)    
+  *Mar 2016 - Jul 2018, Bengaluru India*
+  
+---
+
 Contact
 ====
 Work Email: [pvaithilingam@g.harvard.edu](mailto:pvaithilingam@g.harvard.edu)  
 Personal Email: [priyanmuthu@gmail.com](mailto:priyanmuthu@gmail.com)  
 
 ---
-
-<!---
-
-Press & Media
-====
-
-* **[CodeTalk: Rethinking IDE accessibility](https://www.microsoft.com/en-us/research/blog/codetalk-rethinking-ide-accessibility/)**, Microsoft Research Blog (11 December, 2017)  
-
-* **[Research That Matters](http://epaper.financialexpress.com/1462735/Indian-Express/December-11,-2017#page/8/1)**, Financial Express (11 December, 2017)  
-
-
-* **[AI’s big leap to tiny devices opens world of possibilities](https://goo.gl/CBzs5Q)**, Microsoft Blog (29 June, 2017)  
-
-* **[Find messages faster with the Microsoft Garage’s latest release, Email Insights](https://goo.gl/kt17Zm)**, Microsoft Blog (14 Feb, 2017)  
-
- * **[Microsoft's Email Insights finally adds some useful search smarts to Outlook](https://goo.gl/eEvjDM)**, PC World (14 Feb, 2017)  
-
-* **[Microsoft Garage releases Email Insights, a better way to search through email](https://goo.gl/LPz8ys)**, ON MSFT (14 Feb, 2017)  
-
-* **[Windows 10 new Email Insights: Microsoft's app bids to fix email search in Outlook, Gmail](https://goo.gl/eXDWGX)**, ZDNet (15 Feb, 2017)  
-
-* **[Find That missing message with Microsoft Garage's newest app, Email Insights](https://goo.gl/BLqt9L)**, Digital Trends (16 Feb, 2017)  
-
-
-<div class="iframely-embed" style="max-width: 1310px;"><div class="iframely-responsive" style="padding-bottom: 42.7478%;"><a href="https://www.microsoft.com/en-us/research/blog/codetalk-rethinking-ide-accessibility/" data-iframely-url="//cdn.iframe.ly/PFN17iE"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
----
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">CodeTalk is a first step in a long journey of exploring ways to make IDEs more accessible. See how <a href="https://twitter.com/Microsoft?ref_src=twsrc%5Etfw">@Microsoft</a>’s India Research lab is working to enhance the coding experience for visually impaired developers. <a href="https://t.co/04yJKiX3un">https://t.co/04yJKiX3un</a> <a href="https://twitter.com/hashtag/IDE?src=hash&amp;ref_src=twsrc%5Etfw">#IDE</a> <a href="https://twitter.com/hashtag/accessibility?src=hash&amp;ref_src=twsrc%5Etfw">#accessibility</a> <a href="https://twitter.com/venkypotluri?ref_src=twsrc%5Etfw">@venkypotluri</a> <a href="https://t.co/uYtxVThU9T">pic.twitter.com/uYtxVThU9T</a></p>&mdash; Microsoft Research (@MSFTResearch) <a href="https://twitter.com/MSFTResearch/status/940381447185223680?ref_src=twsrc%5Etfw">December 12, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
----
---->
