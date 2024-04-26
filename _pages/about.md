@@ -29,12 +29,12 @@ Publications
  [\[arxiv\]](https://arxiv.org/abs/2402.07342) | [\[pdf\]](https://arxiv.org/pdf/2402.07342)
 
 * **DynaVis: Dynamically Synthesized UI Widgets for Visualization Editing**    
-  **`🏆Best Paper Award`** *CHI 2024*    
+  `🏆Best Paper Award` *CHI 2024*    
  ***Priyan Vaithilingam**, Elena L Glassman, Jeevana Priya Inala, Chenglong Wang*    
  [\[arxiv\]](https://arxiv.org/abs/2401.10880) | [\[pdf\]](https://arxiv.org/pdf/2401.10880)
 
 * **ChainForge: A Visual Toolkit for Prompt Engineering and LLM Hypothesis Testing**    
-  **`🎖️Honorable Mention Award`** *CHI 2024*    
+  `🎖️Honorable Mention Award` *CHI 2024*    
  *Ian Arawjo, Chelse Swoopes, **Priyan Vaithilingam**, Elena L Glassman, Martin Wattenberg*    
  [\[arxiv\]](https://arxiv.org/abs/2309.09128) | [\[pdf\]](https://arxiv.org/pdf/2309.09128)
 
@@ -69,7 +69,7 @@ Publications
  [\[acm\]](https://dl.acm.org/doi/10.1145/3332165.3347944) | [\[pdf\]](https://priyan.info/files/Bespoke-synthesizing-GUIs-from-CLI-demonstrations_UIST-2019.pdf)  
 
 * **CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers**    
-  **`🎖️Honorable Mention Award`** *CHI 2018*    
+  `🎖️Honorable Mention Award` *CHI 2018*    
  *Venkatesh Potluri, **Priyan Vaithilingam**, Suresh Parthasarathy, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa*    
  [\[acm\]](https://dl.acm.org/citation.cfm?id=3174192) | [\[pdf\]](https://priyan.info/files/CodeTalkPaper.pdf)  
 
