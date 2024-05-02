@@ -1,8 +1,5 @@
 # main links links
 main:
-  - title: "CV"
-    url: https://priyan.info/files/priyan_cv.pdf
-
   - title: "Publications"
     url: /#publications
 
@@ -11,3 +8,6 @@ main:
   
   - title: "Contact"
     url: /#contact
+
+  - title: "CV"
+    url: https://priyan.info/files/priyan_cv.pdf
