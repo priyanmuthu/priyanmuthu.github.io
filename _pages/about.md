@@ -82,6 +82,9 @@ Publications
 
 Relevant Work Experience  
 ====
+* **Research Intern, Microsoft Research**    
+  [MSR VIDA](https://www.microsoft.com/en-us/research/group/vida/)    
+  *May 2024 - Present, Redmond USA* 
 
 * **Research Intern, Microsoft Research**    
   [MSR VIDA](https://www.microsoft.com/en-us/research/group/vida/)    
@@ -94,6 +97,10 @@ Relevant Work Experience
 * **Research Fellow, Microsoft Research India**    
   [Applied Sciences and Engineering](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/)    
   *Mar 2016 - Jul 2018, Bengaluru India*
+
+* **Software Engineer, Microsoft India**    
+  [MS IDC](https://www.microsoft.com/en-in/msidc)    
+  *Jun 2015 - Mar 2016, Hyderabad India*
   
 ---
 
