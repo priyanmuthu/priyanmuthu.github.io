@@ -16,7 +16,7 @@ Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Pro
 
 <br/>
 
-[Download my CV](https://priyan.info/files/priyan_cv.pdf)  &nbsp;&nbsp;|&nbsp;&nbsp;  [Google Scholar Profile](https://scholar.google.com/citations?hl=en&user=xVB9askAAAAJ&view_op=list_works&sortby=pubdate)
+[Download my CV](https://priyan.info/files/priyan_cv.pdf)  &nbsp;&nbsp;&nbsp;&nbsp;  [Google Scholar Profile](https://scholar.google.com/citations?hl=en&user=xVB9askAAAAJ&view_op=list_works&sortby=pubdate)
 
 <br/>
 
