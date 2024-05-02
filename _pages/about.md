@@ -38,6 +38,11 @@ Publications
  *Ian Arawjo, Chelse Swoopes, **Priyan Vaithilingam**, Elena L Glassman, Martin Wattenberg*    
  [\[arxiv\]](https://arxiv.org/abs/2309.09128) | [\[pdf\]](https://arxiv.org/pdf/2309.09128)
 
+* **Amortizing Pragmatic Program Synthesis with Rankings**    
+  *ICML 2024*    
+ *Yewen Pu, Saujas Vaduguru, **Priyan Vaithilingam**, Elena L Glassman, Daniel Fried*    
+ [\[arxiv\]](https://arxiv.org/abs/2309.03225) | [\[pdf\]](https://arxiv.org/pdf/2309.03225)
+
 * **Towards More Effective AI-Assisted Programming: A Systematic Design Exploration to Improve Visual Studio IntelliCode's User Experience**    
  *ICSE SEIP 2023*    
  ***Priyan Vaithilingam**, Elena L Glassman, Peter Groenwegen, Sumit Gulwani, Austin Z. Henley, Rohan Malpani, David Pugh, Arjun Radhakrishna, Gustavo Soares, Joey Wang, Aaron Yim*    
