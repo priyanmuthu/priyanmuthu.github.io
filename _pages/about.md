@@ -23,25 +23,30 @@ Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Pro
 Publications
 ====
 
+* **Semantic Commit: Helping Users Update Intent Specifications for AI Memory at Scale**    
+ *UIST 2025*    
+ ***Priyan Vaithilingam**, Munyeong Kim, Frida-Cecilia Acosta-Parenteau, Daniel Lee, Amine Mhedhbi, Elena L. Glassman, Ian Arawjo*    
+ [\[acm\]](https://dl.acm.org/doi/10.1145/3746059.3747778) | [\[pdf\]](https://arxiv.org/pdf/2504.09283?)
+
 * **Imagining a Future of Designing with AI: Dynamic Grounding, Constructive Negotiation, and Sustainable Motivation**    
  *DIS 2024*    
  ***Priyan Vaithilingam**, Ian Arawjo, Elena L Glassman*    
- [\[arxiv\]](https://arxiv.org/abs/2402.07342) | [\[pdf\]](https://arxiv.org/pdf/2402.07342)
+ [\[acm\]](https://dl.acm.org/doi/10.1145/3643834.3661525) | [\[pdf\]](https://arxiv.org/pdf/2402.07342)
 
 * **DynaVis: Dynamically Synthesized UI Widgets for Visualization Editing**    
   `🏆Best Paper Award` *CHI 2024*    
  ***Priyan Vaithilingam**, Elena L Glassman, Jeevana Priya Inala, Chenglong Wang*    
- [\[arxiv\]](https://arxiv.org/abs/2401.10880) | [\[pdf\]](https://arxiv.org/pdf/2401.10880)
+ [\[acm\]](https://dl.acm.org/doi/10.1145/3613904.3642639) | [\[pdf\]](https://arxiv.org/pdf/2401.10880)
 
 * **ChainForge: A Visual Toolkit for Prompt Engineering and LLM Hypothesis Testing**    
   `🎖️Honorable Mention Award` *CHI 2024*    
  *Ian Arawjo, Chelse Swoopes, **Priyan Vaithilingam**, Elena L Glassman, Martin Wattenberg*    
- [\[arxiv\]](https://arxiv.org/abs/2309.09128) | [\[pdf\]](https://arxiv.org/pdf/2309.09128)
+ [\[acm\]](https://dl.acm.org/doi/10.1145/3613904.3642016) | [\[pdf\]](https://arxiv.org/pdf/2309.09128)
 
 * **Amortizing Pragmatic Program Synthesis with Rankings**    
   *ICML 2024*    
  *Yewen Pu, Saujas Vaduguru, **Priyan Vaithilingam**, Elena L Glassman, Daniel Fried*    
- [\[arxiv\]](https://arxiv.org/abs/2309.03225) | [\[pdf\]](https://arxiv.org/pdf/2309.03225)
+ [\[acm\]](https://dl.acm.org/doi/10.5555/3692070.3693745) | [\[pdf\]](https://arxiv.org/pdf/2309.03225)
 
 * **Towards More Effective AI-Assisted Programming: A Systematic Design Exploration to Improve Visual Studio IntelliCode's User Experience**    
  *ICSE SEIP 2023*    
