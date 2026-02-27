@@ -22,6 +22,10 @@ Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Pro
 
 Publications
 ====
+* **The Way We Notice, That's What Really Matters: Instantiating UI Components with Distinguishing Variations**    
+ *CHI 2026*    
+ ***Priyan Vaithilingam**, Alan Leung, Jeffrey Nichols, Titus Barik*    
+ [\[acm\]](https://dl.acm.org/doi/10.1145/3772318.3790621) | [\[pdf\]](https://arxiv.org/pdf/2602.22436)
 
 * **Semantic Commit: Helping Users Update Intent Specifications for AI Memory at Scale**    
  *UIST 2025*    
