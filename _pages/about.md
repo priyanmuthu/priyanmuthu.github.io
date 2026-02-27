@@ -91,9 +91,13 @@ Publications
 
 Relevant Work Experience  
 ====
+* **ML Research Scientist, Apple**    
+  [Apple AIML](https://machinelearning.apple.com/)    
+  *Apr 2025 - Present, Seattle USA*
+
 * **Research Intern, Microsoft Research**    
   [MSR VIDA](https://www.microsoft.com/en-us/research/group/vida/)    
-  *May 2024 - Present, Redmond USA* 
+  *May 2024 - Aug 2024, Redmond USA* 
 
 * **Research Intern, Microsoft Research**    
   [MSR VIDA](https://www.microsoft.com/en-us/research/group/vida/)    
@@ -114,8 +118,7 @@ Relevant Work Experience
 ---
 
 Contact
-====
-Work Email: [pvaithilingam@g.harvard.edu](mailto:pvaithilingam@g.harvard.edu)  
+==== 
 Personal Email: [priyanmuthu@gmail.com](mailto:priyanmuthu@gmail.com)  
 
 ---
