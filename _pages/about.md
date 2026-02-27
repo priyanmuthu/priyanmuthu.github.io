@@ -8,10 +8,10 @@ redirect_from:
   - /about.html
   - /who
 ---
-I am a **Research Scientist** in the AI/ML group at Apple, working on intelligent user interfaces. I received my **Ph.D.** from **Harvard**, where I was advised by [Prof. Elena Glassman](https://glassmanlab.seas.harvard.edu/glassman.html) at the [Variation Lab](https://glassmanlab.seas.harvard.edu/). My research lies in the intersection of Human-Computer Interaction, Artificial Intelligence, and Software Engineering.
+I am a **Research Scientist** in the [AI/ML](https://machinelearning.apple.com/) group at Apple, working on intelligent user interfaces. I received my **Ph.D.** from **Harvard**, where I was advised by [Prof. Elena Glassman](https://glassmanlab.seas.harvard.edu/glassman.html) at the [**Variation Lab**](https://glassmanlab.seas.harvard.edu/). My research lies in the intersection of Human-Computer Interaction, Artificial Intelligence, and Software Engineering.
 {: .text-justify}  
 
-Prior to this, I was a **Master's Student** @ **UCSD**, where I worked with [Prof. Philip Guo](https://pg.ucsd.edu/) at the [UCSD Design Lab](https://designlab.ucsd.edu/). I was also fortunate to work in **Microsoft Research** India as a **Research Fellow** for two years, where I worked on a multitude of projects related to Information retrieval, developer tools, and programming accessibility.
+Prior to this, I was a **Master's Student** at **UCSD**, where I worked with [Prof. Philip Guo](https://pg.ucsd.edu/) at the [UCSD Design Lab](https://designlab.ucsd.edu/). I was also fortunate to work in [**Microsoft Research**](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/) India as a **Research Fellow** for two years, where I worked on a multitude of projects related to Information retrieval, developer tools, and programming accessibility.
 {: .text-justify}  
 
 <br/>
