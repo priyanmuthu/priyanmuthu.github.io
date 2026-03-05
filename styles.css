@@ -254,6 +254,17 @@ ul li::marker {
   font-weight: bold;
 }
 
+.author-me {
+  color: var(--link);
+  font-weight: 550;
+}
+
+.pub-branch {
+  color: var(--text);
+  font-size: inherit;
+  white-space: nowrap;
+}
+
 .publication {
   margin-bottom: 0.95rem;
   padding-left: 0.75rem;
