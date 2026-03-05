@@ -264,6 +264,74 @@ ul li::marker {
   content: "";
 }
 
+.git-timeline {
+  list-style: none;
+  margin: 0.55rem 0 0;
+  padding: 0;
+}
+
+.git-entry {
+  position: relative;
+  margin: 0 0 1rem;
+  padding-left: 1.35rem;
+}
+
+.git-entry::before {
+  content: "";
+  position: absolute;
+  left: 0.35rem;
+  top: 0.95rem;
+  bottom: -0.85rem;
+  width: 1px;
+  background: var(--line);
+}
+
+.git-entry:last-child::before {
+  display: none;
+}
+
+.git-entry-head {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.83rem;
+}
+
+.git-entry-head::before {
+  content: "*";
+  position: absolute;
+  left: 0;
+  top: 0.01rem;
+  color: var(--h3);
+  font-weight: bold;
+}
+
+.git-prefix {
+  color: var(--text-muted);
+}
+
+.git-hash {
+  color: var(--link);
+}
+
+.git-branch {
+  color: var(--h2);
+}
+
+.git-entry-role {
+  margin: 0.12rem 0 0.14rem;
+  color: var(--text);
+  font-weight: bold;
+}
+
+.git-entry-meta {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.git-entry-meta em {
+  font-style: normal;
+}
+
 .nerd-line {
   margin: 0.9rem 0 0;
   padding-top: 0.65rem;
@@ -299,6 +367,14 @@ a:focus-visible {
   .header-bar,
   nav {
     align-items: flex-start;
+  }
+
+  .git-entry {
+    padding-left: 1.15rem;
+  }
+
+  .git-entry-head {
+    font-size: 0.8rem;
   }
 }
 
