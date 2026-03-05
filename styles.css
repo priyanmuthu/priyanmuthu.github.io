@@ -364,6 +364,11 @@ ul li::marker {
   opacity: 1;
 }
 
+.rw-node:focus,
+.rw-node:focus-visible {
+  outline: none;
+}
+
 .rw-node:focus-visible rect {
   stroke: var(--h2);
   stroke-width: 1.6;
