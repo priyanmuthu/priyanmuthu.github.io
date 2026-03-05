@@ -127,6 +127,65 @@ header h1::after {
   margin: 0.3rem 0 0.7rem;
   color: var(--muted);
   font-size: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.terminal-prompt {
+  color: var(--accent-tree);
+}
+
+.ascii-inline {
+  white-space: nowrap;
+}
+
+.ascii-spinner::before {
+  content: "|";
+  display: inline-block;
+  width: 1ch;
+  animation: ascii-spin 1s steps(1, end) infinite;
+}
+
+.ascii-cursor {
+  display: inline-block;
+  margin-left: 0.1ch;
+  animation: ascii-cursor-blink 1.1s steps(1, end) infinite;
+}
+
+@keyframes ascii-spin {
+  0% {
+    content: "|";
+  }
+
+  25% {
+    content: "/";
+  }
+
+  50% {
+    content: "-";
+  }
+
+  75% {
+    content: "\\";
+  }
+
+  100% {
+    content: "|";
+  }
+}
+
+@keyframes ascii-cursor-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 0;
+  }
 }
 
 nav {
@@ -240,6 +299,13 @@ a:focus-visible {
   .header-bar,
   nav {
     align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ascii-spinner::before,
+  .ascii-cursor {
+    animation: none;
   }
 }
 
