@@ -22,6 +22,7 @@ Prior to this, I was a **Master's Student** at **UCSD**, where I worked with [Pr
 
 Publications
 ====
+
 * **The Way We Notice, That's What Really Matters: Instantiating UI Components with Distinguishing Variations**    
  *CHI 2026*    
  ***Priyan Vaithilingam**, Alan Leung, Jeffrey Nichols, Titus Barik*    
