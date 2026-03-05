@@ -363,6 +363,13 @@ ul li::marker {
   margin-top: 0.45rem;
 }
 
+.rw-mobile-hint {
+  display: none;
+  margin: 0 0 0.45rem;
+  color: var(--text-muted);
+  font-size: 0.76rem;
+}
+
 .related-works-graph-mount {
   display: block;
 }
@@ -385,6 +392,7 @@ ul li::marker {
 .rw-mobile-topics {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.32rem;
   margin-bottom: 0.45rem;
 }
@@ -666,6 +674,10 @@ a:focus-visible {
 
   .related-works-graph {
     display: none;
+  }
+
+  .rw-mobile-hint {
+    display: block;
   }
 
   .rw-mobile {

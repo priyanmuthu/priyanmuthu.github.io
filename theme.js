@@ -274,7 +274,9 @@
       topicBtn.type = "button";
       topicBtn.className = "rw-mobile-topic";
       topicBtn.setAttribute("data-topic", topic.id);
-      topicBtn.textContent = "[" + topic.label + "]";
+      topicBtn.setAttribute("aria-label", topic.label);
+      topicBtn.setAttribute("title", topic.label);
+      topicBtn.textContent = "[" + topic.short + "]";
       topicsRow.appendChild(topicBtn);
     });
     wrapper.appendChild(topicsRow);
