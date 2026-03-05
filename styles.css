@@ -1,0 +1,250 @@
+:root {
+  --bg: #f5f5f5;
+  --bg-pattern: rgba(0, 0, 0, 0.05);
+  --panel: #ffffff;
+  --text-primary: #333333;
+  --text-accent: #003399;
+  --text-muted: #777777;
+  --text: var(--text-primary);
+  --muted: var(--text-muted);
+  --line: #cccccc;
+  --link: var(--text-accent);
+  --link-hover: #e6f3ff;
+  --shadow: rgba(0, 0, 0, 0.12);
+  --toggle-bg: #f2f2f2;
+  --toggle-text: var(--text-primary);
+  --toggle-border: #b8b8b8;
+  --info-bg: #f0f0f0;
+  --table-key-bg: #e6e6e6;
+  --title: #003399;
+  --h2: #cc6600;
+  --h3: #009900;
+  --accent-tree: var(--text-muted);
+}
+
+[data-theme="dark"] {
+  --bg: #161616;
+  --bg-pattern: rgba(255, 255, 255, 0.04);
+  --panel: #1f1f1f;
+  --text-primary: #ebebeb;
+  --text-accent: #9bb6ff;
+  --text-muted: #bbbbbb;
+  --text: var(--text-primary);
+  --muted: var(--text-muted);
+  --line: #565656;
+  --link: var(--text-accent);
+  --link-hover: #2c4258;
+  --shadow: rgba(0, 0, 0, 0.55);
+  --toggle-bg: #2a2a2a;
+  --toggle-text: var(--text-primary);
+  --toggle-border: #707070;
+  --info-bg: #2a2a2a;
+  --table-key-bg: #303030;
+  --title: #9bb6ff;
+  --h2: #ffb267;
+  --h3: #8ee9a4;
+  --accent-tree: var(--text-muted);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--bg);
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      var(--bg-pattern) 0px,
+      var(--bg-pattern) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+  padding: 1rem;
+}
+
+.page {
+  width: min(860px, 100%);
+  margin: 0 auto;
+  padding: 1.1rem 1.2rem 1.3rem;
+  border: 2px solid var(--line);
+  background: var(--panel);
+  border-radius: 5px;
+  box-shadow: 0 0 20px var(--shadow);
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.theme-toggle {
+  border: 1px solid var(--toggle-border);
+  background: var(--toggle-bg);
+  color: var(--toggle-text);
+  font-family: inherit;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 0.35rem 0.55rem;
+  cursor: pointer;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background: var(--link-hover);
+  outline: none;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--title);
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
+}
+
+header h1::before {
+  content: "┌─ ";
+  color: var(--accent-tree);
+}
+
+header h1::after {
+  content: " ─┐";
+  color: var(--accent-tree);
+}
+
+.subtitle {
+  margin: 0.3rem 0 0.7rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.8rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+nav a::before {
+  content: "> ";
+  color: var(--accent-tree);
+}
+
+main {
+  margin-top: 0.25rem;
+}
+
+.section-card {
+  margin-top: 0.95rem;
+  padding: 0.25rem 0;
+  border: 0;
+  background: transparent;
+}
+
+h2 {
+  margin: 0 0 0.45rem;
+  color: var(--h2);
+  font-size: clamp(1.05rem, 3.5vw, 1.15rem);
+}
+
+h2::after {
+  content: " $";
+  color: var(--accent-tree);
+}
+
+p,
+ul,
+ol {
+  margin: 0.4rem 0;
+}
+
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+
+ul li::marker {
+  color: var(--accent-tree);
+}
+
+.quick-links {
+  margin-top: 0.75rem;
+}
+
+.award {
+  color: var(--h2);
+  font-weight: bold;
+}
+
+.publication {
+  margin-bottom: 0.95rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--line);
+}
+
+.publication::before {
+  content: "";
+}
+
+.nerd-line {
+  margin: 0.9rem 0 0;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--line);
+  color: var(--text-muted);
+  font-size: 0.84rem;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover,
+a:focus-visible {
+  background: var(--link-hover);
+  outline: none;
+}
+
+@media (max-width: 680px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    padding: 0.5rem;
+  }
+
+  .page {
+    padding: 0.8rem 0.85rem 1rem;
+    box-shadow: none;
+  }
+
+  .header-bar,
+  nav {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1100px) {
+  html {
+    font-size: 18px;
+  }
+}

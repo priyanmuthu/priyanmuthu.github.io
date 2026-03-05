@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<browserconfig>
-  <msapplication>
-    <tile>
-      <square70x70logo src="/images/mstile-70x70.png?v=M44lzPylqQ"/>
-      <square150x150logo src="/images/mstile-150x150.png?v=M44lzPylqQ"/>
-    </tile>
-  </msapplication>
-</browserconfig>
