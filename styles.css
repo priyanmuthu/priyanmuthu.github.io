@@ -249,6 +249,35 @@ ul li::marker {
   margin-top: 0.75rem;
 }
 
+.ascii-profile {
+  margin: 0.55rem 0 0.1rem;
+  text-align: center;
+}
+
+.ascii-profile-art {
+  display: inline-block;
+  margin: 0;
+  padding: 0.45rem;
+  background: var(--panel);
+  color: var(--text);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 9.5px;
+  line-height: 1;
+  white-space: pre;
+  text-align: left;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.ascii-profile-art:empty::before {
+  content: "loading pv-small.txt ...";
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .ascii-profile-art {
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
 .award-badge {
   display: inline-block;
   padding: 0.02rem 0.26rem;
@@ -617,6 +646,14 @@ a:focus-visible {
   .related-works {
     margin-top: 0.45rem;
     padding: 0.45rem 0.4rem 0.55rem;
+  }
+
+  .ascii-profile {
+    margin-top: 0.45rem;
+  }
+
+  .ascii-profile-art {
+    font-size: 8px;
   }
 
   .related-works:not([open]) .related-works-meta {

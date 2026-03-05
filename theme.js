@@ -33,6 +33,25 @@
 })();
 
 (function () {
+  var asciiArt = document.getElementById("ascii-profile-art");
+  if (!asciiArt) return;
+
+  fetch("pv-small.txt")
+    .then(function (response) {
+      if (!response.ok) {
+        throw new Error("Failed to load pv-small.txt");
+      }
+      return response.text();
+    })
+    .then(function (text) {
+      asciiArt.textContent = text;
+    })
+    .catch(function () {
+      asciiArt.textContent = "[unable to load pv-small.txt]";
+    });
+})();
+
+(function () {
   var section = document.getElementById("publications");
   if (!section) return;
 
