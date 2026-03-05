@@ -42,14 +42,19 @@
   var graphMount = graphPanel.querySelector(".related-works-graph-mount");
   if (!graphMount) return;
 
+  var summaryMeta = graphPanel.querySelector(".related-works-meta");
   var topicConfig = [
-    { id: "hci", label: "Human-Computer Interaction" },
-    { id: "programming-languages", label: "Programming Languages" },
-    { id: "ai", label: "Artificial Intelligence" },
+    { id: "hci", label: "Human-Computer Interaction", short: "HCI" },
+    { id: "programming-languages", label: "Programming Languages", short: "PL" },
+    { id: "ai", label: "Artificial Intelligence", short: "AI" },
   ];
   var topicSet = {};
+  var topicLabelById = {};
+  var topicShortById = {};
   topicConfig.forEach(function (topic) {
     topicSet[topic.id] = true;
+    topicLabelById[topic.id] = topic.label;
+    topicShortById[topic.id] = topic.short;
   });
 
   function trimText(value) {
@@ -89,7 +94,33 @@
 
   if (!publications.length) return;
 
-  function renderGraph() {
+  if (summaryMeta) {
+    summaryMeta.textContent = "[" + topicConfig.length + " topics • " + publications.length + " papers]";
+  }
+
+  var panelStateUserSet = false;
+  var applyingPanelState = false;
+  function applyResponsivePanelDefault() {
+    if (panelStateUserSet) return;
+    applyingPanelState = true;
+    var isMobile = window.matchMedia && window.matchMedia("(max-width: 680px)").matches;
+    if (isMobile) {
+      graphPanel.removeAttribute("open");
+    } else {
+      graphPanel.setAttribute("open", "");
+    }
+    applyingPanelState = false;
+  }
+  applyResponsivePanelDefault();
+
+  graphPanel.addEventListener("toggle", function () {
+    if (applyingPanelState) return;
+    panelStateUserSet = true;
+  });
+
+  window.addEventListener("resize", applyResponsivePanelDefault);
+
+  function renderDesktopGraph() {
     var svgNs = "http://www.w3.org/2000/svg";
 
     function svgEl(name, attrs, textValue) {
@@ -213,8 +244,55 @@
     return svg;
   }
 
+  function renderMobileList() {
+    var wrapper = document.createElement("div");
+    wrapper.className = "rw-mobile";
+
+    var topicsRow = document.createElement("div");
+    topicsRow.className = "rw-mobile-topics";
+    topicConfig.forEach(function (topic) {
+      var topicBtn = document.createElement("button");
+      topicBtn.type = "button";
+      topicBtn.className = "rw-mobile-topic";
+      topicBtn.setAttribute("data-topic", topic.id);
+      topicBtn.textContent = "[" + topic.label + "]";
+      topicsRow.appendChild(topicBtn);
+    });
+    wrapper.appendChild(topicsRow);
+
+    var papersList = document.createElement("div");
+    papersList.className = "rw-mobile-papers";
+    publications.forEach(function (paper) {
+      var paperBtn = document.createElement("button");
+      paperBtn.type = "button";
+      paperBtn.className = "rw-mobile-paper";
+      paperBtn.setAttribute("data-paper", paper.id);
+      paperBtn.setAttribute("data-topics", paper.topics.join(","));
+
+      var titleEl = document.createElement("span");
+      titleEl.className = "rw-mobile-paper-title";
+      titleEl.textContent = paper.label + (paper.year ? " (" + paper.year + ")" : "");
+      paperBtn.appendChild(titleEl);
+
+      var tagEl = document.createElement("span");
+      tagEl.className = "rw-mobile-paper-tags";
+      tagEl.textContent = paper.topics
+        .map(function (topicId) {
+          return "[" + (topicShortById[topicId] || topicId) + "]";
+        })
+        .join(" ");
+      paperBtn.appendChild(tagEl);
+
+      papersList.appendChild(paperBtn);
+    });
+    wrapper.appendChild(papersList);
+
+    return wrapper;
+  }
+
   graphMount.innerHTML = "";
-  graphMount.appendChild(renderGraph());
+  graphMount.appendChild(renderDesktopGraph());
+  graphMount.appendChild(renderMobileList());
 
   var graph = graphMount.querySelector(".related-works-graph");
   var nodes = Array.prototype.slice.call(graph.querySelectorAll(".rw-node"));
@@ -346,9 +424,115 @@
     restoreState();
   });
 
+  var mobileRoot = graphMount.querySelector(".rw-mobile");
+  var mobileTopicButtons = Array.prototype.slice.call(mobileRoot.querySelectorAll(".rw-mobile-topic"));
+  var mobilePaperButtons = Array.prototype.slice.call(mobileRoot.querySelectorAll(".rw-mobile-paper"));
+  var selectedMobileTopic = null;
+  var selectedMobilePaper = null;
+
+  function buttonTopics(paperBtn) {
+    return trimText(paperBtn.getAttribute("data-topics"))
+      .split(",")
+      .map(trimText)
+      .filter(Boolean);
+  }
+
+  function clearMobileClasses() {
+    mobileTopicButtons.forEach(function (btn) {
+      btn.classList.remove("is-active");
+      btn.classList.remove("is-dim");
+    });
+    mobilePaperButtons.forEach(function (btn) {
+      btn.classList.remove("is-active");
+      btn.classList.remove("is-dim");
+    });
+  }
+
+  function applyMobileHighlight() {
+    clearMobileClasses();
+
+    if (selectedMobileTopic) {
+      mobileTopicButtons.forEach(function (btn) {
+        var topicId = btn.getAttribute("data-topic");
+        if (topicId === selectedMobileTopic) {
+          btn.classList.add("is-active");
+        } else {
+          btn.classList.add("is-dim");
+        }
+      });
+
+      mobilePaperButtons.forEach(function (btn) {
+        var topics = buttonTopics(btn);
+        if (topics.indexOf(selectedMobileTopic) !== -1) {
+          btn.classList.add("is-active");
+        } else {
+          btn.classList.add("is-dim");
+        }
+      });
+      return;
+    }
+
+    if (selectedMobilePaper) {
+      var activePaperBtn = null;
+      mobilePaperButtons.forEach(function (btn) {
+        if (btn.getAttribute("data-paper") === selectedMobilePaper) {
+          activePaperBtn = btn;
+          btn.classList.add("is-active");
+        } else {
+          btn.classList.add("is-dim");
+        }
+      });
+
+      var activeTopics = {};
+      if (activePaperBtn) {
+        buttonTopics(activePaperBtn).forEach(function (topicId) {
+          activeTopics[topicId] = true;
+        });
+      }
+
+      mobileTopicButtons.forEach(function (btn) {
+        var topicId = btn.getAttribute("data-topic");
+        if (activeTopics[topicId]) {
+          btn.classList.add("is-active");
+        } else {
+          btn.classList.add("is-dim");
+        }
+      });
+    }
+  }
+
+  mobileTopicButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var topicId = btn.getAttribute("data-topic");
+      if (selectedMobileTopic === topicId) {
+        selectedMobileTopic = null;
+      } else {
+        selectedMobileTopic = topicId;
+      }
+      selectedMobilePaper = null;
+      applyMobileHighlight();
+    });
+  });
+
+  mobilePaperButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var paperId = btn.getAttribute("data-paper");
+      if (selectedMobilePaper === paperId) {
+        selectedMobilePaper = null;
+      } else {
+        selectedMobilePaper = paperId;
+      }
+      selectedMobileTopic = null;
+      applyMobileHighlight();
+    });
+  });
+
   document.addEventListener("click", function (event) {
     if (graphPanel.contains(event.target)) return;
     selectedNode = null;
     clearHighlight();
+    selectedMobileTopic = null;
+    selectedMobilePaper = null;
+    applyMobileHighlight();
   });
 })();

@@ -281,6 +281,13 @@ ul li::marker {
   user-select: none;
 }
 
+.related-works-meta {
+  display: none;
+  margin-left: 0.4rem;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
 .related-works-title::-webkit-details-marker {
   display: none;
 }
@@ -298,12 +305,93 @@ ul li::marker {
   margin-top: 0.45rem;
 }
 
+.related-works-graph-mount {
+  display: block;
+}
+
 .related-works-graph {
   display: block;
   width: 100%;
   height: auto;
   border: 1px solid var(--line);
   background: var(--panel);
+}
+
+.rw-mobile {
+  display: none;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 0.45rem;
+}
+
+.rw-mobile-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.32rem;
+  margin-bottom: 0.45rem;
+}
+
+.rw-mobile-topic {
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.73rem;
+  line-height: 1.1;
+  padding: 0.2rem 0.34rem;
+  cursor: pointer;
+}
+
+.rw-mobile-topic.is-active {
+  border-color: var(--h3);
+  color: var(--h3);
+}
+
+.rw-mobile-topic.is-dim {
+  opacity: 0.35;
+}
+
+.rw-mobile-papers {
+  display: grid;
+  gap: 0.32rem;
+}
+
+.rw-mobile-paper {
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--text);
+  font-family: inherit;
+  line-height: 1.2;
+  padding: 0.3rem 0.38rem;
+  cursor: pointer;
+}
+
+.rw-mobile-paper-title {
+  display: block;
+  font-size: 0.77rem;
+}
+
+.rw-mobile-paper-tags {
+  display: block;
+  margin-top: 0.12rem;
+  font-size: 0.69rem;
+  color: var(--text-muted);
+}
+
+.rw-mobile-paper.is-active {
+  border-color: var(--h3);
+  color: var(--h3);
+  background: var(--link-hover);
+}
+
+.rw-mobile-paper.is-active .rw-mobile-paper-tags {
+  color: var(--h3);
+}
+
+.rw-mobile-paper.is-dim {
+  opacity: 0.35;
 }
 
 .rw-link {
@@ -502,8 +590,20 @@ a:focus-visible {
     padding: 0.45rem 0.4rem 0.55rem;
   }
 
-  .rw-node text {
-    font-size: 9.6px;
+  .related-works:not([open]) .related-works-meta {
+    display: inline;
+  }
+
+  .related-works[open] .related-works-meta {
+    display: none;
+  }
+
+  .related-works-graph {
+    display: none;
+  }
+
+  .rw-mobile {
+    display: block;
   }
 }
 
