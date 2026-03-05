@@ -113,16 +113,6 @@ header h1 {
   font-size: clamp(1.1rem, 4vw, 1.5rem);
 }
 
-header h1::before {
-  content: "┌─ ";
-  color: var(--accent-tree);
-}
-
-header h1::after {
-  content: " ─┐";
-  color: var(--accent-tree);
-}
-
 .subtitle {
   margin: 0.3rem 0 0.7rem;
   color: var(--muted);
