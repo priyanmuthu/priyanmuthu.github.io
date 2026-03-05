@@ -265,6 +265,110 @@ ul li::marker {
   white-space: nowrap;
 }
 
+.related-works {
+  margin: 0.35rem 0 0.9rem;
+  padding: 0.55rem 0.6rem 0.65rem;
+  border: 1px dashed var(--line);
+  background: var(--info-bg);
+}
+
+.related-works-title {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.87rem;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.related-works-title::-webkit-details-marker {
+  display: none;
+}
+
+.related-works-title::before {
+  content: "[+] ";
+  color: var(--accent-tree);
+}
+
+.related-works[open] .related-works-title::before {
+  content: "[-] ";
+}
+
+.related-works-body {
+  margin-top: 0.45rem;
+}
+
+.related-works-graph {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.rw-link {
+  stroke: var(--line);
+  stroke-width: 1.1;
+  opacity: 0.72;
+  transition: opacity 0.12s ease, stroke 0.12s ease, stroke-width 0.12s ease;
+  vector-effect: non-scaling-stroke;
+}
+
+.rw-node {
+  cursor: pointer;
+  transition: opacity 0.12s ease;
+}
+
+.rw-node rect {
+  fill: var(--bg);
+  stroke: var(--line);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.rw-topic rect {
+  fill: var(--table-key-bg);
+}
+
+.rw-node text {
+  fill: var(--text);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10.2px;
+  transition: fill 0.12s ease;
+}
+
+.related-works.is-active .rw-node,
+.related-works.is-active .rw-link {
+  opacity: 0.08;
+}
+
+.related-works .rw-node.rw-active,
+.related-works .rw-link.rw-active {
+  opacity: 1;
+}
+
+.rw-node.rw-active rect {
+  stroke: var(--h3);
+  stroke-width: 1.8;
+  fill: var(--link-hover);
+}
+
+.rw-node.rw-active text {
+  fill: var(--h3);
+  font-weight: 600;
+}
+
+.rw-link.rw-active {
+  stroke: var(--h3);
+  stroke-width: 2.2;
+  opacity: 1;
+}
+
+.rw-node:focus-visible rect {
+  stroke: var(--h2);
+  stroke-width: 1.6;
+}
+
 .publication {
   margin-bottom: 0.95rem;
   padding-left: 0.75rem;
@@ -386,6 +490,15 @@ a:focus-visible {
 
   .git-entry-head {
     font-size: 0.8rem;
+  }
+
+  .related-works {
+    margin-top: 0.45rem;
+    padding: 0.45rem 0.4rem 0.55rem;
+  }
+
+  .rw-node text {
+    font-size: 9.6px;
   }
 }
 
