@@ -249,9 +249,38 @@ ul li::marker {
   margin-top: 0.75rem;
 }
 
-.award {
-  color: var(--h2);
-  font-weight: bold;
+.award-badge {
+  display: inline-block;
+  padding: 0.02rem 0.26rem;
+  border: 1px solid var(--line);
+  background: var(--table-key-bg);
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.award-badge::before {
+  content: "[[";
+  margin-right: 0.24ch;
+  color: var(--accent-tree);
+}
+
+.award-badge::after {
+  content: "]]";
+  margin-left: 0.24ch;
+  color: var(--accent-tree);
+}
+
+.award-best {
+  border-color: var(--h3);
+  color: var(--h3);
+}
+
+.award-hm {
+  border-color: var(--h3);
+  color: var(--h3);
 }
 
 .author-me {
