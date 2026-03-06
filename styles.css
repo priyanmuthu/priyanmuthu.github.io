@@ -320,13 +320,13 @@ ul li::marker {
 }
 
 .award-best {
-  border-color: var(--h3);
-  color: var(--h3);
+  border-color: var(--h2);
+  color: var(--h2);
 }
 
 .award-hm {
-  border-color: var(--h3);
-  color: var(--h3);
+  border-color: var(--h2);
+  color: var(--h2);
 }
 
 .author-me {
