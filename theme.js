@@ -33,6 +33,19 @@
 })();
 
 (function () {
+  var indicator = document.querySelector(".ascii-inline");
+  if (!indicator) return;
+
+  var spinner = indicator.querySelector(".ascii-spinner");
+  var cursor = indicator.querySelector(".ascii-cursor");
+  if (!spinner || !cursor) return;
+
+  var showSpinner = Math.random() < 0.5;
+  spinner.style.display = showSpinner ? "inline-block" : "none";
+  cursor.style.display = showSpinner ? "none" : "inline-block";
+})();
+
+(function () {
   var asciiArt = document.getElementById("ascii-profile-art");
   if (!asciiArt) return;
 
