@@ -49,19 +49,34 @@
   var asciiArt = document.getElementById("ascii-profile-art");
   if (!asciiArt) return;
 
-  fetch("pv-small.txt")
-    .then(function (response) {
-      if (!response.ok) {
-        throw new Error("Failed to load pv-small.txt");
+  function loadAsciiArt() {
+    var theme = document.documentElement.getAttribute("data-theme") || "light";
+    var file = theme === "dark" ? "pv-dark.txt" : "pv-light.txt";
+    fetch(file)
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Failed to load " + file);
+        }
+        return response.text();
+      })
+      .then(function (text) {
+        asciiArt.textContent = text;
+      })
+      .catch(function () {
+        asciiArt.textContent = "[unable to load " + file + "]";
+      });
+  }
+
+  loadAsciiArt();
+
+  var observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.attributeName === "data-theme") {
+        loadAsciiArt();
       }
-      return response.text();
-    })
-    .then(function (text) {
-      asciiArt.textContent = text;
-    })
-    .catch(function () {
-      asciiArt.textContent = "[unable to load pv-small.txt]";
     });
+  });
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 })();
 
 (function () {
