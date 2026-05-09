@@ -11,7 +11,7 @@ window.PUBLICATION_BIBTEX = {
   author={Vaithilingam, Priyan and Leung, Alan and Nichols, Jeffrey and Barik, Titus},
   year={2026},
   month=Apr,
-  pages={1-18},
+  pages={1--18},
   collection={CHI '26}
 }
 `,
@@ -28,7 +28,7 @@ window.PUBLICATION_BIBTEX = {
   author={Vaithilingam, Priyan and Kim, Munyeong and Acosta-Parenteau, Frida-Cecilia and Lee, Daniel and Mhedhbi, Amine and Glassman, Elena L. and Arawjo, Ian},
   year={2025},
   month=Sept,
-  pages={1-18},
+  pages={1--18},
   collection={UIST '25}
 }
 `,
@@ -45,7 +45,7 @@ window.PUBLICATION_BIBTEX = {
   author={Vaithilingam, Priyan and Arawjo, Ian and Glassman, Elena L.},
   year={2024},
   month=July,
-  pages={289-300},
+  pages={289--300},
   collection={DIS '24}
 }
 `,
@@ -62,7 +62,7 @@ window.PUBLICATION_BIBTEX = {
   author={Vaithilingam, Priyan and Glassman, Elena L. and Inala, Jeevana Priya and Wang, Chenglong},
   year={2024},
   month=May,
-  pages={1-17},
+  pages={1--17},
   collection={CHI '24}
 }
 `,
@@ -79,7 +79,7 @@ window.PUBLICATION_BIBTEX = {
   author={Arawjo, Ian and Swoopes, Chelse and Vaithilingam, Priyan and Wattenberg, Martin and Glassman, Elena L.},
   year={2024},
   month=May,
-  pages={1-18},
+  pages={1--18},
   collection={CHI '24}
 }
 `,
@@ -113,7 +113,7 @@ window.PUBLICATION_BIBTEX = {
   author={Rodrigues, Malchiel and Dapello, Joel and Vaithilingam, Priyan and Nobre, Carolina and Beyer, Johanna},
   year={2023},
   month=Oct,
-  pages={176-180}
+  pages={176--180}
 }
 `,
 
@@ -128,7 +128,7 @@ window.PUBLICATION_BIBTEX = {
   author={Vaithilingam, Priyan and Glassman, Elena L. and Groenwegen, Peter and Gulwani, Sumit and Henley, Austin Z. and Malpani, Rohan and Pugh, David and Radhakrishna, Arjun and Soares, Gustavo and Wang, Joey and Yim, Aaron},
   year={2023},
   month=May,
-  pages={185-195}
+  pages={185--195}
 }
 `,
 
@@ -144,7 +144,7 @@ window.PUBLICATION_BIBTEX = {
   author={Vaithilingam, Priyan and Zhang, Tianyi and Glassman, Elena L.},
   year={2022},
   month=Apr,
-  pages={1-7},
+  pages={1--7},
   collection={CHI '22}
 }
 `,
@@ -161,7 +161,7 @@ window.PUBLICATION_BIBTEX = {
   author={Hu, Jingmei and Vaithilingam, Priyan and Chong, Stephen and Seltzer, Margo and Glassman, Elena L.},
   year={2021},
   month=Oct,
-  pages={134-148},
+  pages={134--148},
   collection={UIST '21}
 }
 `,
@@ -178,7 +178,7 @@ window.PUBLICATION_BIBTEX = {
   author={Zhang, Tianyi and Chen, Zhiyang and Zhu, Yuanli and Vaithilingam, Priyan and Wang, Xinyu and Glassman, Elena L.},
   year={2021},
   month=May,
-  pages={1-16},
+  pages={1--16},
   collection={CHI '21}
 }
 `,
@@ -195,7 +195,7 @@ window.PUBLICATION_BIBTEX = {
   author={Vaithilingam, Priyan and Markel, Julia M. and Guo, Philip J.},
   year={2020},
   month=Oct,
-  pages={77-79},
+  pages={77--79},
   collection={UIST '20}
 }
 `,
@@ -212,7 +212,7 @@ window.PUBLICATION_BIBTEX = {
   author={Vaithilingam, Priyan and Guo, Philip J.},
   year={2019},
   month=Oct,
-  pages={563-576},
+  pages={563--576},
   collection={UIST '19}
 }
 `,
@@ -229,7 +229,7 @@ window.PUBLICATION_BIBTEX = {
   author={Potluri, Venkatesh and Vaithilingam, Priyan and Iyengar, Suresh and Vidya, Y. and Swaminathan, Manohar and Srinivasa, Gopal},
   year={2018},
   month=Apr,
-  pages={1-11},
+  pages={1--11},
   collection={CHI '18}
 }
 `
