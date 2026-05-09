@@ -46,6 +46,44 @@
 })();
 
 (function () {
+  var cvLink = document.querySelector('[data-print-target="cv"]');
+  if (!cvLink) return;
+
+  var cvHref = cvLink.href;
+  if (!cvHref) return;
+
+  function goToPrintableCv() {
+    window.location.assign(cvHref);
+  }
+
+  window.addEventListener("keydown", function (event) {
+    if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "p") {
+      event.preventDefault();
+      goToPrintableCv();
+    }
+  });
+
+  window.addEventListener("beforeprint", goToPrintableCv);
+
+  if (window.matchMedia) {
+    var printMediaQuery = window.matchMedia("print");
+    function handlePrintMediaChange(event) {
+      if (event.matches) {
+        goToPrintableCv();
+      }
+    }
+
+    if (printMediaQuery.addEventListener) {
+      printMediaQuery.addEventListener("change", handlePrintMediaChange);
+    } else if (printMediaQuery.addListener) {
+      printMediaQuery.addListener(handlePrintMediaChange);
+    }
+  }
+
+  window.print = goToPrintableCv;
+})();
+
+(function () {
   var asciiArt = document.getElementById("ascii-profile-art");
   if (!asciiArt) return;
 
