@@ -556,6 +556,54 @@ ul li::marker {
   content: "";
 }
 
+.pub-bibtex-toggle,
+.pub-bibtex-copy {
+  border: 0;
+  background: transparent;
+  color: var(--link);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.pub-bibtex-toggle:hover,
+.pub-bibtex-toggle:focus-visible,
+.pub-bibtex-copy:hover,
+.pub-bibtex-copy:focus-visible {
+  background: var(--link-hover);
+  outline: none;
+}
+
+.pub-bibtex {
+  margin-top: 0.4rem;
+  border: 1px dashed var(--line);
+  background: var(--info-bg);
+}
+
+.pub-bibtex-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7rem;
+  padding: 0.28rem 0.4rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.pub-bibtex pre {
+  margin: 0;
+  padding: 0.45rem;
+  overflow-x: auto;
+  white-space: pre;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.74rem;
+  line-height: 1.35;
+}
+
 .git-timeline {
   list-style: none;
   margin: 0.55rem 0 0;

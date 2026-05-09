@@ -80,6 +80,101 @@
 })();
 
 (function () {
+  var bibtexByPaperId = window.PUBLICATION_BIBTEX || {};
+  var publications = Array.prototype.slice.call(document.querySelectorAll(".publication[data-paper-id]"));
+  if (!publications.length) return;
+
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+
+    return new Promise(function (resolve, reject) {
+      var textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.top = "-9999px";
+      document.body.appendChild(textarea);
+      textarea.select();
+
+      try {
+        if (document.execCommand("copy")) {
+          resolve();
+        } else {
+          reject(new Error("Copy command failed"));
+        }
+      } catch (error) {
+        reject(error);
+      } finally {
+        document.body.removeChild(textarea);
+      }
+    });
+  }
+
+  publications.forEach(function (publication) {
+    var paperId = publication.getAttribute("data-paper-id");
+    var bibtex = (bibtexByPaperId[paperId] || "").replace(/^\s+|\s+$/g, "");
+    if (!bibtex) return;
+
+    var toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "pub-bibtex-toggle";
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.textContent = "[bibtex]";
+
+    var panel = document.createElement("div");
+    panel.className = "pub-bibtex";
+    panel.hidden = true;
+
+    var toolbar = document.createElement("div");
+    toolbar.className = "pub-bibtex-toolbar";
+
+    var label = document.createElement("span");
+    label.textContent = "citation.bib";
+
+    var copyButton = document.createElement("button");
+    copyButton.type = "button";
+    copyButton.className = "pub-bibtex-copy";
+    copyButton.textContent = "[copy]";
+
+    var pre = document.createElement("pre");
+    pre.textContent = bibtex;
+
+    toolbar.appendChild(label);
+    toolbar.appendChild(copyButton);
+    panel.appendChild(toolbar);
+    panel.appendChild(pre);
+
+    publication.appendChild(document.createTextNode(" | "));
+    publication.appendChild(toggle);
+    publication.appendChild(panel);
+
+    toggle.addEventListener("click", function () {
+      var isExpanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!isExpanded));
+      panel.hidden = isExpanded;
+    });
+
+    copyButton.addEventListener("click", function () {
+      copyText(bibtex)
+        .then(function () {
+          copyButton.textContent = "[copied]";
+          window.setTimeout(function () {
+            copyButton.textContent = "[copy]";
+          }, 1400);
+        })
+        .catch(function () {
+          copyButton.textContent = "[failed]";
+          window.setTimeout(function () {
+            copyButton.textContent = "[copy]";
+          }, 1800);
+        });
+    });
+  });
+})();
+
+(function () {
   var section = document.getElementById("publications");
   if (!section) return;
 
