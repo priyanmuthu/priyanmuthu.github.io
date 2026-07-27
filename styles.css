@@ -611,46 +611,15 @@ ul li::marker {
 }
 
 .git-entry {
-  position: relative;
-  margin: 0 0 1rem;
-  padding-left: 1.35rem;
-}
-
-.git-entry::before {
-  content: "";
-  position: absolute;
-  left: 0.35rem;
-  top: 0.95rem;
-  bottom: -0.85rem;
-  width: 1px;
-  background: var(--line);
-}
-
-.git-entry:last-child::before {
-  display: none;
+  margin: 0 0 0.95rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--line);
 }
 
 .git-entry-head {
   margin: 0;
   color: var(--text-muted);
   font-size: 0.83rem;
-}
-
-.git-entry-head::before {
-  content: "*";
-  position: absolute;
-  left: 0;
-  top: 0.01rem;
-  color: var(--h3);
-  font-weight: bold;
-}
-
-.git-prefix {
-  color: var(--text-muted);
-}
-
-.git-hash {
-  color: var(--link);
 }
 
 .git-branch {
@@ -732,10 +701,6 @@ a:focus-visible {
     max-width: 100%;
     white-space: normal;
     overflow-wrap: anywhere;
-  }
-
-  .git-entry {
-    padding-left: 1.15rem;
   }
 
   .git-entry-head {
