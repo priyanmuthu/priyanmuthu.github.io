@@ -8,7 +8,8 @@
   <meta name="keywords" content="Priyan Vaithilingam, Apple, AIML, HCI, AI, software engineering, publications, academic homepage">
   <meta name="author" content="Priyan Vaithilingam">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#f3ecd3">
+  <meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161616" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://priyan.info/">
 
   <meta property="og:type" content="website">
@@ -48,15 +49,11 @@
 <body>
   <div class="page terminal-container">
     <header>
-      <div class="header-bar">
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Dark Mode</button>
-      </div>
       <div class="hero-row">
         <div class="hero-text">
-          <h1>priyan vaithilingam</h1>
+          <h1>Priyan Vaithilingam</h1>
           <p class="subtitle">
-            <span class="terminal-prompt">[ research scientist ~ apple ]$</span>
-            <span class="ascii-inline" aria-hidden="true"><span class="ascii-spinner"></span><span class="ascii-cursor">_</span></span>
+            <span class="terminal-prompt">Research Scientist, Apple</span>
           </p>
         </div>
         <div class="ascii-profile header-ascii" aria-label="ASCII portrait">
@@ -69,12 +66,17 @@
         <a href="#publications">publications</a>
         <a href="#experience">work</a>
         <a href="#contact">contact</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <span class="theme-toggle-label">dark</span>
+        </button>
       </nav>
     </header>
 
     <main>
       <section id="about" class="section-card">
-        <h2>priyan@about</h2>
+        <h2>About</h2>
         <p>
           I am a <strong>Research Scientist</strong> in the
           <a href="https://machinelearning.apple.com/" target="_blank" rel="noopener noreferrer">AI/ML</a>
@@ -107,9 +109,9 @@
       </section>
 
       <section id="publications" class="section-card">
-        <h2>priyan@publications</h2>
+        <h2>Publications</h2>
         <details class="related-works" aria-label="Related works graph">
-          <summary class="related-works-title">priyan@related_works:~$ graph --by-topic <span class="related-works-meta" aria-hidden="true"></span></summary>
+          <summary class="related-works-title">Related works by topic <span class="related-works-meta" aria-hidden="true"></span></summary>
           <div class="related-works-body">
           <p class="rw-mobile-hint">Click a topic or paper to see relationships.</p>
           <div class="related-works-graph-mount"></div>
@@ -117,7 +119,7 @@
         </details>
         <div class="publication" data-paper-id="distinguishing-variations" data-graph-label="Distinguishing Variations" data-topics="hci,ai">
           <strong>The Way We Notice, That's What Really Matters: Instantiating UI Components with Distinguishing Variations</strong><br>
-          <span class="pub-branch">[chi/2026]</span><br>
+          <span class="pub-branch">CHI 2026</span><br>
           <em><span class="author-me">Priyan Vaithilingam</span>, Alan Leung, Jeffrey Nichols, Titus Barik</em><br>
           <a href="https://dl.acm.org/doi/10.1145/3772318.3790621" target="_blank" rel="noopener noreferrer">[acm]</a> |
           <a href="https://arxiv.org/pdf/2602.22436" target="_blank" rel="noopener noreferrer">[pdf]</a> |
@@ -125,21 +127,21 @@
         </div>
         <div class="publication" data-paper-id="semantic-commit" data-graph-label="Semantic Commit" data-topics="ai,hci">
           <strong>Semantic Commit: Helping Users Update Intent Specifications for AI Memory at Scale</strong><br>
-          <span class="pub-branch">[uist/2025]</span><br>
+          <span class="pub-branch">UIST 2025</span><br>
           <em><span class="author-me">Priyan Vaithilingam</span>, Munyeong Kim, Frida-Cecilia Acosta-Parenteau, Daniel Lee, Amine Mhedhbi, Elena L. Glassman, Ian Arawjo</em><br>
           <a href="https://dl.acm.org/doi/10.1145/3746059.3747778" target="_blank" rel="noopener noreferrer">[acm]</a> |
           <a href="https://arxiv.org/pdf/2504.09283" target="_blank" rel="noopener noreferrer">[pdf]</a>
         </div>
         <div class="publication" data-paper-id="designing-with-ai" data-graph-label="Designing with AI" data-topics="ai,hci">
           <strong>Imagining a Future of Designing with AI: Dynamic Grounding, Constructive Negotiation, and Sustainable Motivation</strong><br>
-          <span class="pub-branch">[dis/2024]</span><br>
+          <span class="pub-branch">DIS 2024</span><br>
           <em><span class="author-me">Priyan Vaithilingam</span>, Ian Arawjo, Elena L Glassman</em><br>
           <a href="https://dl.acm.org/doi/10.1145/3643834.3661525" target="_blank" rel="noopener noreferrer">[acm]</a> |
           <a href="https://arxiv.org/pdf/2402.07342" target="_blank" rel="noopener noreferrer">[pdf]</a>
         </div>
         <div class="publication" data-paper-id="dynavis" data-graph-label="DynaVis" data-topics="hci,ai">
           <strong>DynaVis: Dynamically Synthesized UI Widgets for Visualization Editing</strong><br>
-          <span class="award-badge award-best">BEST PAPER</span> <span class="pub-branch">[chi/2024]</span><br>
+          <span class="award-badge award-best">Best Paper</span> <span class="pub-branch">CHI 2024</span><br>
           <em><span class="author-me">Priyan Vaithilingam</span>, Elena L Glassman, Jeevana Priya Inala, Chenglong Wang</em><br>
           <a href="https://dl.acm.org/doi/10.1145/3613904.3642639" target="_blank" rel="noopener noreferrer">[acm]</a> |
           <a href="https://arxiv.org/pdf/2401.10880" target="_blank" rel="noopener noreferrer">[pdf]</a> |
@@ -147,7 +149,7 @@
         </div>
         <div class="publication" data-paper-id="chainforge" data-graph-label="ChainForge" data-topics="ai,hci">
           <strong>ChainForge: A Visual Toolkit for Prompt Engineering and LLM Hypothesis Testing</strong><br>
-          <span class="award-badge award-hm">HONORABLE MENTION</span> <span class="pub-branch">[chi/2024]</span><br>
+          <span class="award-badge award-hm">Honorable Mention</span> <span class="pub-branch">CHI 2024</span><br>
           <em>Ian Arawjo, Chelse Swoopes, <span class="author-me">Priyan Vaithilingam</span>, Elena L Glassman, Martin Wattenberg</em><br>
           <a href="https://dl.acm.org/doi/10.1145/3613904.3642016" target="_blank" rel="noopener noreferrer">[acm]</a> |
           <a href="https://arxiv.org/pdf/2309.09128" target="_blank" rel="noopener noreferrer">[pdf]</a> |
@@ -155,21 +157,21 @@
         </div>
         <div class="publication" data-paper-id="pragmatic-synth" data-graph-label="Pragmatic Synth" data-topics="programming-languages,ai">
           <strong>Amortizing Pragmatic Program Synthesis with Rankings</strong><br>
-          <span class="pub-branch">[icml/2024]</span><br>
+          <span class="pub-branch">ICML 2024</span><br>
           <em>Yewen Pu, Saujas Vaduguru, <span class="author-me">Priyan Vaithilingam</span>, Elena L Glassman, Daniel Fried</em><br>
           <a href="https://dl.acm.org/doi/10.5555/3692070.3693745" target="_blank" rel="noopener noreferrer">[acm]</a> |
           <a href="https://arxiv.org/pdf/2309.03225" target="_blank" rel="noopener noreferrer">[pdf]</a>
         </div>
         <div class="publication" data-paper-id="protograph" data-graph-label="ProtoGraph" data-topics="hci">
           <strong>ProtoGraph: A Non-Expert Toolkit for Creating Animated Graphs</strong><br>
-          <span class="pub-branch">[ieee vis/2023]</span><br>
+          <span class="pub-branch">IEEE VIS 2023</span><br>
           <em>Malchiel Rodrigues, Joel Dapello, <span class="author-me">Priyan Vaithilingam</span>, Carolina Nobre, Johanna Beyer</em><br>
           <a href="https://ieeexplore.ieee.org/abstract/document/10360910" target="_blank" rel="noopener noreferrer">[ieee]</a> |
           <a href="https://johanna-b.github.io/files/documents/protograph.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a>
         </div>
         <div class="publication" data-paper-id="intellicode-ux" data-graph-label="IntelliCode UX" data-topics="ai,hci,programming-languages">
           <strong>Towards More Effective AI-Assisted Programming: A Systematic Design Exploration to Improve Visual Studio IntelliCode's User Experience</strong><br>
-          <span class="pub-branch">[icse-seip/2023]</span><br>
+          <span class="pub-branch">ICSE-SEIP 2023</span><br>
           <em><span class="author-me">Priyan Vaithilingam</span>, Elena L Glassman, Peter Groenwegen, Sumit Gulwani, Austin Z. Henley, Rohan Malpani, David Pugh, Arjun Radhakrishna, Gustavo Soares, Joey Wang, Aaron Yim</em><br>
           <a href="https://ieeexplore.ieee.org/abstract/document/10172834" target="_blank" rel="noopener noreferrer">[acm]</a> |
           <a href="https://austinhenley.com/pubs/Vaithilingam2023ICSE_IntelliCode.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a> |
@@ -177,28 +179,28 @@
         </div>
         <div class="publication" data-paper-id="expectation-vs-experience" data-graph-label="Expectation vs Experience" data-topics="ai,hci">
           <strong>Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models</strong><br>
-          <span class="pub-branch">[chi-lbw/2022]</span><br>
+          <span class="pub-branch">CHI LBW 2022</span><br>
           <em><span class="author-me">Priyan Vaithilingam</span>, Tianyi Zhang, Elena L Glassman</em><br>
           <a href="https://dl.acm.org/doi/abs/10.1145/3491101.3519665" target="_blank" rel="noopener noreferrer">[acm]</a> |
           <a href="https://tianyi-zhang.github.io/files/chi2022-lbw-copilot.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a>
         </div>
         <div class="publication" data-paper-id="assuage" data-graph-label="Assuage" data-topics="programming-languages,hci">
           <strong>Assuage: Assembly Synthesis Using A Guided Exploration</strong><br>
-          <span class="pub-branch">[uist/2021]</span><br>
+          <span class="pub-branch">UIST 2021</span><br>
           <em>Jingmei Hu, <span class="author-me">Priyan Vaithilingam</span>, Stephen Chong, Margo Seltzer, Elena L Glassman</em><br>
           <a href="https://dl.acm.org/doi/10.1145/3472749.3474740" target="_blank" rel="noopener noreferrer">[acm]</a> |
           <a href="https://priyan.info/files/assuage_uist2021.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a>
         </div>
         <div class="publication" data-paper-id="interpretable-synth" data-graph-label="Interpretable Synth" data-topics="programming-languages,hci">
           <strong>Interpretable Program Synthesis</strong><br>
-          <span class="pub-branch">[chi/2021]</span><br>
+          <span class="pub-branch">CHI 2021</span><br>
           <em>Tianyi Zhang, Zhiyang Chen, Yuanli Zhu, <span class="author-me">Priyan Vaithilingam</span>, Xinyu Wang, Elena L Glassman</em><br>
           <a href="https://dl.acm.org/doi/10.1145/3411764.3445646" target="_blank" rel="noopener noreferrer">[acm]</a> |
           <a href="https://priyan.info/files/ips_chi2021.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a>
         </div>
         <div class="publication" data-paper-id="papercode" data-graph-label="Papercode" data-topics="hci,programming-languages">
           <strong>Papercode: Generating Paper-Based User Interfaces for Code Review, Annotation, and Teaching</strong><br>
-          <span class="pub-branch">[uist-poster/2020]</span><br>
+          <span class="pub-branch">UIST Poster 2020</span><br>
           <em><span class="author-me">Priyan Vaithilingam</span>, Julia M. Markel, Philip J. Guo</em><br>
           <a href="https://dl.acm.org/doi/10.1145/3379350.3416191" target="_blank" rel="noopener noreferrer">[acm]</a> |
           <a href="https://priyan.info/files/uist20d-sub1069-i5.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a> |
@@ -206,14 +208,14 @@
         </div>
         <div class="publication" data-paper-id="bespoke" data-graph-label="Bespoke" data-topics="hci,programming-languages">
           <strong>Bespoke: Interactively Synthesizing Custom GUIs from Command-Line Applications By Demonstration</strong><br>
-          <span class="pub-branch">[uist/2019]</span><br>
+          <span class="pub-branch">UIST 2019</span><br>
           <em><span class="author-me">Priyan Vaithilingam</span>, Philip J. Guo</em><br>
           <a href="https://dl.acm.org/doi/10.1145/3332165.3347944" target="_blank" rel="noopener noreferrer">[acm]</a> |
           <a href="https://priyan.info/files/Bespoke-synthesizing-GUIs-from-CLI-demonstrations_UIST-2019.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a>
         </div>
         <div class="publication" data-paper-id="codetalk" data-graph-label="CodeTalk" data-topics="hci,programming-languages">
           <strong>CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers</strong><br>
-          <span class="award-badge award-hm">HONORABLE MENTION</span> <span class="pub-branch">[chi/2018]</span><br>
+          <span class="award-badge award-hm">Honorable Mention</span> <span class="pub-branch">CHI 2018</span><br>
           <em>Venkatesh Potluri, <span class="author-me">Priyan Vaithilingam</span>, Suresh Parthasarathy, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa</em><br>
           <a href="https://dl.acm.org/citation.cfm?id=3174192" target="_blank" rel="noopener noreferrer">[acm]</a> |
           <a href="https://priyan.info/files/CodeTalkPaper.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a> |
@@ -222,11 +224,10 @@
       </section>
 
       <section id="experience" class="section-card">
-        <h2>priyan@experience</h2>
+        <h2>Experience</h2>
         <ul class="git-timeline" aria-label="Career timeline">
           <li class="git-entry">
-            <p class="git-entry-head"><span class="git-branch">(HEAD -&gt; current)</span></p>
-            <p class="git-entry-role">ML Research Scientist, Apple</p>
+            <p class="git-entry-role">ML Research Scientist, Apple <span class="award-badge">Current</span></p>
             <p class="git-entry-meta"><a href="https://machinelearning.apple.com/" target="_blank" rel="noopener noreferrer">Apple</a> · <em>Apr 2025 - Present, Seattle USA</em></p>
           </li>
           <li class="git-entry">
@@ -253,12 +254,11 @@
       </section>
 
       <section id="contact" class="section-card">
-        <h2>priyan@contact</h2>
+        <h2>Contact</h2>
         <p>Personal Email: priyanmuthu at gmail dot com</p>
       </section>
     </main>
 
-    <p class="nerd-line">priyan@homepage:~$ git commit -m "checking in version_final_final_2" &amp;&amp; exit 0</p>
 
   </div>
   <script src="bibtex.js" defer></script>

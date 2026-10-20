@@ -16,7 +16,10 @@
   function setTheme(theme) {
     var isDark = theme === "dark";
     root.setAttribute("data-theme", theme);
-    toggle.textContent = isDark ? "Light Mode" : "Dark Mode";
+    var label = toggle.querySelector(".theme-toggle-label");
+    if (label) label.textContent = isDark ? "light" : "dark";
+    toggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+    toggle.setAttribute("title", isDark ? "Switch to light mode" : "Switch to dark mode");
     toggle.setAttribute("aria-pressed", String(isDark));
     try {
       localStorage.setItem("theme", theme);
@@ -159,7 +162,7 @@
     toggle.type = "button";
     toggle.className = "pub-bibtex-toggle";
     toggle.setAttribute("aria-expanded", "false");
-    toggle.textContent = "[bibtex]";
+    toggle.textContent = "bibtex";
 
     var panel = document.createElement("div");
     panel.className = "pub-bibtex";
@@ -174,7 +177,7 @@
     var copyButton = document.createElement("button");
     copyButton.type = "button";
     copyButton.className = "pub-bibtex-copy";
-    copyButton.textContent = "[copy]";
+    copyButton.textContent = "copy";
 
     var pre = document.createElement("pre");
     pre.textContent = bibtex;
@@ -197,15 +200,15 @@
     copyButton.addEventListener("click", function () {
       copyText(bibtex)
         .then(function () {
-          copyButton.textContent = "[copied]";
+          copyButton.textContent = "copied";
           window.setTimeout(function () {
-            copyButton.textContent = "[copy]";
+            copyButton.textContent = "copy";
           }, 1400);
         })
         .catch(function () {
-          copyButton.textContent = "[failed]";
+          copyButton.textContent = "failed";
           window.setTimeout(function () {
-            copyButton.textContent = "[copy]";
+            copyButton.textContent = "copy";
           }, 1800);
         });
     });
@@ -275,7 +278,7 @@
   if (!publications.length) return;
 
   if (summaryMeta) {
-    summaryMeta.textContent = "[" + topicConfig.length + " topics • " + publications.length + " papers]";
+    summaryMeta.textContent = topicConfig.length + " topics • " + publications.length + " papers";
   }
 
   var panelStateUserSet = false;
@@ -392,7 +395,7 @@
           rx: 2,
         })
       );
-      group.appendChild(svgEl("text", { x: topicX + 8, y: centerY + 3 }, "[" + topic.label + "]"));
+      group.appendChild(svgEl("text", { x: topicX + 8, y: centerY + 3 }, topic.label));
       svg.appendChild(group);
     });
 
@@ -437,7 +440,7 @@
       topicBtn.setAttribute("data-topic", topic.id);
       topicBtn.setAttribute("aria-label", topic.label);
       topicBtn.setAttribute("title", topic.label);
-      topicBtn.textContent = "[" + topic.short + "]";
+      topicBtn.textContent = topic.short;
       topicsRow.appendChild(topicBtn);
     });
     wrapper.appendChild(topicsRow);
@@ -460,7 +463,7 @@
       tagEl.className = "rw-mobile-paper-tags";
       tagEl.textContent = paper.topics
         .map(function (topicId) {
-          return "[" + (topicShortById[topicId] || topicId) + "]";
+          return topicShortById[topicId] || topicId;
         })
         .join(" ");
       paperBtn.appendChild(tagEl);
