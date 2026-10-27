@@ -281,24 +281,62 @@
     summaryMeta.textContent = topicConfig.length + " topics • " + publications.length + " papers";
   }
 
+  var summary = graphPanel.querySelector("summary");
   var panelStateUserSet = false;
-  var applyingPanelState = false;
+  var panelAnimation = null;
+  var isExpanded = graphPanel.open;
+
+  function setPanelOpen(expand, animate) {
+    var startHeight = graphPanel.getBoundingClientRect().height;
+    if (panelAnimation) {
+      panelAnimation.cancel();
+      panelAnimation = null;
+    }
+
+    graphPanel.style.height = "";
+    graphPanel.style.overflow = "";
+    graphPanel.open = expand;
+    var endHeight = graphPanel.getBoundingClientRect().height;
+    isExpanded = expand;
+
+    var prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!animate || prefersReducedMotion || !graphPanel.animate || Math.abs(endHeight - startHeight) < 1) {
+      graphPanel.classList.remove("is-closing");
+      return;
+    }
+
+    // Keep the details content rendered until the closing animation finishes.
+    graphPanel.open = true;
+    graphPanel.style.height = startHeight + "px";
+    graphPanel.style.overflow = "hidden";
+    graphPanel.classList.toggle("is-closing", !expand);
+
+    var currentAnimation = graphPanel.animate(
+      [{ height: startHeight + "px" }, { height: endHeight + "px" }],
+      { duration: 300, easing: "ease-in-out" }
+    );
+    panelAnimation = currentAnimation;
+    currentAnimation.onfinish = function () {
+      if (panelAnimation !== currentAnimation) return;
+      panelAnimation = null;
+      graphPanel.open = expand;
+      graphPanel.style.height = "";
+      graphPanel.style.overflow = "";
+      graphPanel.classList.remove("is-closing");
+    };
+  }
+
   function applyResponsivePanelDefault() {
     if (panelStateUserSet) return;
-    applyingPanelState = true;
     var isMobile = window.matchMedia && window.matchMedia("(max-width: 680px)").matches;
-    if (isMobile) {
-      graphPanel.removeAttribute("open");
-    } else {
-      graphPanel.setAttribute("open", "");
-    }
-    applyingPanelState = false;
+    if (isExpanded !== !isMobile) setPanelOpen(!isMobile, false);
   }
   applyResponsivePanelDefault();
 
-  graphPanel.addEventListener("toggle", function () {
-    if (applyingPanelState) return;
+  summary.addEventListener("click", function (event) {
+    event.preventDefault();
     panelStateUserSet = true;
+    setPanelOpen(!isExpanded, true);
   });
 
   window.addEventListener("resize", applyResponsivePanelDefault);

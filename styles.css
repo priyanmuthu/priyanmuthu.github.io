@@ -291,6 +291,10 @@ ul li::marker {
   content: "[-] ";
 }
 
+.related-works.is-closing .related-works-title::before {
+  content: "[+] ";
+}
+
 .related-works-body {
   margin-top: 0.45rem;
 }
