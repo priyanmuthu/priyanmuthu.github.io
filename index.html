@@ -76,7 +76,6 @@ nav.top .name{font-family:var(--display);font-style:italic;text-transform:none;l
 .hero h1 b{font-weight:400}
 .c-hci{color:var(--hci-ink)}.c-ai{color:var(--ai-ink)}.c-pl{color:var(--pl-ink)}
 .hero .who{font-family:var(--display);font-size:1.5rem;margin:1.2rem 0 .2rem}
-.hero p{max-width:34em;color:var(--mute);margin:0 0 2rem;font-size:1.22rem}
 .scrollhint{font-size:.76rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mute);margin-top:auto}
 .about{max-width:44em;font-size:1.22rem}
 .about-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(2rem,5vw,4.5rem);align-items:center;margin-top:1.2rem}
@@ -179,7 +178,6 @@ footer{font-size:.8rem;color:var(--mute);padding:2rem 0 3rem;max-width:1180px;ma
   <span class="eyebrow">Research Scientist · Apple</span>
   <div class="who">Priyan Vaithilingam</div>
   <h1>I <b class="c-ai">design</b>, <b class="c-hci">build</b>, and <b class="c-pl">study</b> tools that augment and enhance Human-AI collaboration.</h1>
-  <p>Human-Computer Interaction, Artificial Intelligence, and Software Engineering. The circles stay with you as you scroll.</p>
   <span class="scrollhint">Scroll ↓</span>
 </section>
 
@@ -702,8 +700,9 @@ var active={hci:false,ai:false,pl:false};
 function centerOf(el){ var r=el.getBoundingClientRect(); return [(r.left+r.width/2)/innerWidth,(r.top+r.height/2)/innerHeight]; }
 function rectOf(id){ var r=document.getElementById(id).getBoundingClientRect(); return {l:r.left/innerWidth,t:r.top/innerHeight,w:r.width/innerWidth,h:r.height/innerHeight,px:r}; }
 window.ORB_STATES = {
-  hero: function(m){ var r=m.mobile?.42:.3, cx=m.mobile?.5:.72, cy=m.mobile?.62:.5, d=r*.62;
-    return [ {x:cx-d*.9,y:cy+d*.1,r:r,f:HCI,o:1}, {x:cx+d*.9,y:cy-d*.45,r:r,f:AI,o:1}, {x:cx+d*.15,y:cy+d*.95,r:r,f:PL,o:1} ]; },
+  /* Hero: oversized circles spilling in from the right edge (bottom-right corner on phones). */
+  hero: function(m){ var L = m.mobile ? [[.62,.98,.42],[1.02,.8,.42],[.98,1.12,.42]] : [[.84,.2,.5],[1.08,.48,.5],[.86,.74,.5]];
+    return L.map(function(c,i){ return {x:c[0],y:c[1],r:c[2],f:COLS[KEYS[i]],o:1}; }); },
   /* Gather the three circles in a Venn behind the portrait. */
   about: function(m){ var base=Math.min(m.vw,m.vh), b=document.getElementById('portrait').getBoundingClientRect(),
       g={cx:b.width/2,cy:b.height*.44,r:Math.max(b.width,b.height)*.36};
@@ -820,6 +819,7 @@ layoutVennM(); window.addEventListener('resize',layoutVennM);
 
   function frame() {
     var m = metrics();
+    if (!m.vw || !m.vh) return; // a zero-size viewport (e.g. while resizing) would give NaN positions
     var mid = window.scrollY + m.vh / 2;
     var i = 0;
     while (i < sections.length - 1 && mid >= anchor(i + 1)) i++;
