@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Priyan Vaithilingam | Academic Homepage</title>
   <meta name="description" content="Priyan Vaithilingam is a Research Scientist at Apple. View publications, work experience, and contact details.">
   <meta name="keywords" content="Priyan Vaithilingam, Apple, AIML, HCI, AI, software engineering, publications, academic homepage">
@@ -25,7 +25,6 @@
   <meta name="twitter:title" content="Priyan Vaithilingam | Academic Homepage">
   <meta name="twitter:description" content="Research profile, publications, work experience, and contact information.">
   <meta name="twitter:image" content="https://priyan.info/favicon-256x256.png">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https: data:; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="256x256" href="favicon-256x256.png">
 
@@ -43,225 +42,782 @@
     ]
   }
   </script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300;1,9..144,400&display=swap">
+<style>
+/* Layout: editorial, slide-like. Fixed Venn layer behind a scrolling column of sections. */
+:root{
+  --bg:#fdfcfa; --fg:#2d2d2d; --mute:#8a8580; --rule:#e9e4de; --card:#ffffff;
+  --hci:#f3a44a; --ai:#2fb3bb; --pl:#f26864;
+  --hci-ink:#d9761a; --ai-ink:#1a9ea8; --pl-ink:#e04f4c;
+  --blend:multiply; --orb-o:.55;
+  --display:'Fraunces',Georgia,serif; --body:'Albert Sans',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15161a;--fg:#ececea;--mute:#9a9aa0;--rule:#2b2c33;--card:#1c1d22;--hci-ink:#f3a44a;--ai-ink:#4ccbd2;--pl-ink:#f58a86;--blend:screen;--orb-o:.5;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#15161a;--fg:#ececea;--mute:#9a9aa0;--rule:#2b2c33;--card:#1c1d22;--hci-ink:#f3a44a;--ai-ink:#4ccbd2;--pl-ink:#f58a86;--blend:screen;--orb-o:.5;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-weight:300;line-height:1.55;font-size:1.125rem;overflow-x:hidden}
+#orbs{position:fixed;inset:0;width:100%;height:100%;z-index:2;pointer-events:none;mix-blend-mode:var(--blend)}
+#orbs ellipse{transition:fill-opacity .25s}
+#orbs ellipse{opacity:var(--orb-o)}
+.orbs-enter ellipse{animation:pop 1.2s cubic-bezier(.2,.8,.2,1) both}
+@keyframes pop{from{transform:scale(.6);transform-origin:center;opacity:0}}
+@media (prefers-reduced-motion:reduce){.orbs-enter ellipse{animation:none}}
+.wrap{position:relative;z-index:1;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+section{max-width:1180px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding-block:12vh}
+section.auto{min-height:0;padding-block:10vh}
+.eyebrow{font-size:.76rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mute)}
+h2.sec{font-family:var(--display);font-weight:300;font-size:clamp(1.8rem,3.5vw,2.6rem);margin:.3em 0 .8em;line-height:1.1}
+nav.top{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(var(--bg) 55%,transparent);padding-bottom:14px;padding:18px max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));font-size:.82rem;letter-spacing:.12em;text-transform:uppercase}
+nav.top a{color:var(--fg);text-decoration:none;margin-left:1.3em;opacity:.7}
+nav.top a:hover,nav.top a:focus-visible{opacity:1;outline:none;text-decoration:underline}
+nav.top .name{font-family:var(--display);font-style:italic;text-transform:none;letter-spacing:0;font-size:1.1rem}
+.hero h1{font-size:clamp(2rem,4.6vw,3.6rem);font-weight:300;line-height:1.15;max-width:14em;margin:0 0 1.2rem;text-wrap:balance}
+.hero h1 b{font-weight:400}
+.c-hci{color:var(--hci-ink)}.c-ai{color:var(--ai-ink)}.c-pl{color:var(--pl-ink)}
+.hero .who{font-family:var(--display);font-size:1.5rem;margin:1.2rem 0 .2rem}
+.hero p{max-width:34em;color:var(--mute);margin:0 0 2rem;font-size:1.22rem}
+.scrollhint{font-size:.76rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mute);margin-top:auto}
+.about{max-width:44em;font-size:1.22rem}
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:3rem}
+.areas h3{font-family:var(--display);font-weight:300;font-size:1.9rem;margin:0 0 .6rem;line-height:1.1;text-wrap:balance}
+.areas p{margin:0;color:var(--mute);max-width:26em}
+.areas .eyebrow{display:block;margin-bottom:5.5rem}
+.areas .papers{margin:.8rem 0 0;padding:0;list-style:none;font-size:1rem;color:var(--mute)}
+.map{position:relative;height:80vh;min-height:600px}
+.map .label{position:absolute;transform:translate(-50%,-50%);text-align:center;font-size:.8rem;letter-spacing:.26em;text-transform:uppercase;color:var(--fg);opacity:.8;width:12em}
+.map .pub-tag{position:absolute;font-size:1rem;line-height:1.2;max-width:14em;transform:translate(-50%,-50%)}
+.map .pub-tag small{display:block;color:var(--mute);font-size:.84rem;margin-top:.15em}
+.map .pub-tag .dot{width:7px;height:7px;margin-right:2px}
+.map .foot{position:absolute;right:0;bottom:0;font-size:.86rem;color:var(--mute)}
+.map-mobile{display:none}
+.venn-m{position:relative;width:100%;aspect-ratio:1/.85;margin-top:1rem}
+.venn-m .label{position:absolute;transform:translate(-50%,-50%);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;white-space:nowrap;text-align:center}
+.venn-m{cursor:pointer;-webkit-tap-highlight-color:transparent;user-select:none}
+.venn-m .label{pointer-events:none}
+.venn-m .seed{position:absolute;width:22px;height:22px;margin:-11px 0 0 -11px;padding:0;border:0;background:none;cursor:pointer;transition:opacity .25s;-webkit-tap-highlight-color:transparent}
+.venn-m .seed::after{content:'';position:absolute;left:50%;top:50%;width:7px;height:7px;margin:-3.5px 0 0 -3.5px;border-radius:50%;background:var(--fg);opacity:.75;transition:transform .2s,opacity .2s,box-shadow .2s}
+.venn-m .seed.on::after{transform:scale(1.7);opacity:1;box-shadow:0 0 0 2px var(--bg)}
+.venn-m .seed:focus-visible{outline:none}.venn-m .seed:focus-visible::after{box-shadow:0 0 0 2px var(--bg),0 0 0 3px var(--fg)}
+.venn-m.has-sel .seed:not(.in){opacity:.2}
+.venn-cap{min-height:3em;margin:.2rem 0 0;font-size:.95rem;color:var(--mute);text-align:center;line-height:1.45}
+.venn-cap a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--rule)}
+.pubs-list{max-width:900px}
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 58px);z-index:3;display:flex;gap:.6rem;align-items:center;padding:.8rem 0;background:linear-gradient(var(--bg) 70%,transparent);flex-wrap:wrap;margin-top:.6rem}
+.chip{appearance:none;border:1px solid var(--rule);background:transparent;color:var(--fg);font:inherit;font-weight:500;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;padding:.6em 1.1em .6em 2.3em;border-radius:999px;cursor:pointer;position:relative}
+.chip[aria-pressed="false"]{color:var(--mute)}
+.chip:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.bar .count{margin-left:auto;font-size:.86rem;color:var(--mute);font-variant-numeric:tabular-nums}
+.pubs-list{margin-top:.5rem}
+.pub{transition:opacity .25s}
+.pub.off{opacity:.18}
+.glyph{width:44px;height:36px;display:block;flex:none}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1rem}
+.card{background:var(--card);border:1px solid var(--rule);padding:1.3rem 1.5rem;min-width:0}
+.card .exp:first-child{border-top:0;padding-top:0}
+.contact .email{font-size:1.22rem;margin:1.5rem 0 0}
+.btns{display:flex;gap:min(6vw,56px);margin-top:2.5rem;flex-wrap:wrap}
+.btns a{width:170px;height:170px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;color:var(--fg);font-size:.86rem;letter-spacing:.18em;text-transform:uppercase;border:1px solid transparent;text-align:center}
+.btns a:hover,.btns a:focus-visible{border-color:var(--fg);outline:none}
+.btns a small{text-transform:none;letter-spacing:0;color:var(--mute);font-size:.9rem;margin-top:.3em}
+.contact h2{font-family:var(--display);font-weight:300;font-size:clamp(2.4rem,7vw,5.5rem);margin:0;line-height:1}
+footer{font-size:.8rem;color:var(--mute);padding:2rem 0 3rem;max-width:1180px;margin:0 auto}
+@media (max-width:860px){.cards{grid-template-columns:1fr}}
+@media (max-width:719px){
+  .areas{grid-template-columns:1fr;gap:2.5rem}.areas .eyebrow{margin-bottom:1rem}
+  .map{display:none}.map-mobile{display:block}
+  .hero h1{font-size:2rem}nav.top span:last-child{display:none}
+  .btns a{width:110px;height:110px;font-size:.66rem}.glyph{width:36px}
+}
+/* shared content styles (publications, experience, education, about); tokens come from each page */
+.about p{max-width:40em;margin:0 0 1em}
+.about a,.exp-meta a{color:var(--fg)}
+.quick-links{display:flex;gap:1.5rem;flex-wrap:wrap;margin:0}
+.quick-links a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:.15em}
+.quick-links a:hover,.quick-links a:focus-visible{border-color:var(--fg);outline:none}
+.pubs-list,.exp-list{list-style:none;padding:0;margin:0}
+.pub{display:flex;gap:1rem;padding:1rem 0;border-top:1px solid var(--rule);align-items:flex-start}
+.pub-body{min-width:0;flex:1}
+.pub-title{font-weight:500;line-height:1.3;text-wrap:balance}
+.pub-venue{font-size:.95rem;color:var(--mute);margin-top:.25em;display:flex;gap:.5em;align-items:center;flex-wrap:wrap}
+.pub-authors{font-size:1rem;color:var(--mute);margin-top:.3em;line-height:1.45}
+.pub-authors .me{color:var(--fg);font-weight:500}
+.pub-links{font-size:.9rem;margin-top:.35em;display:flex;gap:.7em;flex-wrap:wrap}
+.pub-links a{color:var(--fg);text-decoration:none;opacity:.75}
+.pub-links a:hover,.pub-links a:focus-visible{opacity:1;text-decoration:underline;outline:none}
+.award{display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;border:1px solid currentColor;border-radius:999px;padding:.08em .6em;color:var(--fg);vertical-align:middle}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%}
+.dot-hci{background:var(--hci)}.dot-ai{background:var(--ai)}.dot-pl{background:var(--pl)}
+.exp{padding:.85rem 0;border-top:1px solid var(--rule)}
+.exp-role{font-weight:500}
+.exp-meta{font-size:1rem;color:var(--mute)}
+.exp-meta a{text-decoration:none}
+.email .addr{user-select:all;color:var(--fg);font-weight:500}
 
-  <link rel="stylesheet" href="styles.css">
+</style>
 </head>
 <body>
-  <div class="page terminal-container">
-    <header>
-      <div class="hero-row">
-        <div class="hero-text">
-          <h1>Priyan Vaithilingam</h1>
-          <p class="subtitle">
-            <span class="terminal-prompt">Research Scientist, Apple</span>
-          </p>
-        </div>
-        <div class="ascii-profile header-ascii" aria-label="ASCII portrait">
-          <pre id="ascii-profile-art" class="ascii-profile-art" aria-label="ASCII portrait of Priyan"></pre>
-        </div>
-      </div>
+<svg id="orbs" aria-hidden="true">
+  <ellipse id="o-hci" fill="#f3a44a"></ellipse>
+  <ellipse id="o-ai" fill="#2fb3bb"></ellipse>
+  <ellipse id="o-pl" fill="#f26864"></ellipse>
+</svg>
+<nav class="top"><span class="name">Priyan Vaithilingam</span><span><a href="#about">About</a><a href="#map">Research</a><a href="#publications">Publications</a><a href="#experience">Work</a><a href="#contact">Contact</a></span></nav>
+<div class="wrap">
 
-      <nav aria-label="Main navigation">
-        <a href="#about">about</a>
-        <a href="#publications">publications</a>
-        <a href="#experience">work</a>
-        <a href="#contact">contact</a>
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-          <span class="theme-toggle-label">dark</span>
-        </button>
-      </nav>
-    </header>
+<section class="hero" id="hero" data-orbs="hero">
+  <span class="eyebrow">Research Scientist · Apple</span>
+  <div class="who">Priyan Vaithilingam</div>
+  <h1>I <b class="c-ai">design</b>, <b class="c-hci">build</b>, and <b class="c-pl">study</b> tools that augment and enhance Human-AI collaboration.</h1>
+  <p>Human-Computer Interaction, Artificial Intelligence, and Software Engineering. The circles stay with you as you scroll.</p>
+  <span class="scrollhint">Scroll ↓</span>
+</section>
 
-    <main>
-      <section id="about" class="section-card">
-        <h2>About</h2>
-        <p>
-          I am a <strong>Research Scientist</strong> in the
-          <a href="https://machinelearning.apple.com/" target="_blank" rel="noopener noreferrer">AI/ML</a>
-          group at Apple, working on intelligent user interfaces. I received my
-          <strong>Ph.D.</strong> from <strong>Harvard</strong>, where I was advised by
-          <a href="https://glassmanlab.seas.harvard.edu/glassman.html" target="_blank" rel="noopener noreferrer">Prof. Elena Glassman</a>
-          at the
-          <a href="https://glassmanlab.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Variation Lab</a>.
-          My research lies in the intersection of Human-Computer Interaction, Artificial Intelligence, and
-          Software Engineering.
-        </p>
-        <p>
-          Prior to this, I was a <strong>Master's Student</strong> at <strong>UCSD</strong>,
-          where I worked with
-          <a href="https://pg.ucsd.edu/" target="_blank" rel="noopener noreferrer">Prof. Philip Guo</a>
-          at the
-          <a href="https://designlab.ucsd.edu/" target="_blank" rel="noopener noreferrer">UCSD Design Lab</a>.
-          I was also fortunate to work in
-          <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target="_blank" rel="noopener noreferrer">Microsoft Research</a>
-          India as a <strong>Research Fellow</strong> for two years, where I worked on projects related to
-          information retrieval, developer tools, and programming accessibility.
-        </p>
-        <p class="quick-links">
-          <a href="https://priyan.info/files/priyan_cv.pdf" target="_blank" rel="noopener noreferrer" data-print-target="cv">CV</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="https://scholar.google.com/citations?hl=en&amp;user=xVB9askAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="https://www.linkedin.com/in/priyanv/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </p>
-      </section>
+<section id="about" data-orbs="about" class="auto">
+  <span class="eyebrow">About</span>
+  <div class="about" id="aboutbox" style="margin-top:1.2rem"></div>
+</section>
 
-      <section id="publications" class="section-card">
-        <h2>Publications</h2>
-        <details class="related-works" aria-label="Related works graph">
-          <summary class="related-works-title">Related works by topic <span class="related-works-meta" aria-hidden="true"></span></summary>
-          <div class="related-works-body">
-          <p class="rw-mobile-hint">Click a topic or paper to see relationships.</p>
-          <div class="related-works-graph-mount"></div>
-          </div>
-        </details>
-        <div class="publication" data-paper-id="distinguishing-variations" data-graph-label="Distinguishing Variations" data-topics="hci,ai">
-          <strong>The Way We Notice, That's What Really Matters: Instantiating UI Components with Distinguishing Variations</strong><br>
-          <span class="pub-branch">CHI 2026</span><br>
-          <em><span class="author-me">Priyan Vaithilingam</span>, Alan Leung, Jeffrey Nichols, Titus Barik</em><br>
-          <a href="https://dl.acm.org/doi/10.1145/3772318.3790621" target="_blank" rel="noopener noreferrer">[acm]</a> |
-          <a href="https://arxiv.org/pdf/2602.22436" target="_blank" rel="noopener noreferrer">[pdf]</a> |
-          <a href="https://machinelearning.apple.com/research/we-notice" target="_blank" rel="noopener noreferrer">[apple]</a>
-        </div>
-        <div class="publication" data-paper-id="semantic-commit" data-graph-label="Semantic Commit" data-topics="ai,hci">
-          <strong>Semantic Commit: Helping Users Update Intent Specifications for AI Memory at Scale</strong><br>
-          <span class="pub-branch">UIST 2025</span><br>
-          <em><span class="author-me">Priyan Vaithilingam</span>, Munyeong Kim, Frida-Cecilia Acosta-Parenteau, Daniel Lee, Amine Mhedhbi, Elena L. Glassman, Ian Arawjo</em><br>
-          <a href="https://dl.acm.org/doi/10.1145/3746059.3747778" target="_blank" rel="noopener noreferrer">[acm]</a> |
-          <a href="https://arxiv.org/pdf/2504.09283" target="_blank" rel="noopener noreferrer">[pdf]</a>
-        </div>
-        <div class="publication" data-paper-id="designing-with-ai" data-graph-label="Designing with AI" data-topics="ai,hci">
-          <strong>Imagining a Future of Designing with AI: Dynamic Grounding, Constructive Negotiation, and Sustainable Motivation</strong><br>
-          <span class="pub-branch">DIS 2024</span><br>
-          <em><span class="author-me">Priyan Vaithilingam</span>, Ian Arawjo, Elena L Glassman</em><br>
-          <a href="https://dl.acm.org/doi/10.1145/3643834.3661525" target="_blank" rel="noopener noreferrer">[acm]</a> |
-          <a href="https://arxiv.org/pdf/2402.07342" target="_blank" rel="noopener noreferrer">[pdf]</a>
-        </div>
-        <div class="publication" data-paper-id="dynavis" data-graph-label="DynaVis" data-topics="hci,ai">
-          <strong>DynaVis: Dynamically Synthesized UI Widgets for Visualization Editing</strong><br>
-          <span class="award-badge award-best">Best Paper</span> <span class="pub-branch">CHI 2024</span><br>
-          <em><span class="author-me">Priyan Vaithilingam</span>, Elena L Glassman, Jeevana Priya Inala, Chenglong Wang</em><br>
-          <a href="https://dl.acm.org/doi/10.1145/3613904.3642639" target="_blank" rel="noopener noreferrer">[acm]</a> |
-          <a href="https://arxiv.org/pdf/2401.10880" target="_blank" rel="noopener noreferrer">[pdf]</a> |
-          <a href="https://www.microsoft.com/en-us/research/publication/dynavis-dynamically-synthesized-ui-widgets-for-visualization-editing/" target="_blank" rel="noopener noreferrer">[microsoft]</a>
-        </div>
-        <div class="publication" data-paper-id="chainforge" data-graph-label="ChainForge" data-topics="ai,hci">
-          <strong>ChainForge: A Visual Toolkit for Prompt Engineering and LLM Hypothesis Testing</strong><br>
-          <span class="award-badge award-hm">Honorable Mention</span> <span class="pub-branch">CHI 2024</span><br>
-          <em>Ian Arawjo, Chelse Swoopes, <span class="author-me">Priyan Vaithilingam</span>, Elena L Glassman, Martin Wattenberg</em><br>
-          <a href="https://dl.acm.org/doi/10.1145/3613904.3642016" target="_blank" rel="noopener noreferrer">[acm]</a> |
-          <a href="https://arxiv.org/pdf/2309.09128" target="_blank" rel="noopener noreferrer">[pdf]</a> |
-          <a href="https://chainforge.ai/" target="_blank" rel="noopener noreferrer">[try it]</a>
-        </div>
-        <div class="publication" data-paper-id="pragmatic-synth" data-graph-label="Pragmatic Synth" data-topics="programming-languages,ai">
-          <strong>Amortizing Pragmatic Program Synthesis with Rankings</strong><br>
-          <span class="pub-branch">ICML 2024</span><br>
-          <em>Yewen Pu, Saujas Vaduguru, <span class="author-me">Priyan Vaithilingam</span>, Elena L Glassman, Daniel Fried</em><br>
-          <a href="https://dl.acm.org/doi/10.5555/3692070.3693745" target="_blank" rel="noopener noreferrer">[acm]</a> |
-          <a href="https://arxiv.org/pdf/2309.03225" target="_blank" rel="noopener noreferrer">[pdf]</a>
-        </div>
-        <div class="publication" data-paper-id="protograph" data-graph-label="ProtoGraph" data-topics="hci">
-          <strong>ProtoGraph: A Non-Expert Toolkit for Creating Animated Graphs</strong><br>
-          <span class="pub-branch">IEEE VIS 2023</span><br>
-          <em>Malchiel Rodrigues, Joel Dapello, <span class="author-me">Priyan Vaithilingam</span>, Carolina Nobre, Johanna Beyer</em><br>
-          <a href="https://ieeexplore.ieee.org/abstract/document/10360910" target="_blank" rel="noopener noreferrer">[ieee]</a> |
-          <a href="https://johanna-b.github.io/files/documents/protograph.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a>
-        </div>
-        <div class="publication" data-paper-id="intellicode-ux" data-graph-label="IntelliCode UX" data-topics="ai,hci,programming-languages">
-          <strong>Towards More Effective AI-Assisted Programming: A Systematic Design Exploration to Improve Visual Studio IntelliCode's User Experience</strong><br>
-          <span class="pub-branch">ICSE-SEIP 2023</span><br>
-          <em><span class="author-me">Priyan Vaithilingam</span>, Elena L Glassman, Peter Groenwegen, Sumit Gulwani, Austin Z. Henley, Rohan Malpani, David Pugh, Arjun Radhakrishna, Gustavo Soares, Joey Wang, Aaron Yim</em><br>
-          <a href="https://ieeexplore.ieee.org/abstract/document/10172834" target="_blank" rel="noopener noreferrer">[acm]</a> |
-          <a href="https://austinhenley.com/pubs/Vaithilingam2023ICSE_IntelliCode.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a> |
-          <a href="https://www.microsoft.com/en-us/research/publication/towards-more-effective-ai-assisted-programming-a-systematic-design-exploration-to-improve-visual-studio-intellicodes-user-experience/" target="_blank" rel="noopener noreferrer">[microsoft]</a>
-        </div>
-        <div class="publication" data-paper-id="expectation-vs-experience" data-graph-label="Expectation vs Experience" data-topics="ai,hci">
-          <strong>Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models</strong><br>
-          <span class="pub-branch">CHI LBW 2022</span><br>
-          <em><span class="author-me">Priyan Vaithilingam</span>, Tianyi Zhang, Elena L Glassman</em><br>
-          <a href="https://dl.acm.org/doi/abs/10.1145/3491101.3519665" target="_blank" rel="noopener noreferrer">[acm]</a> |
-          <a href="https://tianyi-zhang.github.io/files/chi2022-lbw-copilot.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a>
-        </div>
-        <div class="publication" data-paper-id="assuage" data-graph-label="Assuage" data-topics="programming-languages,hci">
-          <strong>Assuage: Assembly Synthesis Using A Guided Exploration</strong><br>
-          <span class="pub-branch">UIST 2021</span><br>
-          <em>Jingmei Hu, <span class="author-me">Priyan Vaithilingam</span>, Stephen Chong, Margo Seltzer, Elena L Glassman</em><br>
-          <a href="https://dl.acm.org/doi/10.1145/3472749.3474740" target="_blank" rel="noopener noreferrer">[acm]</a> |
-          <a href="https://priyan.info/files/assuage_uist2021.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a>
-        </div>
-        <div class="publication" data-paper-id="interpretable-synth" data-graph-label="Interpretable Synth" data-topics="programming-languages,hci">
-          <strong>Interpretable Program Synthesis</strong><br>
-          <span class="pub-branch">CHI 2021</span><br>
-          <em>Tianyi Zhang, Zhiyang Chen, Yuanli Zhu, <span class="author-me">Priyan Vaithilingam</span>, Xinyu Wang, Elena L Glassman</em><br>
-          <a href="https://dl.acm.org/doi/10.1145/3411764.3445646" target="_blank" rel="noopener noreferrer">[acm]</a> |
-          <a href="https://priyan.info/files/ips_chi2021.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a>
-        </div>
-        <div class="publication" data-paper-id="papercode" data-graph-label="Papercode" data-topics="hci,programming-languages">
-          <strong>Papercode: Generating Paper-Based User Interfaces for Code Review, Annotation, and Teaching</strong><br>
-          <span class="pub-branch">UIST Poster 2020</span><br>
-          <em><span class="author-me">Priyan Vaithilingam</span>, Julia M. Markel, Philip J. Guo</em><br>
-          <a href="https://dl.acm.org/doi/10.1145/3379350.3416191" target="_blank" rel="noopener noreferrer">[acm]</a> |
-          <a href="https://priyan.info/files/uist20d-sub1069-i5.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a> |
-          <a href="https://priyan.info/files/uist20d-sub1069-i6.pdf" target="_blank" rel="noopener noreferrer">[poster]</a>
-        </div>
-        <div class="publication" data-paper-id="bespoke" data-graph-label="Bespoke" data-topics="hci,programming-languages">
-          <strong>Bespoke: Interactively Synthesizing Custom GUIs from Command-Line Applications By Demonstration</strong><br>
-          <span class="pub-branch">UIST 2019</span><br>
-          <em><span class="author-me">Priyan Vaithilingam</span>, Philip J. Guo</em><br>
-          <a href="https://dl.acm.org/doi/10.1145/3332165.3347944" target="_blank" rel="noopener noreferrer">[acm]</a> |
-          <a href="https://priyan.info/files/Bespoke-synthesizing-GUIs-from-CLI-demonstrations_UIST-2019.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a>
-        </div>
-        <div class="publication" data-paper-id="codetalk" data-graph-label="CodeTalk" data-topics="hci,programming-languages">
-          <strong>CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers</strong><br>
-          <span class="award-badge award-hm">Honorable Mention</span> <span class="pub-branch">CHI 2018</span><br>
-          <em>Venkatesh Potluri, <span class="author-me">Priyan Vaithilingam</span>, Suresh Parthasarathy, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa</em><br>
-          <a href="https://dl.acm.org/citation.cfm?id=3174192" target="_blank" rel="noopener noreferrer">[acm]</a> |
-          <a href="https://priyan.info/files/CodeTalkPaper.pdf" target="_blank" rel="noopener noreferrer">[pdf]</a> |
-          <a href="https://www.microsoft.com/en-us/research/publication/codetalk-improving-programming-environment-accessibility-for-visually-impaired-developers/" target="_blank" rel="noopener noreferrer">[microsoft]</a>
-        </div>
-      </section>
-
-      <section id="experience" class="section-card">
-        <h2>Experience</h2>
-        <ul class="git-timeline" aria-label="Career timeline">
-          <li class="git-entry">
-            <p class="git-entry-role">ML Research Scientist, Apple <span class="award-badge">Current</span></p>
-            <p class="git-entry-meta"><a href="https://machinelearning.apple.com/" target="_blank" rel="noopener noreferrer">Apple</a> · <em>Apr 2025 - Present, Seattle USA</em></p>
-          </li>
-          <li class="git-entry">
-            <p class="git-entry-role">Research Intern, Microsoft Research</p>
-            <p class="git-entry-meta"><a href="https://www.microsoft.com/en-us/research/group/vida/" target="_blank" rel="noopener noreferrer">MSR VIDA</a> · <em>May 2024 - Aug 2024, Redmond USA</em></p>
-          </li>
-          <li class="git-entry">
-            <p class="git-entry-role">Research Intern, Microsoft Research</p>
-            <p class="git-entry-meta"><a href="https://www.microsoft.com/en-us/research/group/vida/" target="_blank" rel="noopener noreferrer">MSR VIDA</a> · <em>May 2023 - Aug 2023, Redmond USA</em></p>
-          </li>
-          <li class="git-entry">
-            <p class="git-entry-role">Research Intern, Microsoft Research</p>
-            <p class="git-entry-meta"><a href="https://www.microsoft.com/en-us/research/group/prose/" target="_blank" rel="noopener noreferrer">Microsoft PROSE</a> · <em>Sep 2021 - Aug 2022, Remote</em></p>
-          </li>
-          <li class="git-entry">
-            <p class="git-entry-role">Research Fellow, Microsoft Research India</p>
-            <p class="git-entry-meta"><a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target="_blank" rel="noopener noreferrer">Applied Sciences and Engineering</a> · <em>Mar 2016 - Jul 2018, Bengaluru India</em></p>
-          </li>
-          <li class="git-entry">
-            <p class="git-entry-role">Software Engineer, Microsoft India</p>
-            <p class="git-entry-meta"><a href="https://www.microsoft.com/en-in/msidc" target="_blank" rel="noopener noreferrer">MS IDC</a> · <em>Jun 2015 - Mar 2016, Hyderabad India</em></p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="contact" class="section-card">
-        <h2>Contact</h2>
-        <p>Personal Email: priyanmuthu at gmail dot com</p>
-      </section>
-    </main>
-
-
+<section id="areas" data-orbs="areas">
+  <div class="areas">
+    <div><span class="eyebrow c-hci">Human-Computer Interaction</span><h3>Interfaces people can steer</h3><p>How people actually use AI tools, and new interactions that keep them in control: generative UI, visualization editing, prompt engineering, accessible programming.</p></div>
+    <div><span class="eyebrow c-ai">Artificial Intelligence</span><h3>Models worth collaborating with</h3><p>Intent specifications for AI memory, hypothesis testing for LLMs, ranking for program synthesis, and the real usability of code generation.</p></div>
+    <div><span class="eyebrow c-pl">Programming Languages &amp; SE</span><h3>Synthesis you can see</h3><p>Program synthesizers that explain their search, assistants that fit developer workflows, and tools that turn command lines into GUIs.</p></div>
   </div>
-  <script src="bibtex.js" defer></script>
-  <script src="theme.js" defer></script>
+</section>
+
+<section id="map" data-orbs="map">
+  <span class="eyebrow">Research map · 14 publications · 2018 to 2026</span>
+  <div class="map" id="mapbox"></div>
+  <div class="map-mobile"><div class="venn-m" id="vennm" role="group" aria-label="Publications by research area"></div><p class="venn-cap" id="venncap" aria-live="polite"></p></div>
+</section>
+
+<section id="publications" data-orbs="publications" class="auto">
+  <span class="eyebrow">Publications · click a circle to filter</span>
+  <div class="bar" id="bar">
+    <button class="chip" type="button" data-k="hci" aria-pressed="true" id="chip-hci">HCI</button>
+    <button class="chip" type="button" data-k="ai" aria-pressed="true" id="chip-ai">AI</button>
+    <button class="chip" type="button" data-k="pl" aria-pressed="true" id="chip-pl">PL + SE</button>
+    <span class="count" id="count">14 of 14</span>
+  </div>
+  <ul class="pubs-list" id="publist"></ul>
+</section>
+
+<section id="experience" data-orbs="experience" class="auto">
+  <span class="eyebrow">Experience and education</span>
+  <h2 class="sec">Where the work happened</h2>
+  <div class="cards">
+    <div class="card"><span class="eyebrow">Experience</span><ul class="exp-list" id="explist" style="margin-top:.8rem"></ul></div>
+    <div class="card"><span class="eyebrow">Education</span><ul class="exp-list" id="edulist" style="margin-top:.8rem"></ul></div>
+  </div>
+</section>
+
+<section class="contact" id="contact" data-orbs="contact">
+  <span class="eyebrow">Contact</span>
+  <h2 style="margin-top:1rem">Pick a circle.</h2>
+  <p class="email">Personal Email: <span class="addr">priyanmuthu at gmail dot com</span></p>
+  <div class="btns" id="btns"><a href="https://priyan.info/files/priyan_cv.pdf" target="_blank" rel="noopener noreferrer">CV<small>PDF</small></a><a href="https://scholar.google.com/citations?hl=en&amp;user=xVB9askAAAAJ" target="_blank" rel="noopener noreferrer">Scholar<small>all papers</small></a><a href="https://www.linkedin.com/in/priyanv/" target="_blank" rel="noopener noreferrer">LinkedIn<small>priyanv</small></a></div>
+</section>
+<footer>© Priyan Vaithilingam</footer>
+</div>
+<script>
+window.SITE = {
+ "name": "Priyan Vaithilingam",
+ "title": "Research Scientist, Apple",
+ "group": "AI/ML group at Apple",
+ "tagline": "I design, build, and study tools that augment and enhance Human-AI collaboration.",
+ "about": [
+  "I am a <strong>Research Scientist</strong> in the <a href=\"https://machinelearning.apple.com/\" target=\"_blank\" rel=\"noopener noreferrer\">AI/ML</a> group at Apple, working on intelligent user interfaces. I received my <strong>Ph.D.</strong> from <strong>Harvard</strong>, where I was advised by <a href=\"https://glassmanlab.seas.harvard.edu/glassman.html\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Elena Glassman</a> at the <a href=\"https://glassmanlab.seas.harvard.edu/\" target=\"_blank\" rel=\"noopener noreferrer\">Variation Lab</a>. My research lies in the intersection of Human-Computer Interaction, Artificial Intelligence, and Software Engineering.",
+  "Prior to this, I was a <strong>Master's Student</strong> at <strong>UCSD</strong>, where I worked with <a href=\"https://pg.ucsd.edu/\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Philip Guo</a> at the <a href=\"https://designlab.ucsd.edu/\" target=\"_blank\" rel=\"noopener noreferrer\">UCSD Design Lab</a>. I was also fortunate to work in <a href=\"https://www.microsoft.com/en-us/research/lab/microsoft-research-india/\" target=\"_blank\" rel=\"noopener noreferrer\">Microsoft Research</a> India as a <strong>Research Fellow</strong> for two years, where I worked on projects related to information retrieval, developer tools, and programming accessibility."
+ ],
+ "links": [
+  [
+   "CV",
+   "https://priyan.info/files/priyan_cv.pdf"
+  ],
+  [
+   "Google Scholar",
+   "https://scholar.google.com/citations?hl=en&user=xVB9askAAAAJ"
+  ],
+  [
+   "LinkedIn",
+   "https://www.linkedin.com/in/priyanv/"
+  ]
+ ],
+ "email": "priyanmuthu at gmail dot com",
+ "ascii": "                                                                      \n                                 ... ..                               \n                             .=+.-+**++*#*+.                          \n                          -=#%%%#%%%%@%%%%%%##+.                      \n                       :#%%%%@%%%%%@@@%@%%%%%#%*                      \n                      -%#%@%%@@@@@@@%@%@@@@@@@%#.                     \n                     :#@@@@@@@@@@@@@@@@@@@@@@@@@##:                   \n                     #@@@@@@@%@@@@%%%%%@@@@@@@@@@%+                   \n                     %@@@@@@@@@%@%%%*=--=#@@@@@@@@#                   \n                     %@@@@@@%%@@@%#**----=*@@@@@@@%=                  \n                    :@@@@@@%####*++==----==*%@@@@@%-                  \n                     %@@@@@#***+++==-==---==+%@%@@*-                  \n                      %@@@%%#***##%@%@##*+=+#%@@@@-                   \n                      *@@@#####*+##*-%*##%%%*#@@@+                    \n                       =%@*#+====**=:=*==+==**%%=                     \n                       .%%**+++*#+++===*#+++=+%*                      \n                        *%##***##%%%##*+**++**#+                      \n                        :%####%%%###*****##**+#-                      \n                         +###+++***+==++=+****+                       \n                          #%%#*+++========+**#:                       \n                           %@%%%*+==+==+***%%.                        \n                           #%@@@@@@%@@@@%@@@#                         \n                           *%%%@@@@@@@@@@%##*.                        \n                        .*###%%%%%%%%%##*****+*=                      \n                     =*##*###########********+=+**+-                  \n                .=+****##+**#######*******+++==***+++++=:             \n           .-=++++++*****##***####*******++=+****+++++++++===:        \n        .+++++++++++++******#####*****++*###****++++++++++++==+=-     \n      -+++++++++++++++++*******##########*******++++++++++++++++=+-   \n     =+**+++++++++++++++*+*********************++++++++++++++++++++=  \n    =*****+++++++++++++++*+********************++++++++++++*+++*++++= \n   -********++*++++++++++++++*****************+++++++++++++*++*+**+++-\n  .**********+**++++++++++++*++*+************++*+++++++++++**+****++++\n .**********#***+++++++++++*+++****************+++++++++++************\n +**##*##*#**#****+***+++**+***+******************++**+*++*****#******\n+*#*###*####*##*******************************************+######+=*#*\n**#########%#%#*##************************************#*#####%###*+##*\n*#####%#####%%#%%###**********************************####%##%#%#*####",
+ "pubs": [
+  {
+   "id": "distinguishing-variations",
+   "t": "The Way We Notice, That's What Really Matters: Instantiating UI Components with Distinguishing Variations",
+   "short": "Distinguishing Variations",
+   "v": "CHI 2026",
+   "y": 2026,
+   "a": [
+    "hci",
+    "ai"
+   ],
+   "au": "Priyan Vaithilingam, Alan Leung, Jeffrey Nichols, Titus Barik",
+   "links": [
+    [
+     "acm",
+     "https://dl.acm.org/doi/10.1145/3772318.3790621"
+    ],
+    [
+     "pdf",
+     "https://arxiv.org/pdf/2602.22436"
+    ],
+    [
+     "apple",
+     "https://machinelearning.apple.com/research/we-notice"
+    ]
+   ]
+  },
+  {
+   "id": "semantic-commit",
+   "t": "Semantic Commit: Helping Users Update Intent Specifications for AI Memory at Scale",
+   "short": "Semantic Commit",
+   "v": "UIST 2025",
+   "y": 2025,
+   "a": [
+    "ai",
+    "hci"
+   ],
+   "au": "Priyan Vaithilingam, Munyeong Kim, Frida-Cecilia Acosta-Parenteau, Daniel Lee, Amine Mhedhbi, Elena L. Glassman, Ian Arawjo",
+   "links": [
+    [
+     "acm",
+     "https://dl.acm.org/doi/10.1145/3746059.3747778"
+    ],
+    [
+     "pdf",
+     "https://arxiv.org/pdf/2504.09283"
+    ]
+   ]
+  },
+  {
+   "id": "designing-with-ai",
+   "t": "Imagining a Future of Designing with AI: Dynamic Grounding, Constructive Negotiation, and Sustainable Motivation",
+   "short": "Designing with AI",
+   "v": "DIS 2024",
+   "y": 2024,
+   "a": [
+    "ai",
+    "hci"
+   ],
+   "au": "Priyan Vaithilingam, Ian Arawjo, Elena L Glassman",
+   "links": [
+    [
+     "acm",
+     "https://dl.acm.org/doi/10.1145/3643834.3661525"
+    ],
+    [
+     "pdf",
+     "https://arxiv.org/pdf/2402.07342"
+    ]
+   ]
+  },
+  {
+   "id": "dynavis",
+   "t": "DynaVis: Dynamically Synthesized UI Widgets for Visualization Editing",
+   "short": "DynaVis",
+   "v": "CHI 2024",
+   "y": 2024,
+   "a": [
+    "hci",
+    "ai"
+   ],
+   "award": "Best Paper",
+   "au": "Priyan Vaithilingam, Elena L Glassman, Jeevana Priya Inala, Chenglong Wang",
+   "links": [
+    [
+     "acm",
+     "https://dl.acm.org/doi/10.1145/3613904.3642639"
+    ],
+    [
+     "pdf",
+     "https://arxiv.org/pdf/2401.10880"
+    ],
+    [
+     "microsoft",
+     "https://www.microsoft.com/en-us/research/publication/dynavis-dynamically-synthesized-ui-widgets-for-visualization-editing/"
+    ]
+   ]
+  },
+  {
+   "id": "chainforge",
+   "t": "ChainForge: A Visual Toolkit for Prompt Engineering and LLM Hypothesis Testing",
+   "short": "ChainForge",
+   "v": "CHI 2024",
+   "y": 2024,
+   "a": [
+    "ai",
+    "hci"
+   ],
+   "award": "Honorable Mention",
+   "au": "Ian Arawjo, Chelse Swoopes, Priyan Vaithilingam, Elena L Glassman, Martin Wattenberg",
+   "links": [
+    [
+     "acm",
+     "https://dl.acm.org/doi/10.1145/3613904.3642016"
+    ],
+    [
+     "pdf",
+     "https://arxiv.org/pdf/2309.09128"
+    ],
+    [
+     "try it",
+     "https://chainforge.ai/"
+    ]
+   ]
+  },
+  {
+   "id": "pragmatic-synth",
+   "t": "Amortizing Pragmatic Program Synthesis with Rankings",
+   "short": "Pragmatic Synthesis",
+   "v": "ICML 2024",
+   "y": 2024,
+   "a": [
+    "pl",
+    "ai"
+   ],
+   "au": "Yewen Pu, Saujas Vaduguru, Priyan Vaithilingam, Elena L Glassman, Daniel Fried",
+   "links": [
+    [
+     "acm",
+     "https://dl.acm.org/doi/10.5555/3692070.3693745"
+    ],
+    [
+     "pdf",
+     "https://arxiv.org/pdf/2309.03225"
+    ]
+   ]
+  },
+  {
+   "id": "protograph",
+   "t": "ProtoGraph: A Non-Expert Toolkit for Creating Animated Graphs",
+   "short": "ProtoGraph",
+   "v": "IEEE VIS 2023",
+   "y": 2023,
+   "a": [
+    "hci"
+   ],
+   "au": "Malchiel Rodrigues, Joel Dapello, Priyan Vaithilingam, Carolina Nobre, Johanna Beyer",
+   "links": [
+    [
+     "ieee",
+     "https://ieeexplore.ieee.org/abstract/document/10360910"
+    ],
+    [
+     "pdf",
+     "https://johanna-b.github.io/files/documents/protograph.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "intellicode-ux",
+   "t": "Towards More Effective AI-Assisted Programming: A Systematic Design Exploration to Improve Visual Studio IntelliCode's User Experience",
+   "short": "IntelliCode UX",
+   "v": "ICSE-SEIP 2023",
+   "y": 2023,
+   "a": [
+    "ai",
+    "hci",
+    "pl"
+   ],
+   "au": "Priyan Vaithilingam, Elena L Glassman, Peter Groenwegen, Sumit Gulwani, Austin Z. Henley, Rohan Malpani, David Pugh, Arjun Radhakrishna, Gustavo Soares, Joey Wang, Aaron Yim",
+   "links": [
+    [
+     "acm",
+     "https://ieeexplore.ieee.org/abstract/document/10172834"
+    ],
+    [
+     "pdf",
+     "https://austinhenley.com/pubs/Vaithilingam2023ICSE_IntelliCode.pdf"
+    ],
+    [
+     "microsoft",
+     "https://www.microsoft.com/en-us/research/publication/towards-more-effective-ai-assisted-programming-a-systematic-design-exploration-to-improve-visual-studio-intellicodes-user-experience/"
+    ]
+   ]
+  },
+  {
+   "id": "expectation-vs-experience",
+   "t": "Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models",
+   "short": "Expectation vs. Experience",
+   "v": "CHI LBW 2022",
+   "y": 2022,
+   "a": [
+    "ai",
+    "hci"
+   ],
+   "au": "Priyan Vaithilingam, Tianyi Zhang, Elena L Glassman",
+   "links": [
+    [
+     "acm",
+     "https://dl.acm.org/doi/abs/10.1145/3491101.3519665"
+    ],
+    [
+     "pdf",
+     "https://tianyi-zhang.github.io/files/chi2022-lbw-copilot.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "assuage",
+   "t": "Assuage: Assembly Synthesis Using A Guided Exploration",
+   "short": "Assuage",
+   "v": "UIST 2021",
+   "y": 2021,
+   "a": [
+    "pl",
+    "hci"
+   ],
+   "au": "Jingmei Hu, Priyan Vaithilingam, Stephen Chong, Margo Seltzer, Elena L Glassman",
+   "links": [
+    [
+     "acm",
+     "https://dl.acm.org/doi/10.1145/3472749.3474740"
+    ],
+    [
+     "pdf",
+     "https://priyan.info/files/assuage_uist2021.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "interpretable-synth",
+   "t": "Interpretable Program Synthesis",
+   "short": "Interpretable Synthesis",
+   "v": "CHI 2021",
+   "y": 2021,
+   "a": [
+    "pl",
+    "hci"
+   ],
+   "au": "Tianyi Zhang, Zhiyang Chen, Yuanli Zhu, Priyan Vaithilingam, Xinyu Wang, Elena L Glassman",
+   "links": [
+    [
+     "acm",
+     "https://dl.acm.org/doi/10.1145/3411764.3445646"
+    ],
+    [
+     "pdf",
+     "https://priyan.info/files/ips_chi2021.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "papercode",
+   "t": "Papercode: Generating Paper-Based User Interfaces for Code Review, Annotation, and Teaching",
+   "short": "Papercode",
+   "v": "UIST Poster 2020",
+   "y": 2020,
+   "a": [
+    "hci",
+    "pl"
+   ],
+   "au": "Priyan Vaithilingam, Julia M. Markel, Philip J. Guo",
+   "links": [
+    [
+     "acm",
+     "https://dl.acm.org/doi/10.1145/3379350.3416191"
+    ],
+    [
+     "pdf",
+     "https://priyan.info/files/uist20d-sub1069-i5.pdf"
+    ],
+    [
+     "poster",
+     "https://priyan.info/files/uist20d-sub1069-i6.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "bespoke",
+   "t": "Bespoke: Interactively Synthesizing Custom GUIs from Command-Line Applications By Demonstration",
+   "short": "Bespoke",
+   "v": "UIST 2019",
+   "y": 2019,
+   "a": [
+    "hci",
+    "pl"
+   ],
+   "au": "Priyan Vaithilingam, Philip J. Guo",
+   "links": [
+    [
+     "acm",
+     "https://dl.acm.org/doi/10.1145/3332165.3347944"
+    ],
+    [
+     "pdf",
+     "https://priyan.info/files/Bespoke-synthesizing-GUIs-from-CLI-demonstrations_UIST-2019.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "codetalk",
+   "t": "CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers",
+   "short": "CodeTalk",
+   "v": "CHI 2018",
+   "y": 2018,
+   "a": [
+    "hci",
+    "pl"
+   ],
+   "award": "Honorable Mention",
+   "au": "Venkatesh Potluri, Priyan Vaithilingam, Suresh Parthasarathy, Vidhya Reddy, Manohar Swaminathan, Gopal Srinivasa",
+   "links": [
+    [
+     "acm",
+     "https://dl.acm.org/citation.cfm?id=3174192"
+    ],
+    [
+     "pdf",
+     "https://priyan.info/files/CodeTalkPaper.pdf"
+    ],
+    [
+     "microsoft",
+     "https://www.microsoft.com/en-us/research/publication/codetalk-improving-programming-environment-accessibility-for-visually-impaired-developers/"
+    ]
+   ]
+  }
+ ],
+ "exp": [
+  {
+   "role": "ML Research Scientist, Apple",
+   "org": "Apple",
+   "url": "https://machinelearning.apple.com/",
+   "when": "Apr 2025 - Present",
+   "where": "Seattle USA",
+   "current": true
+  },
+  {
+   "role": "Research Intern, Microsoft Research",
+   "org": "MSR VIDA",
+   "url": "https://www.microsoft.com/en-us/research/group/vida/",
+   "when": "May 2024 - Aug 2024",
+   "where": "Redmond USA"
+  },
+  {
+   "role": "Research Intern, Microsoft Research",
+   "org": "MSR VIDA",
+   "url": "https://www.microsoft.com/en-us/research/group/vida/",
+   "when": "May 2023 - Aug 2023",
+   "where": "Redmond USA"
+  },
+  {
+   "role": "Research Intern, Microsoft Research",
+   "org": "Microsoft PROSE",
+   "url": "https://www.microsoft.com/en-us/research/group/prose/",
+   "when": "Sep 2021 - Aug 2022",
+   "where": "Remote"
+  },
+  {
+   "role": "Research Fellow, Microsoft Research India",
+   "org": "Applied Sciences and Engineering",
+   "url": "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/",
+   "when": "Mar 2016 - Jul 2018",
+   "where": "Bengaluru India"
+  },
+  {
+   "role": "Software Engineer, Microsoft India",
+   "org": "MS IDC",
+   "url": "https://www.microsoft.com/en-in/msidc",
+   "when": "Jun 2015 - Mar 2016",
+   "where": "Hyderabad India"
+  }
+ ],
+ "edu": [
+  {
+   "deg": "Ph.D. in Computer Science",
+   "school": "Harvard University",
+   "note": "Advised by Prof. Elena Glassman, Variation Lab",
+   "when": "2020 - 2025"
+  },
+  {
+   "deg": "M.S. in Computer Science",
+   "school": "University of California, San Diego",
+   "note": "Advised by Prof. Philip Guo, UCSD Design Lab",
+   "when": "2018 - 2020"
+  },
+  {
+   "deg": "B.Tech. in Computer Science and Engineering",
+   "school": "Indian Institute of Technology, Indore",
+   "note": "",
+   "when": "2011 - 2015"
+  }
+ ],
+ "areas": {
+  "hci": {
+   "name": "Human-Computer Interaction",
+   "short": "HCI"
+  },
+  "ai": {
+   "name": "Artificial Intelligence",
+   "short": "AI"
+  },
+  "pl": {
+   "name": "Programming Languages & Software Engineering",
+   "short": "PL + SE"
+  }
+ }
+};
+
+window.PUBS = SITE.pubs; window.AREAS = SITE.areas;
+/* Shared renderers. Each prototype styles the class names in its own CSS. */
+window.renderAbout = function(el){ el.innerHTML = SITE.about.map(function(p){ return '<p>'+p+'</p>'; }).join('') +
+  '<p class="quick-links">'+SITE.links.map(function(l){ return '<a href="'+l[1]+'" target="_blank" rel="noopener noreferrer">'+l[0]+'</a>'; }).join('')+'</p>'; };
+window.pubHTML = function(p, opts){ opts = opts||{};
+  var au = p.au.replace('Priyan Vaithilingam','<span class="me">Priyan Vaithilingam</span>');
+  var links = p.links.map(function(l){ return '<a href="'+l[1]+'" target="_blank" rel="noopener noreferrer">['+l[0]+']</a>'; }).join(' ');
+  return (opts.glyph ? opts.glyph(p.a) : '') + '<div class="pub-body"><div class="pub-title">'+p.t+'</div>' +
+    '<div class="pub-venue">'+(p.award?'<span class="award">'+p.award+'</span> ':'')+'<span class="venue">'+p.v+'</span></div>' +
+    '<div class="pub-authors">'+au+'</div><div class="pub-links">'+links+'</div></div>'; };
+window.renderPubs = function(el, opts){ opts = opts||{}; el.innerHTML=''; SITE.pubs.forEach(function(p){ var d=document.createElement(opts.tag||'li'); d.className='pub'; d.dataset.id=p.id; d.dataset.a=p.a.join(' '); d.dataset.y=p.y; d.innerHTML=pubHTML(p,opts); el.appendChild(d); }); };
+window.renderExperience = function(el){ el.innerHTML = SITE.exp.map(function(e){ return '<li class="exp"><div class="exp-role">'+e.role+(e.current?' <span class="award">Current</span>':'')+'</div><div class="exp-meta"><a href="'+e.url+'" target="_blank" rel="noopener noreferrer">'+e.org+'</a> · <em>'+e.when+', '+e.where+'</em></div></li>'; }).join(''); };
+window.renderEducation = function(el){ el.innerHTML = SITE.edu.map(function(e){ return '<li class="exp edu"><div class="exp-role">'+e.deg+'</div><div class="exp-meta">'+e.school+(e.note?' · '+e.note:'')+' · <em>'+e.when+'</em></div></li>'; }).join(''); };
+window.renderContact = function(el){ el.innerHTML = '<p class="email">Personal Email: <span class="addr">'+SITE.email+'</span></p><p class="quick-links">'+SITE.links.map(function(l){ return '<a href="'+l[1]+'" target="_blank" rel="noopener noreferrer">'+l[0]+'</a>'; }).join('')+'</p>'; };
+</script>
+<script>
+/* Shared three-circle geometry: centres for HCI, AI, PL around (cx, cy). */
+function vennGeo(w,h){ return {cx:w/2,cy:h*.44,r:w*.27}; }
+function vennCenters(g){ var d=g.r*.62; return [[g.cx-d*.9,g.cy-d*.3],[g.cx+d*.9,g.cy-d*.3],[g.cx,g.cy+d*.85]]; }
+var HCI='#f3a44a', AI='#2fb3bb', PL='#f26864', KEYS=['hci','ai','pl'], COLS={hci:HCI,ai:AI,pl:PL};
+var active={hci:true,ai:true,pl:true};
+function centerOf(el){ var r=el.getBoundingClientRect(); return [(r.left+r.width/2)/innerWidth,(r.top+r.height/2)/innerHeight]; }
+function rectOf(id){ var r=document.getElementById(id).getBoundingClientRect(); return {l:r.left/innerWidth,t:r.top/innerHeight,w:r.width/innerWidth,h:r.height/innerHeight,px:r}; }
+window.ORB_STATES = {
+  hero: function(m){ var r=m.mobile?.42:.3, cx=m.mobile?.5:.72, cy=m.mobile?.62:.5, d=r*.62;
+    return [ {x:cx-d*.9,y:cy+d*.1,r:r,f:HCI,o:1}, {x:cx+d*.9,y:cy-d*.45,r:r,f:AI,o:1}, {x:cx+d*.15,y:cy+d*.95,r:r,f:PL,o:1} ]; },
+  about: function(m){ var r=.34; return [ {x:1.02,y:.25,r:r,f:HCI,o:.6}, {x:1.12,y:.6,r:r,f:AI,o:.6}, {x:.95,y:.85,r:r,f:PL,o:.6} ]; },
+  /* Track each column's live position so the circles stay pinned to their headings at any width. */
+  areas: function(m){ var base=Math.min(m.vw,m.vh);
+    return [].slice.call(document.querySelectorAll('.areas > div')).map(function(col,i){
+      var c=col.getBoundingClientRect(), e=col.querySelector('.eyebrow').getBoundingClientRect(), h=col.querySelector('h3').getBoundingClientRect(), r, x, y;
+      if(m.mobile){ r=Math.min(c.width*.17,70); x=c.right-r*.9; y=(e.top+h.bottom)/2; }
+      else { r=Math.min(c.width*.46,base*.19); x=c.left+c.width/2; y=Math.min((e.top+e.bottom)/2, h.top-r*.85); }
+      return {x:x/m.vw,y:y/m.vh,r:r/base,f:COLS[KEYS[i]],o:.75}; }); },
+  /* Follow the map box (desktop) or the phone Venn box so circles stay under their labels. */
+  map: function(m){ var base=Math.min(m.vw,m.vh), b=document.getElementById(m.mobile?'vennm':'mapbox').getBoundingClientRect(),
+      g=m.mobile?vennGeo(b.width,b.height):{cx:b.width/2,cy:b.height*.51,r:Math.min(b.height*.3375,b.width*.21)};
+    return vennCenters(g).map(function(c,i){ return {x:(b.left+c[0])/m.vw,y:(b.top+c[1])/m.vh,r:g.r/base,f:COLS[KEYS[i]],o:m.mobile&&vennSel.ks&&vennSel.ks.indexOf(KEYS[i])<0?.2:.9}; }); },
+  publications: function(m){ var base=Math.min(m.vw,m.vh); return KEYS.map(function(k){ var c=document.getElementById('chip-'+k); var r=c.getBoundingClientRect(); return {x:(r.left+18)/m.vw,y:(r.top+r.height/2)/m.vh,r:7/base,f:COLS[k],o:active[k]?1:.25}; }); },
+  experience: function(m){ return [ {x:.12,y:.25,r:.3,f:HCI,o:.35},{x:.88,y:.35,r:.34,f:AI,o:.35},{x:.5,y:.98,r:.32,f:PL,o:.35} ]; },
+  contact: function(m){ var base=Math.min(m.vw,m.vh); return KEYS.map(function(k,i){ var a=document.querySelectorAll('#btns a')[i]; var p=centerOf(a); var r=a.getBoundingClientRect().width/2/base; return {x:p[0],y:p[1],r:r,f:COLS[k],o:.8}; }); }
+};
+renderAbout(document.getElementById('aboutbox'));
+function glyph(a){ var on=function(k){return a.indexOf(k)>=0;};
+  return '<svg class="glyph" viewBox="0 0 44 36" aria-hidden="true"><circle cx="16" cy="14" r="10" fill="'+HCI+'" opacity="'+(on('hci')?.9:.15)+'"/><circle cx="28" cy="14" r="10" fill="'+AI+'" opacity="'+(on('ai')?.9:.15)+'"/><circle cx="22" cy="23" r="10" fill="'+PL+'" opacity="'+(on('pl')?.9:.15)+'"/></svg>'; }
+var list=document.getElementById('publist'); renderPubs(list,{glyph:glyph});
+renderExperience(document.getElementById('explist'));
+renderEducation(document.getElementById('edulist'));
+function toggle(k){ active[k]=!active[k]; document.getElementById('chip-'+k).setAttribute('aria-pressed',String(active[k])); applyFilter(); }
+function applyFilter(){ var n=0; [].slice.call(list.children).forEach(function(li){ var ok=li.dataset.a.split(' ').some(function(k){return active[k];}); li.classList.toggle('off',!ok); if(ok)n++; });
+  document.getElementById('count').textContent=n+' of '+PUBS.length; window.dispatchEvent(new Event('scroll')); }
+document.querySelectorAll('.chip').forEach(function(c){ c.addEventListener('click',function(){ toggle(c.dataset.k); }); });
+/* Research map: short labels placed by region (percent of box). */
+var MAP = { 'distinguishing-variations':[24,6],'semantic-commit':[50,3],'designing-with-ai':[76,6],'dynavis':[37,15],'chainforge':[63,15],'expectation-vs-experience':[90,22],
+  'intellicode-ux':[91,44],'pragmatic-synth':[88,64],'protograph':[9,40],'bespoke':[7,58],'codetalk':[9,74],'interpretable-synth':[18,90],'assuage':[34,97],'papercode':[66,96] };
+var box=document.getElementById('mapbox');
+['HCI|34|36','AI|66|36','PL + SE|50|80'].forEach(function(s){ var p=s.split('|'); var l=document.createElement('div'); l.className='label'; l.style.left=p[1]+'%'; l.style.top=p[2]+'%'; l.textContent=p[0]; box.appendChild(l); });
+PUBS.forEach(function(p){ var pos=MAP[p.id]||[50,50]; var d=document.createElement('a'); d.className='pub-tag'; d.href='#publications'; d.style.left=pos[0]+'%'; d.style.top=pos[1]+'%'; d.style.color='inherit'; d.style.textDecoration='none';
+  d.innerHTML=p.short+'<small>'+(p.award?'🏆 ':'')+p.v+' '+p.a.map(function(k){return '<i class="dot dot-'+k+'"></i>'}).join('')+'</small>'; box.appendChild(d); });
+/* Phone map: a Venn with one seed per paper. Tap a region or a seed to spotlight it. */
+var NAMES={hci:'HCI',ai:'AI',pl:'PL + SE'}, groups={}, vennSel={ks:null,pub:null}, vennG=null;
+PUBS.forEach(function(p){ var k=KEYS.filter(function(x){ return p.a.indexOf(x)>=0; }).join('+'); (groups[k]=groups[k]||[]).push(p); });
+var REGIONS=['hci','ai','pl','hci+ai','hci+pl','ai+pl','hci+ai+pl'];
+function regionOf(x,y){ var C=vennCenters(vennG); return KEYS.filter(function(k,i){ return Math.hypot(x-C[i][0],y-C[i][1])<vennG.r; }).join('+'); }
+function layoutVennM(){ var v=document.getElementById('vennm'), w=v.clientWidth, h=v.clientHeight; if(!w) return;
+  var g=vennGeo(w,h), C=vennCenters(g), mid=[(C[0][0]+C[1][0]+C[2][0])/3,(C[0][1]+C[1][1]+C[2][1])/3], html='';
+  vennG=g;
+  function out(pts,push){ var x=0,y=0; pts.forEach(function(c){ x+=c[0]/pts.length; y+=c[1]/pts.length; });
+    var dx=x-mid[0], dy=y-mid[1], len=Math.hypot(dx,dy)||1; return [x+dx/len*push,y+dy/len*push]; }
+  KEYS.forEach(function(k,i){ var q=out([C[i]],g.r*.78); html+='<div class="label" style="left:'+q[0]+'px;top:'+q[1]+'px">'+NAMES[k]+'</div>'; });
+  /* Seeds sit in a tight hex cluster around each region's centre, nearest spots first. */
+  var HEX=[[0,0]]; for(var ring=1;ring<3;ring++) for(var t=0;t<6*ring;t++){ var a=t/(6*ring)*Math.PI*2; HEX.push([Math.cos(a)*ring,Math.sin(a)*ring]); }
+  REGIONS.forEach(function(k){ var ks=k.split('+'), list=groups[k]||[]; if(!list.length) return;
+    var c=out(ks.map(function(x){ return C[KEYS.indexOf(x)]; }), ks.length===1?g.r*.42:ks.length===2?g.r*.42:0);
+    list.forEach(function(p,n){ var x=c[0]+HEX[n][0]*12, y=c[1]+HEX[n][1]*12;
+      html+='<button type="button" class="seed" data-id="'+p.id+'" data-k="'+k+'" style="left:'+x+'px;top:'+y+'px" aria-label="'+p.short+', '+p.v+'"></button>'; }); });
+  v.innerHTML=html; paintVennM();
+}
+function paintVennM(){ var k=vennSel.ks&&vennSel.ks.join('+'), p=vennSel.pub, cap=document.getElementById('venncap'), n=k&&(groups[k]||[]).length;
+  document.getElementById('vennm').classList.toggle('has-sel',!!k);
+  [].slice.call(document.querySelectorAll('#vennm .seed')).forEach(function(s){ s.classList.toggle('in',s.dataset.k===k); s.classList.toggle('on',!!p&&s.dataset.id===p.id); });
+  var name=k&&vennSel.ks.map(function(x){ return NAMES[x]; }).join(' · ')+(vennSel.ks.length===1?' only':'');
+  cap.innerHTML = p ? '<a href="#publications">'+p.short+'</a><br>'+(p.award?'🏆 ':'')+p.v+' · '+name
+    : k ? name+'<br>'+(n?n+' paper'+(n>1?'s':''):'No papers yet')
+    : 'Tap a circle or a dot';
+  window.dispatchEvent(new Event('scroll'));
+}
+document.getElementById('vennm').addEventListener('click',function(e){ var seed=e.target.closest('.seed'), k, p=null;
+  if(seed){ k=seed.dataset.k; p=PUBS.filter(function(q){ return q.id===seed.dataset.id; })[0]; if(vennSel.pub===p) p=null, k=null; }
+  else { var r=this.getBoundingClientRect(); k=regionOf(e.clientX-r.left,e.clientY-r.top)||null; if(vennSel.ks&&vennSel.ks.join('+')===k&&!vennSel.pub) k=null; }
+  vennSel={ks:k?k.split('+'):null,pub:p}; paintVennM(); });
+layoutVennM(); window.addEventListener('resize',layoutVennM);
+</script>
+<script>
+/* Orbs engine: three fixed SVG ellipses interpolated between per-section keyframes.
+   A keyframe is a function (m) => [c0, c1, c2] where m = {vw, vh, mobile}.
+   Each c: {x, y: fractions of viewport; r: fraction of min(vw,vh); k: ry/rx ratio (default 1);
+            o: opacity; f: fill hex; s: stroke hex|null; sw: stroke width px}. */
+(function () {
+  var svg = document.getElementById('orbs');
+  if (!svg) return;
+  var els = Array.prototype.slice.call(svg.querySelectorAll('ellipse'));
+  var sections = Array.prototype.slice.call(document.querySelectorAll('[data-orbs]'));
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cur = els.map(function () { return null; });
+
+  function clamp(v, a, b) { return v < a ? a : v > b ? b : v; }
+  function lerp(a, b, t) { return a + (b - a) * t; }
+  function ease(t) { return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t; }
+  function hex(c) { c = c.replace('#', ''); if (c.length === 3) c = c.replace(/./g, function (x) { return x + x; }); return [parseInt(c.substr(0, 2), 16), parseInt(c.substr(2, 2), 16), parseInt(c.substr(4, 2), 16)]; }
+  function mix(a, b, t) { if (!a) return b; if (!b) return a; if (a === b) return a; var A = hex(a), B = hex(b); return 'rgb(' + Math.round(lerp(A[0], B[0], t)) + ',' + Math.round(lerp(A[1], B[1], t)) + ',' + Math.round(lerp(A[2], B[2], t)) + ')'; }
+
+  function metrics() { return { vw: window.innerWidth, vh: window.innerHeight, mobile: window.innerWidth < 720 }; }
+  function stateOf(i, m) { var k = window.ORB_STATES[sections[i].getAttribute('data-orbs')]; return k(m); }
+  function anchor(i) { var s = sections[i]; var r = s.getBoundingClientRect(); return r.top + window.scrollY + Math.min(r.height, window.innerHeight) / 2; }
+
+  function frame() {
+    var m = metrics();
+    var mid = window.scrollY + m.vh / 2;
+    var i = 0;
+    while (i < sections.length - 1 && mid >= anchor(i + 1)) i++;
+    var a = anchor(i), b = i < sections.length - 1 ? anchor(i + 1) : a + 1;
+    // Hold the current state until the next section is at most one viewport away, then transition over that stretch.
+    var span = Math.max(1, Math.min(b - a, m.vh));
+    var t = ease(clamp((mid - (b - span)) / span, 0, 1));
+    var sa = stateOf(i, m), sb = stateOf(Math.min(i + 1, sections.length - 1), m);
+    var base = Math.min(m.vw, m.vh);
+    els.forEach(function (el, j) {
+      var p = sa[j], q = sb[j];
+      var r = lerp(p.r, q.r, t) * base;
+      var k = lerp(p.k == null ? 1 : p.k, q.k == null ? 1 : q.k, t);
+      el.setAttribute('cx', lerp(p.x, q.x, t) * m.vw);
+      el.setAttribute('cy', lerp(p.y, q.y, t) * m.vh);
+      el.setAttribute('rx', Math.max(0, r));
+      el.setAttribute('ry', Math.max(0, r * k));
+      el.setAttribute('fill', mix(p.f, q.f, t));
+      el.setAttribute('fill-opacity', lerp(p.o == null ? 1 : p.o, q.o == null ? 1 : q.o, t));
+      var so = lerp(p.s ? 1 : 0, q.s ? 1 : 0, t);
+      el.setAttribute('stroke', mix(p.s || q.s || '#000', q.s || p.s || '#000', t));
+      el.setAttribute('stroke-opacity', so);
+      el.setAttribute('stroke-width', lerp(p.sw || 0, q.sw || 0, t));
+    });
+    document.documentElement.style.setProperty('--orb-section', i);
+    sections.forEach(function (s, j) { s.classList.toggle('is-current', j === i); });
+    if (window.onOrbFrame) window.onOrbFrame(i, t, m);
+  }
+  var ticking = false;
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(function () { frame(); ticking = false; }); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  window.addEventListener('load', frame);
+  frame();
+  if (!reduced) svg.classList.add('orbs-enter');
+})();
+</script>
 </body>
 </html>
