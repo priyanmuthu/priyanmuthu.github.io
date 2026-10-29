@@ -79,20 +79,22 @@ nav.top .name{font-family:var(--display);font-style:italic;text-transform:none;l
 .hero p{max-width:34em;color:var(--mute);margin:0 0 2rem;font-size:1.22rem}
 .scrollhint{font-size:.76rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mute);margin-top:auto}
 .about{max-width:44em;font-size:1.22rem}
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(2rem,5vw,4.5rem);align-items:center;margin-top:1.2rem}
+.portrait{margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:clamp(5px,.6vw,8px);line-height:1.08;letter-spacing:.06em;color:var(--fg);white-space:pre;user-select:none;min-height:45em;order:2}
 .areas{display:grid;grid-template-columns:repeat(3,1fr);gap:3rem}
 .areas h3{font-family:var(--display);font-weight:300;font-size:1.9rem;margin:0 0 .6rem;line-height:1.1;text-wrap:balance}
 .areas p{margin:0;color:var(--mute);max-width:26em}
 .areas .eyebrow{display:block;margin-bottom:5.5rem}
 .areas .papers{margin:.8rem 0 0;padding:0;list-style:none;font-size:1rem;color:var(--mute)}
 .map{position:relative;height:80vh;min-height:600px}
-.map .label{position:absolute;transform:translate(-50%,-50%);text-align:center;font-size:.8rem;letter-spacing:.26em;text-transform:uppercase;color:var(--fg);opacity:.8;width:12em}
+.map .label{position:absolute;transform:translate(-50%,-50%);text-align:center;font-size:.98rem;letter-spacing:.26em;text-transform:uppercase;color:var(--fg);opacity:.8;width:12em}
 .map .pub-tag{position:absolute;font-size:1rem;line-height:1.2;max-width:14em;transform:translate(-50%,-50%)}
 .map .pub-tag small{display:block;color:var(--mute);font-size:.84rem;margin-top:.15em}
 .map .pub-tag .dot{width:7px;height:7px;margin-right:2px}
 .map .foot{position:absolute;right:0;bottom:0;font-size:.86rem;color:var(--mute)}
 .map-mobile{display:none}
 .venn-m{position:relative;width:100%;aspect-ratio:1/.85;margin-top:1rem}
-.venn-m .label{position:absolute;transform:translate(-50%,-50%);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;white-space:nowrap;text-align:center}
+.venn-m .label{position:absolute;transform:translate(-50%,-50%);font-size:.84rem;letter-spacing:.22em;text-transform:uppercase;white-space:nowrap;text-align:center}
 .venn-m{cursor:pointer;-webkit-tap-highlight-color:transparent;user-select:none}
 .venn-m .label{pointer-events:none}
 .venn-m .seed{position:absolute;width:22px;height:22px;margin:-11px 0 0 -11px;padding:0;border:0;background:none;cursor:pointer;transition:opacity .25s;-webkit-tap-highlight-color:transparent}
@@ -105,12 +107,19 @@ nav.top .name{font-family:var(--display);font-style:italic;text-transform:none;l
 .pubs-list{max-width:900px}
 .bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 58px);z-index:3;display:flex;gap:.6rem;align-items:center;padding:.8rem 0;background:linear-gradient(var(--bg) 70%,transparent);flex-wrap:wrap;margin-top:.6rem}
 .chip{appearance:none;border:1px solid var(--rule);background:transparent;color:var(--fg);font:inherit;font-weight:500;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;padding:.6em 1.1em .6em 2.3em;border-radius:999px;cursor:pointer;position:relative}
-.chip[aria-pressed="false"]{color:var(--mute)}
+.chip{transition:color .2s,border-color .2s,background-color .2s}
+.chip:hover{border-color:var(--mute)}
+.chip[aria-pressed="true"]{border-color:var(--fg)}
+.bar.has-sel .chip[aria-pressed="false"]{color:var(--mute)}
+.bar .clear{appearance:none;border:0;background:none;padding:0;font:inherit;font-size:.86rem;color:var(--fg);cursor:pointer;border-bottom:1px solid var(--rule)}
+.bar .clear:hover,.bar .clear:focus-visible{border-color:var(--fg);outline:none}
 .chip:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
 .bar .count{margin-left:auto;font-size:.86rem;color:var(--mute);font-variant-numeric:tabular-nums}
 .pubs-list{margin-top:.5rem}
-.pub{transition:opacity .25s}
-.pub.off{opacity:.18}
+.pub.off{display:none}
+.pub.enter{animation:pub-in .4s cubic-bezier(.2,.8,.2,1) both}
+@keyframes pub-in{from{opacity:0;transform:translateY(6px)}}
+@media (prefers-reduced-motion:reduce){.pub.enter{animation:none}}
 .glyph{width:44px;height:36px;display:block;flex:none}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1rem}
 .card{background:var(--card);border:1px solid var(--rule);padding:1.3rem 1.5rem;min-width:0}
@@ -124,6 +133,7 @@ nav.top .name{font-family:var(--display);font-style:italic;text-transform:none;l
 footer{font-size:.8rem;color:var(--mute);padding:2rem 0 3rem;max-width:1180px;margin:0 auto}
 @media (max-width:860px){.cards{grid-template-columns:1fr}}
 @media (max-width:719px){
+  .about-grid{grid-template-columns:1fr;gap:2rem}.portrait{font-size:min(7px,1.75vw);justify-self:center;order:0}
   .areas{grid-template-columns:1fr;gap:2.5rem}.areas .eyebrow{margin-bottom:1rem}
   .map{display:none}.map-mobile{display:block}
   .hero h1{font-size:2rem}nav.top span:last-child{display:none}
@@ -173,9 +183,12 @@ footer{font-size:.8rem;color:var(--mute);padding:2rem 0 3rem;max-width:1180px;ma
   <span class="scrollhint">Scroll ↓</span>
 </section>
 
-<section id="about" data-orbs="about" class="auto">
+<section id="about" data-orbs="about" data-orbs-anchor="portrait" class="auto">
   <span class="eyebrow">About</span>
-  <div class="about" id="aboutbox" style="margin-top:1.2rem"></div>
+  <div class="about-grid">
+    <pre class="portrait" id="portrait" role="img" aria-label="Text-art portrait of Priyan Vaithilingam"></pre>
+    <div class="about" id="aboutbox"></div>
+  </div>
 </section>
 
 <section id="areas" data-orbs="areas">
@@ -193,12 +206,12 @@ footer{font-size:.8rem;color:var(--mute);padding:2rem 0 3rem;max-width:1180px;ma
 </section>
 
 <section id="publications" data-orbs="publications" class="auto">
-  <span class="eyebrow">Publications · click a circle to filter</span>
+  <span class="eyebrow">Publications · pick a circle to filter, two to see their overlap</span>
   <div class="bar" id="bar">
-    <button class="chip" type="button" data-k="hci" aria-pressed="true" id="chip-hci">HCI</button>
-    <button class="chip" type="button" data-k="ai" aria-pressed="true" id="chip-ai">AI</button>
-    <button class="chip" type="button" data-k="pl" aria-pressed="true" id="chip-pl">PL + SE</button>
-    <span class="count" id="count">14 of 14</span>
+    <button class="chip" type="button" data-k="hci" aria-pressed="false" id="chip-hci">HCI</button>
+    <button class="chip" type="button" data-k="ai" aria-pressed="false" id="chip-ai">AI</button>
+    <button class="chip" type="button" data-k="pl" aria-pressed="false" id="chip-pl">PL + SE</button>
+    <span class="count" id="count" aria-live="polite">14 papers</span><button class="clear" type="button" id="clear" hidden>Show all</button>
   </div>
   <ul class="pubs-list" id="publist"></ul>
 </section>
@@ -684,13 +697,17 @@ window.renderContact = function(el){ el.innerHTML = '<p class="email">Personal E
 function vennGeo(w,h){ return {cx:w/2,cy:h*.44,r:w*.27}; }
 function vennCenters(g){ var d=g.r*.62; return [[g.cx-d*.9,g.cy-d*.3],[g.cx+d*.9,g.cy-d*.3],[g.cx,g.cy+d*.85]]; }
 var HCI='#f3a44a', AI='#2fb3bb', PL='#f26864', KEYS=['hci','ai','pl'], COLS={hci:HCI,ai:AI,pl:PL};
-var active={hci:true,ai:true,pl:true};
+/* Selected areas for the publication filter; none selected shows everything. */
+var active={hci:false,ai:false,pl:false};
 function centerOf(el){ var r=el.getBoundingClientRect(); return [(r.left+r.width/2)/innerWidth,(r.top+r.height/2)/innerHeight]; }
 function rectOf(id){ var r=document.getElementById(id).getBoundingClientRect(); return {l:r.left/innerWidth,t:r.top/innerHeight,w:r.width/innerWidth,h:r.height/innerHeight,px:r}; }
 window.ORB_STATES = {
   hero: function(m){ var r=m.mobile?.42:.3, cx=m.mobile?.5:.72, cy=m.mobile?.62:.5, d=r*.62;
     return [ {x:cx-d*.9,y:cy+d*.1,r:r,f:HCI,o:1}, {x:cx+d*.9,y:cy-d*.45,r:r,f:AI,o:1}, {x:cx+d*.15,y:cy+d*.95,r:r,f:PL,o:1} ]; },
-  about: function(m){ var r=.34; return [ {x:1.02,y:.25,r:r,f:HCI,o:.6}, {x:1.12,y:.6,r:r,f:AI,o:.6}, {x:.95,y:.85,r:r,f:PL,o:.6} ]; },
+  /* Gather the three circles in a Venn behind the portrait. */
+  about: function(m){ var base=Math.min(m.vw,m.vh), b=document.getElementById('portrait').getBoundingClientRect(),
+      g={cx:b.width/2,cy:b.height*.44,r:Math.max(b.width,b.height)*.36};
+    return vennCenters(g).map(function(c,i){ return {x:(b.left+c[0])/m.vw,y:(b.top+c[1])/m.vh,r:g.r/base,f:COLS[KEYS[i]],o:.6}; }); },
   /* Track each column's live position so the circles stay pinned to their headings at any width. */
   areas: function(m){ var base=Math.min(m.vw,m.vh);
     return [].slice.call(document.querySelectorAll('.areas > div')).map(function(col,i){
@@ -702,19 +719,37 @@ window.ORB_STATES = {
   map: function(m){ var base=Math.min(m.vw,m.vh), b=document.getElementById(m.mobile?'vennm':'mapbox').getBoundingClientRect(),
       g=m.mobile?vennGeo(b.width,b.height):{cx:b.width/2,cy:b.height*.51,r:Math.min(b.height*.3375,b.width*.21)};
     return vennCenters(g).map(function(c,i){ return {x:(b.left+c[0])/m.vw,y:(b.top+c[1])/m.vh,r:g.r/base,f:COLS[KEYS[i]],o:m.mobile&&vennSel.ks&&vennSel.ks.indexOf(KEYS[i])<0?.2:.9}; }); },
-  publications: function(m){ var base=Math.min(m.vw,m.vh); return KEYS.map(function(k){ var c=document.getElementById('chip-'+k); var r=c.getBoundingClientRect(); return {x:(r.left+18)/m.vw,y:(r.top+r.height/2)/m.vh,r:7/base,f:COLS[k],o:active[k]?1:.25}; }); },
+  publications: function(m){ var base=Math.min(m.vw,m.vh); return KEYS.map(function(k){ var c=document.getElementById('chip-'+k); var r=c.getBoundingClientRect(); return {x:(r.left+18)/m.vw,y:(r.top+r.height/2)/m.vh,r:7/base,f:COLS[k],o:active[k]||!anyActive()?1:.25}; }); },
   experience: function(m){ return [ {x:.12,y:.25,r:.3,f:HCI,o:.35},{x:.88,y:.35,r:.34,f:AI,o:.35},{x:.5,y:.98,r:.32,f:PL,o:.35} ]; },
   contact: function(m){ var base=Math.min(m.vw,m.vh); return KEYS.map(function(k,i){ var a=document.querySelectorAll('#btns a')[i]; var p=centerOf(a); var r=a.getBoundingClientRect().width/2/base; return {x:p[0],y:p[1],r:r,f:COLS[k],o:.8}; }); }
 };
 renderAbout(document.getElementById('aboutbox'));
+/* Text portrait: pv-light.txt on light backgrounds, pv-dark.txt on dark, following the system theme. */
+(function(){ var pre=document.getElementById('portrait'), mq=matchMedia('(prefers-color-scheme: dark)'), cache={};
+  function load(){ var t=document.documentElement.dataset.theme, file=(t?t==='dark':mq.matches)?'pv-dark.txt':'pv-light.txt';
+    if(cache[file]){ pre.textContent=cache[file]; return; }
+    fetch(file).then(function(r){ if(!r.ok) throw 0; return r.text(); })
+      .then(function(txt){ cache[file]=txt.replace(/\s+$/,''); pre.textContent=cache[file]; pre.style.minHeight=''; window.dispatchEvent(new Event('scroll')); })
+      .catch(function(){ pre.textContent=''; }); }
+  mq.addEventListener('change',load); load(); })();
 function glyph(a){ var on=function(k){return a.indexOf(k)>=0;};
   return '<svg class="glyph" viewBox="0 0 44 36" aria-hidden="true"><circle cx="16" cy="14" r="10" fill="'+HCI+'" opacity="'+(on('hci')?.9:.15)+'"/><circle cx="28" cy="14" r="10" fill="'+AI+'" opacity="'+(on('ai')?.9:.15)+'"/><circle cx="22" cy="23" r="10" fill="'+PL+'" opacity="'+(on('pl')?.9:.15)+'"/></svg>'; }
 var list=document.getElementById('publist'); renderPubs(list,{glyph:glyph});
 renderExperience(document.getElementById('explist'));
 renderEducation(document.getElementById('edulist'));
+function anyActive(){ return KEYS.some(function(k){ return active[k]; }); }
 function toggle(k){ active[k]=!active[k]; document.getElementById('chip-'+k).setAttribute('aria-pressed',String(active[k])); applyFilter(); }
-function applyFilter(){ var n=0; [].slice.call(list.children).forEach(function(li){ var ok=li.dataset.a.split(' ').some(function(k){return active[k];}); li.classList.toggle('off',!ok); if(ok)n++; });
-  document.getElementById('count').textContent=n+' of '+PUBS.length; window.dispatchEvent(new Event('scroll')); }
+/* Venn-style filter: a paper shows when it belongs to every selected area. */
+function applyFilter(){ var sel=KEYS.filter(function(k){ return active[k]; }), n=0, bar=document.getElementById('bar');
+  [].slice.call(list.children).forEach(function(li){ var a=li.dataset.a.split(' '), ok=sel.every(function(k){ return a.indexOf(k)>=0; });
+    li.classList.toggle('off',!ok); li.classList.remove('enter'); if(ok){ n++; void li.offsetWidth; li.classList.add('enter'); } });
+  var names=sel.map(function(k){ return document.getElementById('chip-'+k).textContent; }).join(' ∩ ');
+  document.getElementById('count').textContent = !sel.length ? n+' papers' : n ? n+' paper'+(n>1?'s':'')+' in '+names : 'No papers in '+names+' yet';
+  bar.classList.toggle('has-sel',sel.length>0); document.getElementById('clear').hidden=!sel.length;
+  /* Keep the top of the list in view when filtering shortens it. */
+  if(list.getBoundingClientRect().top<bar.getBoundingClientRect().bottom) bar.parentNode.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+  window.dispatchEvent(new Event('scroll')); }
+document.getElementById('clear').addEventListener('click',function(){ KEYS.forEach(function(k){ active[k]=false; document.getElementById('chip-'+k).setAttribute('aria-pressed','false'); }); applyFilter(); });
 document.querySelectorAll('.chip').forEach(function(c){ c.addEventListener('click',function(){ toggle(c.dataset.k); }); });
 /* Research map: short labels placed by region (percent of box). */
 var MAP = { 'distinguishing-variations':[24,6],'semantic-commit':[50,3],'designing-with-ai':[76,6],'dynavis':[37,15],'chainforge':[63,15],'expectation-vs-experience':[90,22],
@@ -778,7 +813,10 @@ layoutVennM(); window.addEventListener('resize',layoutVennM);
 
   function metrics() { return { vw: window.innerWidth, vh: window.innerHeight, mobile: window.innerWidth < 720 }; }
   function stateOf(i, m) { var k = window.ORB_STATES[sections[i].getAttribute('data-orbs')]; return k(m); }
-  function anchor(i) { var s = sections[i]; var r = s.getBoundingClientRect(); return r.top + window.scrollY + Math.min(r.height, window.innerHeight) / 2; }
+  // A section may name an element (data-orbs-anchor) whose centre marks the moment its state is fully reached.
+  function anchor(i) { var s = sections[i], id = s.getAttribute('data-orbs-anchor'), el = id && document.getElementById(id), r;
+    if (el) { r = el.getBoundingClientRect(); return r.top + window.scrollY + r.height / 2; }
+    r = s.getBoundingClientRect(); return r.top + window.scrollY + Math.min(r.height, window.innerHeight) / 2; }
 
   function frame() {
     var m = metrics();
