@@ -80,11 +80,6 @@ nav.top .name{font-family:var(--display);font-style:italic;text-transform:none;l
 .about{max-width:44em;font-size:1.22rem}
 .about-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(2rem,5vw,4.5rem);align-items:center;margin-top:1.2rem}
 .portrait{margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:clamp(5px,.6vw,8px);line-height:1.08;letter-spacing:.06em;color:var(--fg);white-space:pre;user-select:none;min-height:45em;order:2}
-.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:3rem}
-.areas h3{font-family:var(--display);font-weight:300;font-size:1.9rem;margin:0 0 .6rem;line-height:1.1;text-wrap:balance}
-.areas p{margin:0;color:var(--mute);max-width:26em}
-.areas .eyebrow{display:block;margin-bottom:5.5rem}
-.areas .papers{margin:.8rem 0 0;padding:0;list-style:none;font-size:1rem;color:var(--mute)}
 .map{position:relative;height:80vh;min-height:600px}
 .map .label{position:absolute;transform:translate(-50%,-50%);text-align:center;font-size:.98rem;letter-spacing:.26em;text-transform:uppercase;color:var(--fg);opacity:.8;width:12em}
 .map .pub-tag{position:absolute;font-size:1rem;line-height:1.2;max-width:14em;transform:translate(-50%,-50%)}
@@ -135,7 +130,6 @@ footer a:hover,footer a:focus-visible{color:var(--fg);border-color:var(--fg);out
 @media (max-width:860px){.cards{grid-template-columns:1fr}}
 @media (max-width:719px){
   .about-grid{grid-template-columns:1fr;gap:2rem}.portrait{font-size:min(7px,1.75vw);justify-self:center;order:0}
-  .areas{grid-template-columns:1fr;gap:2.5rem}.areas .eyebrow{margin-bottom:1rem}
   .map{display:none}.map-mobile{display:block}
   .hero h1{font-size:2rem}nav.top span:last-child{display:none}
   .btns a{width:110px;height:110px;font-size:.66rem}.glyph{width:36px}
@@ -188,14 +182,6 @@ footer a:hover,footer a:focus-visible{color:var(--fg);border-color:var(--fg);out
   <div class="about-grid">
     <pre class="portrait" id="portrait" role="img" aria-label="Text-art portrait of Priyan Vaithilingam"></pre>
     <div class="about" id="aboutbox"></div>
-  </div>
-</section>
-
-<section id="areas" data-orbs="areas">
-  <div class="areas">
-    <div><span class="eyebrow c-hci">Human-Computer Interaction</span><h3>Interfaces people can steer</h3><p>How people actually use AI tools, and new interactions that keep them in control: generative UI, visualization editing, prompt engineering, accessible programming.</p></div>
-    <div><span class="eyebrow c-ai">Artificial Intelligence</span><h3>Models worth collaborating with</h3><p>Intent specifications for AI memory, hypothesis testing for LLMs, ranking for program synthesis, and the real usability of code generation.</p></div>
-    <div><span class="eyebrow c-pl">Programming Languages &amp; SE</span><h3>Synthesis you can see</h3><p>Program synthesizers that explain their search, assistants that fit developer workflows, and tools that turn command lines into GUIs.</p></div>
   </div>
 </section>
 
@@ -709,13 +695,6 @@ window.ORB_STATES = {
   about: function(m){ var base=Math.min(m.vw,m.vh), b=document.getElementById('portrait').getBoundingClientRect(),
       g={cx:b.width/2,cy:b.height*.44,r:Math.max(b.width,b.height)*.36};
     return vennCenters(g).map(function(c,i){ return {x:(b.left+c[0])/m.vw,y:(b.top+c[1])/m.vh,r:g.r/base,f:COLS[KEYS[i]],o:.6}; }); },
-  /* Track each column's live position so the circles stay pinned to their headings at any width. */
-  areas: function(m){ var base=Math.min(m.vw,m.vh);
-    return [].slice.call(document.querySelectorAll('.areas > div')).map(function(col,i){
-      var c=col.getBoundingClientRect(), e=col.querySelector('.eyebrow').getBoundingClientRect(), h=col.querySelector('h3').getBoundingClientRect(), r, x, y;
-      if(m.mobile){ r=Math.min(c.width*.17,70); x=c.right-r*.9; y=(e.top+h.bottom)/2; }
-      else { r=Math.min(c.width*.46,base*.19); x=c.left+c.width/2; y=Math.min((e.top+e.bottom)/2, h.top-r*.85); }
-      return {x:x/m.vw,y:y/m.vh,r:r/base,f:COLS[KEYS[i]],o:.75}; }); },
   /* Follow the map box (desktop) or the phone Venn box so circles stay under their labels. */
   map: function(m){ var base=Math.min(m.vw,m.vh), b=document.getElementById(m.mobile?'vennm':'mapbox').getBoundingClientRect(),
       g=m.mobile?vennGeo(b.width,b.height):{cx:b.width/2,cy:b.height*.51,r:Math.min(b.height*.3375,b.width*.21)};
