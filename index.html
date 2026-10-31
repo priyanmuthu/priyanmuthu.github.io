@@ -846,9 +846,6 @@ layoutVennM(); window.addEventListener('resize',layoutVennM);
       el.setAttribute('stroke-opacity', so);
       el.setAttribute('stroke-width', lerp(p.sw || 0, q.sw || 0, t));
     });
-    document.documentElement.style.setProperty('--orb-section', i);
-    sections.forEach(function (s, j) { s.classList.toggle('is-current', j === i); });
-    if (window.onOrbFrame) window.onOrbFrame(i, t, m);
   }
   var ticking = false;
   function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(function () { frame(); ticking = false; }); } }
