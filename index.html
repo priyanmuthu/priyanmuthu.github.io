@@ -71,7 +71,7 @@ h2.sec{font-family:var(--display);font-weight:300;font-size:clamp(1.8rem,3.5vw,2
 nav.top{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(var(--bg) 55%,transparent);padding-bottom:14px;padding:18px max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));font-size:.82rem;letter-spacing:.12em;text-transform:uppercase}
 nav.top a{color:var(--fg);text-decoration:none;margin-left:1.3em;opacity:.7}
 nav.top a:hover,nav.top a:focus-visible{opacity:1;outline:none;text-decoration:underline}
-nav.top .name{font-family:var(--display);font-style:italic;text-transform:none;letter-spacing:0;font-size:1.1rem}
+nav.top .name{margin-left:0;opacity:1;font-family:var(--display);font-style:italic;text-transform:none;letter-spacing:0;font-size:1.1rem}
 .hero h1{font-size:clamp(2rem,4.6vw,3.6rem);font-weight:300;line-height:1.15;max-width:14em;margin:0 0 1.2rem;text-wrap:balance}
 .hero h1 b{font-weight:400}
 .c-hci{color:var(--hci-ink)}.c-ai{color:var(--ai-ink)}.c-pl{color:var(--pl-ink)}
@@ -182,7 +182,7 @@ footer a:hover,footer a:focus-visible{color:var(--fg);border-color:var(--fg);out
   <ellipse id="o-ai" fill="#2fb3bb"></ellipse>
   <ellipse id="o-pl" fill="#f26864"></ellipse>
 </svg>
-<nav class="top"><span class="name">Priyan Vaithilingam</span><span><a href="#about">About</a><a href="#map">Research</a><a href="#publications">Publications</a><a href="#experience">Work</a><a href="#contact">Contact</a></span></nav>
+<nav class="top"><a class="name" href="#top">Priyan Vaithilingam</a><span><a href="#about">About</a><a href="#map">Research</a><a href="#publications">Publications</a><a href="#experience">Work</a><a href="#contact">Contact</a></span></nav>
 <div class="wrap">
 
 <section class="hero" id="hero" data-orbs="hero">
@@ -584,7 +584,7 @@ window.SITE = {
    "links": [
     [
      "acm",
-     "https://dl.acm.org/citation.cfm?id=3174192"
+     "https://dl.acm.org/doi/10.1145/3173574.3174192"
     ],
     [
      "pdf",
